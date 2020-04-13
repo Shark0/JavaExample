@@ -1,48 +1,59 @@
 package com.shark.example.csv;
 
+import com.google.gson.Gson;
 import com.opencsv.CSVReader;
 import org.mozilla.universalchardet.UniversalDetector;
 import util.StringUtil;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.nio.charset.Charset;
+import java.util.HashSet;
 
 public class ParserCsvExample {
     public static void main(String argv[]) throws IOException {
-        String fileName = "blank_error.csv";
         long startTime = System.currentTimeMillis();
-//        FileReader fileReader = new FileReader("file/big.csv");
-        File file = new File("file/" + fileName);
-        byte[] buff = new byte[4096];
-        FileInputStream fileInputStream = new FileInputStream(file);
-        UniversalDetector detector = new UniversalDetector(null);
-        int read;
-        while ((read = fileInputStream.read(buff)) > 0 && !detector.isDone()) {
-            detector.handleData(buff, 0, read);
-        }
-        detector.dataEnd();
-
-        String encoding = detector.getDetectedCharset();
-        if (StringUtil.isEmpty(encoding)) {
-            encoding = "UTF-8";
-        }
-        detector.reset();
-        System.out.println("encoding: " + encoding);
-//        long endTime = System.currentTimeMillis();
-//        System.out.println("total time: " + (endTime - startTime));
-        FileReader fileReader = new FileReader("file/" + fileName, Charset.forName(encoding));
+        File file = findFile("file/test.csv");
+        String encode = detectFileEncode(file);
+        FileReader fileReader = new FileReader("file/test.csv", Charset.forName(encode));
         CSVReader csvReader = new CSVReader(fileReader);
         String[] nextRecord;
+        Gson gson = new Gson();
+        HashSet<Integer> cellSizeSet = new HashSet<>();
         while ((nextRecord = csvReader.readNext()) != null) {
-            for (String cell : nextRecord) {
-                System.out.println("cell: " + cell);
-            }
+//            System.out.println("cell size: " + nextRecord.length + ", data: "+ gson.toJson(nextRecord));
+            cellSizeSet.add(nextRecord.length);
         }
+//        System.out.println("cell length count: " + cellSizeSet.size() + ", data: " + gson.toJson(cellSizeSet));
         csvReader.close();
         long endTime = System.currentTimeMillis();
         System.out.println("total time: " + (endTime - startTime));
+    }
+
+    private static File findFile(String path) {
+        return new File(path);
+    }
+
+    private static String detectFileEncode(File file) {
+        byte[] buff = new byte[4096];
+        String encode = null;
+        try(FileInputStream fileInputStream = new FileInputStream(file)) {
+            UniversalDetector detector = new UniversalDetector(null);
+            int read;
+            while ((read = fileInputStream.read(buff)) > 0 && !detector.isDone()) {
+                detector.handleData(buff, 0, read);
+            }
+            detector.dataEnd();
+            encode = detector.getDetectedCharset();
+            if (StringUtil.isEmpty(encode)) {
+                encode = "UTF-8";
+            }
+            detector.reset();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        System.out.println("encode: " + encode);
+        return encode;
     }
 }

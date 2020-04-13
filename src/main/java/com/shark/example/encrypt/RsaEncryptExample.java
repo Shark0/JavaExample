@@ -16,7 +16,8 @@ import java.util.Calendar;
 public class RsaEncryptExample {
     public static void main(String[] argv) {
         Calendar calendar = Calendar.getInstance();
-        calendar.add(Calendar.YEAR, 2);
+        calendar.set(Calendar.MONTH, 3);
+        calendar.set(Calendar.DAY_OF_MONTH, 12);
         System.out.println("time: " + new SimpleDateFormat("yyyy-MM-dd").format(calendar.getTime()));
         String src = String.valueOf(calendar.getTime().getTime());
         System.out.println(src);
@@ -33,7 +34,6 @@ public class RsaEncryptExample {
                 "CGs=";
 
         //私鑰加密、公鑰解密——加密
-
         KeyFactory keyFactory = null;
         try {
             PKCS8EncodedKeySpec pkcs8EncodedKeySpec = new PKCS8EncodedKeySpec(Base64.decodeBase64(privateKeyString));
