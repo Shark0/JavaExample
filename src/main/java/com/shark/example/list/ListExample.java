@@ -17,6 +17,7 @@ public class ListExample {
         list.add("9");
         list.add("10");
         list.add("11");
+
         double size = 10;
         double count = Math.ceil(list.size() / size);
         System.out.println("count: " + count);

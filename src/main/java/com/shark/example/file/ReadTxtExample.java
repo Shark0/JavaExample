@@ -1,4 +1,4 @@
-package com.shark.example;
+package com.shark.example.file;
 
 import java.io.*;
 

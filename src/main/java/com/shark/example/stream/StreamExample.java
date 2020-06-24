@@ -7,6 +7,9 @@ import java.util.stream.Collectors;
 
 public class StreamExample {
     public static void main(String[] argv) {
+        List<String> list = List.of("1", "2", "3");
+        list.add("4");
+
         List<String> stringList = Arrays.asList("abc", "", "bc", "efg", "abcd", "", "jkl");
         long count = stringList.stream().filter(string -> string.isEmpty()).count();
         System.out.println("空字串數量： " + count);

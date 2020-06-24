@@ -8,7 +8,7 @@ public class ParserDouble {
 
     public static void main(String[] argv) {
         try {
-            identify("0.0001242621932277");
+            identify("0.6%");
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -19,7 +19,14 @@ public class ParserDouble {
             String refinedInput = input.trim().replace(",", "");
             if (refinedInput.endsWith("%")) {
                 refinedInput = refinedInput.replace("%", "").trim();
-                BigDecimal parsedInput = BigDecimal.valueOf(Double.parseDouble(refinedInput)).divide(BigDecimal.valueOf(100), refinedInput.length() - 1, HALF_UP);
+                int scale = 0;
+                if(refinedInput.contains(".")) {
+                    scale = refinedInput.substring(refinedInput.trim().indexOf(".")).length() + 1;
+                } else {
+                    scale = 2;
+                }
+                System.out.println("scale: " + scale);
+                BigDecimal parsedInput = BigDecimal.valueOf(Double.parseDouble(refinedInput)).divide(BigDecimal.valueOf(100), scale, HALF_UP);
                 refinedInput = String.valueOf(parsedInput);
             }
             int dotIndex = refinedInput.trim().indexOf(".");

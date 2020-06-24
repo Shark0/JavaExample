@@ -1,17 +1,16 @@
 package com.shark.example.excel;
 
+import com.monitorjbl.xlsx.StreamingReader;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.*;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Iterator;
 
-public class ReadExcelExample {
+public class ReadExcelExample2 {
 
     private static final String FILE_PATH = "file/test.xlsx";
 
@@ -23,7 +22,7 @@ public class ReadExcelExample {
     private static void readWorkBook() {
         try {
             SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
-            Workbook workbook = WorkbookFactory.create(new File(FILE_PATH));
+            Workbook workbook = StreamingReader.builder().rowCacheSize(1000).bufferSize(100).open(new FileInputStream(new File(FILE_PATH)));
             Sheet sheet = workbook.getSheetAt(0);
             Iterator<Row> rowIterator = sheet.rowIterator();
             int i = 0;
@@ -68,8 +67,6 @@ public class ReadExcelExample {
                 i ++;
             }
         } catch (IOException e) {
-            e.printStackTrace();
-        } catch (InvalidFormatException e) {
             e.printStackTrace();
         }
     }
