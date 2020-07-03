@@ -1,6 +1,6 @@
-package com.shark.example.parserSentence.grammar;
+package com.shark.example.sentence.grammar;
 
-import com.shark.example.parserSentence.TokenType;
+import com.shark.example.sentence.TokenType;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 

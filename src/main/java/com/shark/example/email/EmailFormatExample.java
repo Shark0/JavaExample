@@ -1,4 +1,4 @@
-package com.shark.example.format;
+package com.shark.example.email;
 
 import java.util.ArrayList;
 import java.util.List;

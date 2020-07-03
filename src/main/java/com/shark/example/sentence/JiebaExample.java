@@ -1,4 +1,4 @@
-package com.shark.example.parserSentence;
+package com.shark.example.sentence;
 
 import com.huaban.analysis.jieba.JiebaSegmenter;
 import com.huaban.analysis.jieba.SegToken;
