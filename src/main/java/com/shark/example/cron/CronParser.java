@@ -6,7 +6,7 @@ import org.springframework.util.StringUtils;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
-public class CronSequenceGenerator {
+public class CronParser {
     private final String expression;
 
     @Nullable
@@ -16,31 +16,28 @@ public class CronSequenceGenerator {
     private final BitSet daysOfWeek;
     private final BitSet hours;
     private final BitSet minutes;
-    private final BitSet seconds;
 
-    public CronSequenceGenerator(String expression) {
+    public CronParser(String expression) {
         this(expression, TimeZone.getDefault());
     }
 
-    public CronSequenceGenerator(String expression, TimeZone timeZone) {
+    public CronParser(String expression, TimeZone timeZone) {
         this.months = new BitSet(12);
         this.daysOfMonth = new BitSet(31);
         this.daysOfWeek = new BitSet(7);
         this.hours = new BitSet(24);
         this.minutes = new BitSet(60);
-        this.seconds = new BitSet(60);
         this.expression = expression;
         this.timeZone = timeZone;
         this.parse(expression);
     }
 
-    private CronSequenceGenerator(String expression, String[] fields) {
+    private CronParser(String expression, String[] fields) {
         this.months = new BitSet(12);
         this.daysOfMonth = new BitSet(31);
         this.daysOfWeek = new BitSet(7);
         this.hours = new BitSet(24);
         this.minutes = new BitSet(60);
-        this.seconds = new BitSet(60);
         this.expression = expression;
         this.timeZone = null;
         this.doParse(fields);
@@ -54,11 +51,12 @@ public class CronSequenceGenerator {
         Calendar calendar = new GregorianCalendar();
         calendar.setTimeZone(this.timeZone);
         calendar.setTime(date);
-        calendar.set(14, 0);
+        calendar.set(Calendar.MILLISECOND, 0);
+        calendar.set(Calendar.SECOND, 0);
         long originalTimestamp = calendar.getTimeInMillis();
         this.doNext(calendar, calendar.get(1));
         if (calendar.getTimeInMillis() == originalTimestamp) {
-            calendar.add(13, 1);
+            calendar.add(Calendar.MINUTE, 1);
             this.doNext(calendar, calendar.get(1));
         }
 
@@ -67,25 +65,19 @@ public class CronSequenceGenerator {
 
     private void doNext(Calendar calendar, int dot) {
         List<Integer> resets = new ArrayList();
-        int second = calendar.get(13);
-        List<Integer> emptyList = Collections.emptyList();
-        int updateSecond = this.findNext(this.seconds, second, calendar, 13, 12, emptyList);
-        if (second == updateSecond) {
-            resets.add(13);
-        }
 
-        int minute = calendar.get(12);
-        int updateMinute = this.findNext(this.minutes, minute, calendar, 12, 11, resets);
+        int minute = calendar.get(Calendar.MINUTE);
+        int updateMinute = this.findNext(this.minutes, minute, calendar, Calendar.MINUTE, Calendar.HOUR_OF_DAY, resets);
         if (minute == updateMinute) {
-            resets.add(12);
+            resets.add(Calendar.MINUTE);
         } else {
             this.doNext(calendar, dot);
         }
 
-        int hour = calendar.get(11);
-        int updateHour = this.findNext(this.hours, hour, calendar, 11, 7, resets);
+        int hour = calendar.get(Calendar.HOUR_OF_DAY);
+        int updateHour = this.findNext(this.hours, hour, calendar, Calendar.HOUR_OF_DAY, Calendar.DAY_OF_WEEK, resets);
         if (hour == updateHour) {
-            resets.add(11);
+            resets.add(Calendar.HOUR_OF_DAY);
         } else {
             this.doNext(calendar, dot);
         }
@@ -94,16 +86,16 @@ public class CronSequenceGenerator {
         int dayOfMonth = calendar.get(5);
         int updateDayOfMonth = this.findNextDay(calendar, this.daysOfMonth, dayOfMonth, this.daysOfWeek, dayOfWeek, resets);
         if (dayOfMonth == updateDayOfMonth) {
-            resets.add(5);
+            resets.add(Calendar.DATE);
         } else {
 //            System.out.println("doNext dayOfMonth: " + dayOfMonth + ", updateDayOfMonth: " + updateDayOfMonth + new SimpleDateFormat("yyyy-MM-dd HH:mm:ss: ").format(calendar.getTime()));
             this.doNext(calendar, dot);
         }
 
-        int month = calendar.get(2);
+        int month = calendar.get(Calendar.MONTH);
         int updateMonth = this.findNext(this.months, month, calendar, Calendar.MONTH, Calendar.YEAR, resets);
         if (month != updateMonth) {
-            if (calendar.get(1) - dot > 4) {
+            if (calendar.get(Calendar.YEAR) - dot > 4) {
                 throw new IllegalArgumentException("Invalid cron expression \"" + this.expression + "\" led to runaway search for next trigger");
             }
 //            System.out.println("doNext month: " + new SimpleDateFormat("yyyy-MM-dd HH:mm:ss: ").format(calendar.getTime()));
@@ -116,7 +108,7 @@ public class CronSequenceGenerator {
         int count = 0;
         short max = 366;
 
-        while((!daysOfMonth.get(dayOfMonth) || !daysOfWeek.get(dayOfWeek - 1)) && count++ < max) {
+        while ((!daysOfMonth.get(dayOfMonth) || !daysOfWeek.get(dayOfWeek - 1)) && count++ < max) {
             calendar.add(5, 1);
             dayOfMonth = calendar.get(5);
             dayOfWeek = calendar.get(7);
@@ -149,93 +141,87 @@ public class CronSequenceGenerator {
     private void reset(Calendar calendar, List<Integer> fields) {
         Iterator var3 = fields.iterator();
 
-        while(var3.hasNext()) {
-            int field = (Integer)var3.next();
-            calendar.set(field, field == 5 ? 1 : 0);
+        while (var3.hasNext()) {
+            int field = (Integer) var3.next();
+            calendar.set(field, field == Calendar.DATE ? 1 : 0);
         }
-
     }
 
     private void parse(String expression) throws IllegalArgumentException {
         String[] fields = StringUtils.tokenizeToStringArray(expression, " ");
         if (!areValidCronFields(fields)) {
-            throw new IllegalArgumentException(String.format("Cron expression must consist of 6 fields (found %d in \"%s\")", fields.length, expression));
+            throw new IllegalArgumentException(String.format("Cron expression must consist of 5 fields (found %d in \"%s\")", fields.length, expression));
         } else {
             this.doParse(fields);
         }
     }
 
-    public Date preview(Date date) {
+    public Date previous(Date date) {
         Calendar calendar = new GregorianCalendar();
         calendar.setTimeZone(this.timeZone);
         calendar.setTime(date);
-        calendar.set(14, 0); //millisecond
+        calendar.set(Calendar.MILLISECOND, 0);
+        calendar.set(Calendar.SECOND, 0);
         long originalTimestamp = calendar.getTimeInMillis();
-//        System.out.println("doPreview 1");
-        this.doPreview(calendar, calendar.get(Calendar.YEAR));
+        this.doPrevious(calendar, calendar.get(Calendar.YEAR));
         if (calendar.getTimeInMillis() == originalTimestamp) {
-            calendar.add(Calendar.SECOND, -1);
-//            System.out.println("doPreview 2");
-            this.doPreview(calendar, calendar.get(Calendar.YEAR));
+            calendar.add(Calendar.MINUTE, -1);
+            this.doPrevious(calendar, calendar.get(Calendar.YEAR));
         }
 
         return calendar.getTime();
     }
 
-    private void doPreview(Calendar calendar, int dot) {
+    private void doPrevious(Calendar calendar, int dot) {
+        int month = calendar.get(Calendar.MONTH);
         List<Integer> resets = new ArrayList();
-        int second = calendar.get(Calendar.SECOND);
-        List<Integer> emptyList = Collections.emptyList();
-        int updateSecond = this.findPreview(this.seconds, second, calendar, Calendar.SECOND, Calendar.MINUTE, -1, emptyList);
-        if (second == updateSecond) {
-            resets.add(Calendar.SECOND);
-        }
 
-        int minute = calendar.get(Calendar.MINUTE);
-        int updateMinute = this.findPreview(this.minutes, minute, calendar, Calendar.MINUTE, Calendar.HOUR_OF_DAY, Calendar.SECOND, resets);
-        if (minute == updateMinute) {
-            resets.add(Calendar.MINUTE);
-        } else {
-//            System.out.println("doPreview minute: " + new SimpleDateFormat("yyyy-MM-dd HH:mm:ss: ").format(calendar.getTime()));
-            this.doPreview(calendar, dot);
-        }
+        int updateMonth = this.findPreview(this.months, month, calendar, Calendar.MONTH, Calendar.YEAR,
+                List.of(Calendar.DAY_OF_MONTH, Calendar.HOUR_OF_DAY, Calendar.MINUTE));
 
-        int hour = calendar.get(Calendar.HOUR_OF_DAY);
-        int updateHour = this.findPreview(this.hours, hour, calendar, Calendar.HOUR_OF_DAY, Calendar.DAY_OF_WEEK, Calendar.MINUTE, resets);
-        if (hour == updateHour) {
-            resets.add(Calendar.HOUR_OF_DAY);
-        } else {
-//            System.out.println("doPreview hour of day: " + new SimpleDateFormat("yyyy-MM-dd HH:mm:ss: ").format(calendar.getTime()));
-            this.doPreview(calendar, dot);
+        if (month != updateMonth) {
+            if (calendar.get(Calendar.YEAR) - dot > 4) {
+                throw new IllegalArgumentException("Invalid cron expression \"" + this.expression + "\" led to runaway search for next trigger");
+            }
+//            System.out.println("doPreview month: " + month + ", update month: " + updateMonth + ", calendar " + new SimpleDateFormat("yyyy-MM-dd HH:mm:ss: ").format(calendar.getTime()));
+            this.doPrevious(calendar, dot);
+            return;
         }
 
         int dayOfWeek = calendar.get(Calendar.DAY_OF_WEEK);
         int dayOfMonth = calendar.get(Calendar.DAY_OF_MONTH);
         int updateDayOfMonth = this.findPreviewDay(calendar, this.daysOfMonth, dayOfMonth, this.daysOfWeek, dayOfWeek, resets);
-        if (dayOfMonth == updateDayOfMonth) {
-            resets.add(Calendar.DAY_OF_MONTH);
-        } else {
-//            System.out.println("doPreview dayOfMonth: " + dayOfMonth + ", updateDayOfMonth: " + updateDayOfMonth + new SimpleDateFormat("yyyy-MM-dd HH:mm:ss: ").format(calendar.getTime()));
-            this.doPreview(calendar, dot);
+//        System.out.println("doPreview dayOfWeek: " + dayOfWeek + ", dayOfMonth: " + dayOfMonth + ", updateDayOfMonth: " + updateDayOfMonth);
+        if (dayOfMonth != updateDayOfMonth) {
+//            System.out.println("doPreview dayOfMonth: " + dayOfMonth + ", updateDayOfMonth: " + updateDayOfMonth + ", calendar: " + new SimpleDateFormat("yyyy-MM-dd HH:mm:ss: ").format(calendar.getTime()));
+            this.doPrevious(calendar, dot);
+            return;
         }
 
-        int month = calendar.get(Calendar.MONTH);
-        int updateMonth = this.findPreview(this.months, month, calendar, Calendar.MONTH, Calendar.YEAR, Calendar.DAY_OF_WEEK, resets);
-        if (month != updateMonth) {
-            if (calendar.get(1) - dot > 4) {
-                throw new IllegalArgumentException("Invalid cron expression \"" + this.expression + "\" led to runaway search for next trigger");
-            }
-//            System.out.println("doPreview month: " + new SimpleDateFormat("yyyy-MM-dd HH:mm:ss: ").format(calendar.getTime()));
-            this.doPreview(calendar, dot);
+        int hour = calendar.get(Calendar.HOUR_OF_DAY);
+        int updateHour = this.findPreview(this.hours, hour, calendar, Calendar.HOUR_OF_DAY, Calendar.DAY_OF_WEEK,
+                List.of(Calendar.MINUTE));
+        if (hour != updateHour) {
+//            System.out.println("doPreview hour: " + hour + ", updateHour: " + updateHour + ", calendar: " + new SimpleDateFormat("yyyy-MM-dd HH:mm:ss: ").format(calendar.getTime()));
+            this.doPrevious(calendar, dot);
+            return;
         }
 
+        int minute = calendar.get(Calendar.MINUTE);
+        int updateMinute = this.findPreview(this.minutes, minute, calendar, Calendar.MINUTE, Calendar.HOUR_OF_DAY, resets);
+        if (minute != updateMinute) {
+//            System.out.println("doPreview minute: " + minute + ", updateMinute: " + updateMinute + ", calendar: " + new SimpleDateFormat("yyyy-MM-dd HH:mm:ss: ").format(calendar.getTime()));
+            this.doPrevious(calendar, dot);
+        }
     }
 
     private int findPreviewDay(Calendar calendar, BitSet daysOfMonth, int dayOfMonth, BitSet daysOfWeek, int dayOfWeek, List<Integer> resets) {
+//        System.out.println("findPreviewDay daysOfMonth: " + dayOfMonth + ", daysOfMonth: " + daysOfMonth.get(dayOfMonth) +
+//                ", dayOfWeek: " + dayOfWeek + ", daysOfWeek: " + daysOfWeek.get(dayOfWeek -1)) ;
         int count = 0;
         short max = 366;
 
-        while((!daysOfMonth.get(dayOfMonth) || !daysOfWeek.get(dayOfWeek - 1)) && count++ < max) {
+        while ((!daysOfMonth.get(dayOfMonth) || !daysOfWeek.get(dayOfWeek - 1)) && count++ < max) {
             calendar.add(Calendar.DATE, -1);
             dayOfMonth = calendar.get(Calendar.DAY_OF_MONTH);
             dayOfWeek = calendar.get(Calendar.DAY_OF_WEEK);
@@ -253,8 +239,8 @@ public class CronSequenceGenerator {
     private void resetPreviewDay(Calendar calendar, List<Integer> fields) {
         Iterator var3 = fields.iterator();
 
-        while(var3.hasNext()) {
-            int field = (Integer)var3.next();
+        while (var3.hasNext()) {
+            int field = (Integer) var3.next();
             calendar.set(field, field == Calendar.DAY_OF_MONTH ? 1 : 0);
         }
         //將其他小的時間filed 補成最大值 - Shark
@@ -263,14 +249,11 @@ public class CronSequenceGenerator {
 //        System.out.println("resetPreviewDay: " + new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(calendar.getTime())) ;
     }
 
-    private int findPreview(BitSet bits, int value, Calendar calendar, int field, int nextFiledId, int previewField, List<Integer> lowerOrders) {
+    private int findPreview(BitSet bits, int value, Calendar calendar, int field, int nextFiledId, List<Integer> lowerOrders) {
 
         int previewValue = bits.previousSetBit(value);
         if (previewValue == -1) {
             //比cron tab的 preview 值小，取cron tab裡面最大的值
-            if(previewField != -1) {
-                calendar.add(previewField, -1);
-            }
 
             this.resetPreview(calendar, field, Collections.singletonList(field));
             //找出bits的最大值
@@ -295,22 +278,21 @@ public class CronSequenceGenerator {
     private void resetPreview(Calendar calendar, Integer currentField, List<Integer> fields) {
         Iterator var3 = fields.iterator();
 
-        while(var3.hasNext()) {
-            int field = (Integer)var3.next();
+        while (var3.hasNext()) {
+            int field = (Integer) var3.next();
             calendar.set(field, field == Calendar.DAY_OF_MONTH ? 1 : 0);
         }
         //將其他小的時間filed 補成最大值 - Shark
         calendar.add(currentField, 1);
-        calendar.add(Calendar.SECOND, -1);
+        calendar.add(Calendar.MINUTE, -1);
     }
 
     private void doParse(String[] fields) {
-        this.setNumberHits(this.seconds, fields[0], 0, 60);
-        this.setNumberHits(this.minutes, fields[1], 0, 60);
-        this.setNumberHits(this.hours, fields[2], 0, 24);
-        this.setDaysOfMonth(this.daysOfMonth, fields[3]);
-        this.setMonths(this.months, fields[4]);
-        this.setDays(this.daysOfWeek, this.replaceOrdinals(fields[5], "SUN,MON,TUE,WED,THU,FRI,SAT"), 8);
+        this.setNumberHits(this.minutes, fields[0], 0, 60);
+        this.setNumberHits(this.hours, fields[1], 0, 24);
+        this.setDaysOfMonth(this.daysOfMonth, fields[2]);
+        this.setMonths(this.months, fields[3]);
+        this.setDays(this.daysOfWeek, this.replaceOrdinals(fields[4], "SUN,MON,TUE,WED,THU,FRI,SAT"), 8);
         if (this.daysOfWeek.get(7)) {
             this.daysOfWeek.set(0);
             this.daysOfWeek.clear(7);
@@ -320,7 +302,7 @@ public class CronSequenceGenerator {
     private String replaceOrdinals(String value, String commaSeparatedList) {
         String[] list = StringUtils.commaDelimitedListToStringArray(commaSeparatedList);
 
-        for(int i = 0; i < list.length; ++i) {
+        for (int i = 0; i < list.length; ++i) {
             String item = list[i].toUpperCase();
             value = StringUtils.replace(value.toUpperCase(), item, "" + i);
         }
@@ -348,7 +330,7 @@ public class CronSequenceGenerator {
         BitSet months = new BitSet(13);
         this.setNumberHits(months, value, 1, max + 1);
 
-        for(int i = 1; i <= max; ++i) {
+        for (int i = 1; i <= max; ++i) {
             if (months.get(i)) {
                 bits.set(i - 1);
             }
@@ -360,7 +342,7 @@ public class CronSequenceGenerator {
         String[] var6 = fields;
         int var7 = fields.length;
 
-        for(int var8 = 0; var8 < var7; ++var8) {
+        for (int var8 = 0; var8 < var7; ++var8) {
             String field = var6[var8];
             if (!field.contains("/")) {
                 int[] range = this.getRange(field, min, max);
@@ -381,7 +363,7 @@ public class CronSequenceGenerator {
                     throw new IllegalArgumentException("Incrementer delta must be 1 or higher: '" + field + "' in expression \"" + this.expression + "\"");
                 }
 
-                for(int i = range[0]; i <= range[1]; i += delta) {
+                for (int i = range[0]; i <= range[1]; i += delta) {
                     bits.set(i);
                 }
             }
@@ -433,7 +415,7 @@ public class CronSequenceGenerator {
                 return false;
             } else {
                 try {
-                    new CronSequenceGenerator(expression, fields);
+                    new CronParser(expression, fields);
                     return true;
                 } catch (IllegalArgumentException var3) {
                     return false;
@@ -443,27 +425,17 @@ public class CronSequenceGenerator {
     }
 
     private static boolean areValidCronFields(@Nullable String[] fields) {
-        return fields != null && fields.length == 6;
+        return fields != null && fields.length == 5;
     }
 
-    public boolean equals(@Nullable Object other) {
-        if (this == other) {
-            return true;
-        } else if (!(other instanceof CronSequenceGenerator)) {
-            return false;
-        } else {
-            CronSequenceGenerator otherCron = (CronSequenceGenerator)other;
-            return this.months.equals(otherCron.months) && this.daysOfMonth.equals(otherCron.daysOfMonth) && this.daysOfWeek.equals(otherCron.daysOfWeek) && this.hours.equals(otherCron.hours) && this.minutes.equals(otherCron.minutes) && this.seconds.equals(otherCron.seconds);
-        }
-    }
 
     public int hashCode() {
-        return 17 * this.months.hashCode() + 29 * this.daysOfMonth.hashCode() + 37 * this.daysOfWeek.hashCode() + 41 * this.hours.hashCode() + 53 * this.minutes.hashCode() + 61 * this.seconds.hashCode();
+        return 17 * this.months.hashCode() + 29 * this.daysOfMonth.hashCode() + 37 * this.daysOfWeek.hashCode() + 41 * this.hours.hashCode() + 53 * this.minutes.hashCode();
     }
 
     public void print() {
         System.out.println("months: " + months + ", daysOfMonth: " + daysOfMonth + ", daysOfWeek: " +
-                daysOfWeek + ", hours: " + hours + ", minutes: " + minutes + ", seconds: " + seconds);
+                daysOfWeek + ", hours: " + hours + ", minutes: " + minutes);
     }
 
     public String toString() {

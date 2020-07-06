@@ -6,31 +6,31 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class CronTabExample {
+public class CrontabExample {
     public static void main(String[] argv) {
         List<String> cronTabList = new ArrayList<>();
-//        cronTabList.add("*/5 * * * * *");
-//        cronTabList.add("0 */15 * * * *");
-//        cronTabList.add("0 5 * * * *");
-//        cronTabList.add("0 5 1 * * *");
-//        cronTabList.add("0 0 0 1 * *");
-//        cronTabList.add("0 0 0 1 1 *");
-        cronTabList.add("0 */15 0 25 12 *");
+//        cronTabList.add("*/5 * * * *");
+//        cronTabList.add("*/15 * * * *");
+//        cronTabList.add("0 5 * * *");
+//        cronTabList.add("0 0 1 * *");
+//        cronTabList.add("0 0 1 1 *");
+        cronTabList.add("* * * 1 *");
+//        cronTabList.add("0 0 * 1 2");
+//        cronTabList.add("0 0 * 1 SUN");
 
         DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS");
 
         Date currentTime = new Date();
         int index = 0;
         for (String cronTab : cronTabList) {
-            CronSequenceGenerator cronSequenceGenerator = new CronSequenceGenerator(cronTab);
-//            cronSequenceGenerator.print();
-
+            CronParser cronSequenceGenerator = new CronParser(cronTab);
+            cronSequenceGenerator.print();
             Date nextDate = cronSequenceGenerator.next(currentTime);
-            System.out.println("index: index" + index + ", nextDate: " +
+            System.out.println("index: " + index + ", nextDate: " +
                     nextDate.toInstant().atZone(ZoneId.systemDefault()).format(dateTimeFormatter));
 
-            Date previewDate = cronSequenceGenerator.preview(currentTime);
-            System.out.println("index: index" + index + ", prevDate: " +
+            Date previewDate = cronSequenceGenerator.previous(currentTime);
+            System.out.println("index: " + index + ", prevDate: " +
                     previewDate.toInstant().atZone(ZoneId.systemDefault()).format(dateTimeFormatter));
             index = index + 1;
         }
