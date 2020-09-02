@@ -10,11 +10,11 @@ public class CrontabExample {
     public static void main(String[] argv) {
         List<String> cronTabList = new ArrayList<>();
 //        cronTabList.add("*/5 * * * *");
-//        cronTabList.add("*/15 * * * *");
+        cronTabList.add("*/15 * * * *");
 //        cronTabList.add("0 5 * * *");
 //        cronTabList.add("0 0 1 * *");
 //        cronTabList.add("0 0 1 1 *");
-        cronTabList.add("* * * 1 *");
+//        cronTabList.add("* * * 1 *");
 //        cronTabList.add("0 0 * 1 2");
 //        cronTabList.add("0 0 * 1 SUN");
 

@@ -3,7 +3,7 @@ package com.shark.example.list;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ListExample {
+public class SubListExample {
     public static void main(String argv[]) {
         List<String> list = new ArrayList<>();
         list.add("1");
