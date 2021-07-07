@@ -3,7 +3,7 @@ package com.shark.example.csv;
 import com.google.gson.Gson;
 import com.opencsv.CSVReader;
 import org.mozilla.universalchardet.UniversalDetector;
-import util.StringUtil;
+import com.shark.example.util.StringUtil;
 
 import java.io.*;
 import java.nio.charset.Charset;

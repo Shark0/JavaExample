@@ -1,4 +1,4 @@
-package util;
+package com.shark.example.util;
 
 public class StringUtil {
     public static boolean isEmpty(String string) {
