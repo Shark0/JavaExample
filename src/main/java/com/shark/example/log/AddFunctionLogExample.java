@@ -9,9 +9,9 @@ import java.util.List;
 
 public class AddFunctionLogExample {
 
-    private static final String PROJECT_PATH = "D:\\Shark\\C#\\Example";
+    private static final String PROJECT_PATH = "D:\\HW\\Fish\\Source_Code\\GameServer\\JCBYServer2.0";
     private static final String CLASS_FILE_EXTENSION = ".cs";
-    private static final String LOG_FUNCTION_START = "Console.WriteLine(\"";
+    private static final String LOG_FUNCTION_START = "MyLog.All(\"";
     private static final String LOG_FUNCTION_END = "\");";
 
     public static void main(String argv[]) {
@@ -43,19 +43,23 @@ public class AddFunctionLogExample {
     }
 
     private static List<FunctionLogNode> parserClassFile(File classFile) {
-
         List functionNodeList = new ArrayList();
         List<String> codeLineList;
         try {
             codeLineList = Files.readAllLines(classFile.toPath());
             for(int i = 0; i < codeLineList.size(); i ++) {
-                FunctionLogNode functionLogNode = generateFunctionNode(codeLineList, i);
-                if(functionLogNode != null) {
-                    functionNodeList.add(functionLogNode);
+                try {
+                    FunctionLogNode functionLogNode = generateFunctionNode(codeLineList, i);
+                    if(functionLogNode != null) {
+                        functionNodeList.add(functionLogNode);
+                    }
+                } catch (Exception e) {
+                    System.out.println("fileAbsolutePath: " + classFile.getAbsolutePath());
+                    System.out.println("i: " + i + ", code: " + codeLineList.get(i).trim());
+                    e.printStackTrace();
                 }
             }
         } catch (Exception e) {
-            System.out.println("fileAbsolutePath: " + classFile.getAbsolutePath());
             e.printStackTrace();
         }
         return functionNodeList;
@@ -65,31 +69,14 @@ public class AddFunctionLogExample {
         String code = codeLineList.get(index);
         String trimCode = code.trim();
         if(StringUtil.isEmpty(trimCode) ||
-                trimCode.matches(".*\".*") ||
-                trimCode.matches(".*\\..*") ||
-                trimCode.matches(".*\\+.*") ||
-                trimCode.matches(".*}") ||
-                trimCode.matches(".*=.*") ||
-                trimCode.matches(".*new\\ .*") ||
-                trimCode.matches(".*;") ||
-                trimCode.matches(".*;.*\\/\\/.*") ||
-                trimCode.matches(".*\\#.*") ||
-                trimCode.matches("\\[.*\\]") ||
-                trimCode.matches(":.*") ||
-                trimCode.matches("\\/\\/.*")) {
+                !trimCode.matches("[\\w\\s]+\\w+\\(.*\\)")) {
             return null;
         }
 
         String[] subCodeArray = code.split(" ");
         for(String subCode: subCodeArray) {
             if(subCode.contains("(")) {
-                if(subCode.split("\\(").length < 2) {
-                    continue;
-                }
                 String functionName = subCode.split("\\(")[0];
-                if(StringUtil.isEmpty(functionName)) {
-                    continue;
-                }
                 FunctionLogNode functionLogNode = new FunctionLogNode();
                 functionLogNode.setCode(code);
                 functionLogNode.setFunctionName(functionName);
@@ -99,7 +86,7 @@ public class AddFunctionLogExample {
                 }
                 functionLogNode.setSpaceCount(spaceIndex);
                 int curlyBracketIndex = 0;
-                while (!codeLineList.get(index + curlyBracketIndex).trim().matches(".*\\{.*")) {
+                while (!codeLineList.get(index + curlyBracketIndex).trim().equalsIgnoreCase("{")) {
                     curlyBracketIndex = curlyBracketIndex + 1;
                 }
                 int logIndex = index + curlyBracketIndex + 1;
@@ -111,6 +98,7 @@ public class AddFunctionLogExample {
     }
 
     private static void addFunctionNodeLog(File classFile, List<FunctionLogNode> functionLogNodeList) {
+        String className = classFile.getName();
 //        System.out.println("fileAbsolutePath: " + classFile.getAbsolutePath());
         List<String> lines;
         try {
@@ -123,7 +111,8 @@ public class AddFunctionLogExample {
                 for(int x = 0; x < node.getSpaceCount() + 4; x ++) {
                     logStringBuilder.append(" ");
                 }
-                logStringBuilder.append(LOG_FUNCTION_START).append(node.getFunctionName()).append("()").append(LOG_FUNCTION_END);
+                logStringBuilder.append(LOG_FUNCTION_START).append(className).append("\", \"")
+                        .append(node.getFunctionName()).append("()").append(LOG_FUNCTION_END);
                 String logCode = logStringBuilder.toString();
                 lines.add(node.getLogLineIndex() + i, logCode);
             }
