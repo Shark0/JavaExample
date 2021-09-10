@@ -7,7 +7,7 @@ import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AddFunctionLogExample {
+public class AddCSharpFunctionLogExample {
 
     private static final String PROJECT_PATH = "D:\\HW\\Fish\\Source_Code\\GameServer\\JCBYServer2.0";
     private static final String CLASS_FILE_EXTENSION = ".cs";
