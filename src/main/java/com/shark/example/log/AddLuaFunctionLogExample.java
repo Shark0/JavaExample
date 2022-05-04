@@ -66,7 +66,7 @@ public class AddLuaFunctionLogExample {
     private static FunctionLogNode generateFunctionNode(List<String> codeLineList , int index) {
         String code = codeLineList.get(index);
         try {
-            if(code.startsWith("function")) {
+            if(!code.startsWith("function")) {
                 return null;
             }
             String functionName = code.replace("function ", "");
@@ -84,7 +84,8 @@ public class AddLuaFunctionLogExample {
     }
 
     private static void addFunctionNodeLog(File classFile, List<FunctionLogNode> functionLogNodeList) {
-        String className = classFile.getName();
+        String classPath = classFile.getPath();
+        classPath = classPath.replace(PROJECT_PATH, "").substring(1).replace("\\", "\\\\");
         List<String> lines;
         try {
             lines = Files.readAllLines(classFile.toPath());
@@ -96,7 +97,7 @@ public class AddLuaFunctionLogExample {
                 for(int x = 0; x < node.getSpaceCount() + 4; x ++) {
                     logStringBuilder.append(" ");
                 }
-                logStringBuilder.append(LOG_FUNCTION_START).append(className).append(" ")
+                logStringBuilder.append(LOG_FUNCTION_START).append(classPath).append(" ")
                         .append(node.getFunctionName()).append(LOG_FUNCTION_END);
                 String logCode = logStringBuilder.toString();
                 lines.add(node.getLogLineIndex() + i, logCode);
