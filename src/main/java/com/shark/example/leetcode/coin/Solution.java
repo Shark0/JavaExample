@@ -36,7 +36,7 @@ public class Solution {
             int tempCoinChange = -1;
             if (amount % coin == 0) {
                 tempCoinChange = amount / coin;
-                if ((tempCoinChange > 0) && (coinChange == -1 || (tempCoinChange < coinChange))) {
+                if (coinChange == -1 || (tempCoinChange < coinChange)) {
                     amountResultMap.put(amount, tempCoinChange);
                     return tempCoinChange;
                 }
