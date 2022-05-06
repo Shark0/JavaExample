@@ -1,47 +1,65 @@
 package com.shark.example.leetcode.coin;
 
+import com.google.gson.Gson;
+
 import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
-import java.util.stream.Collectors;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Solution {
+
+    private Map<Integer, Integer> amountResultMap = new HashMap<>();
+
     public int coinChange(int[] coins, int amount) {
-        if(amount <= 0) {
+        if (amount == 0) {
             return 0;
         }
-        List<Integer> sortCoinList = sortCoins(coins);
-        return coinChange(sortCoinList, amount, 0, 0);
+        int[] sortCoin = sort(coins);
+        return sortCoinChange(sortCoin, amount);
     }
 
-    private List<Integer> sortCoins(int[] coins) {
-        Integer[] coinList = Arrays.stream( coins ).boxed().toArray( Integer[]::new );
-        return Arrays.stream(coinList).sorted(Comparator.reverseOrder()).collect(Collectors.toList());
-    }
-
-    public int coinChange(List<Integer> sortCoinList, int currentAmount, int preChangeCount, int listIndex) {
-        if(currentAmount < 0) {
-            return -1;
+    private int[] sort(int[] coins) {
+        coins = Arrays.stream(coins).sorted().toArray();
+        for(int i = 0; i < (coins.length / 2); i ++) {
+            int start = coins[i];
+            int tail = coins[coins.length - i -1];
+            coins[i] = tail;
+            coins[coins.length - i - 1] = start;
         }
-        int result = -1;
-        for(int i = listIndex; i < sortCoinList.size(); i ++) {
-            Integer coin = sortCoinList.get(listIndex);
-            int coinChangeCount = -1;
-            if(currentAmount % coin == 0) {
-                int currentChangeCount = currentAmount / coin;
-                coinChangeCount = preChangeCount + currentChangeCount;
-                if(result == -1) {
-                    return coinChangeCount;
+        return coins;
+    }
+
+    public int sortCoinChange(int[] coins, int amount) {
+        int coinChange = -1;
+        for (int i = 0; i < coins.length; i++) {
+            Integer coin = coins[i];
+            int tempCoinChange = -1;
+            if (amount % coin == 0) {
+                tempCoinChange = amount / coin;
+                if ((tempCoinChange > 0) && (coinChange == -1 || (tempCoinChange < coinChange))) {
+                    amountResultMap.put(amount, tempCoinChange);
+                    return tempCoinChange;
                 }
             } else {
-                coinChangeCount = coinChange(sortCoinList, currentAmount - coin, preChangeCount + 1, i);
-            }
-            if(coinChangeCount != -1) {
-                if(result == -1 || coinChangeCount < result) {
-                    result = coinChangeCount;
+                int nextAmount = amount - coin;
+                if (nextAmount < 0) {
+                    continue;
+                }
+                int nextCoinChange;
+                if (amountResultMap.get(nextAmount) != null) {
+                    nextCoinChange = amountResultMap.get(nextAmount);
+                } else {
+                    nextCoinChange = sortCoinChange(coins, nextAmount);
+                }
+                if (nextCoinChange > 0) {
+                    tempCoinChange = nextCoinChange + 1;
                 }
             }
+            if ((tempCoinChange > 0) && (coinChange == -1 || (tempCoinChange < coinChange))) {
+                coinChange = tempCoinChange;
+            }
         }
-        return result;
+        amountResultMap.put(amount, coinChange);
+        return coinChange;
     }
 }
