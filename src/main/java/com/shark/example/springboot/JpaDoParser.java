@@ -56,42 +56,57 @@ public class JpaDoParser {
         String columnName = sqlContent[0];
         String parameterName = generateParameterName(columnName);
         String dataType = generateDataType(sqlLine);
-        doCodeStringBuilder.append("\t").append("@Column(name = \"").append(columnName).append("\")").append("\n")
+        doCodeStringBuilder.append("\t").append("@Column(name = \"").append(columnName.toUpperCase()).append("\")").append("\n")
                 .append("\t").append("private ").append(dataType).append(" ").append(parameterName).append(";").append("\n");
     }
 
     private static void handleParameter(StringBuilder doCodeStringBuilder, String sqlLine) {
-        String[] sqlContent = sqlLine.split("\\s+");
-        String columnName = sqlContent[0];
+        String[] sqlContentArray = sqlLine.split("\\s+");
+        String columnType = sqlContentArray[1];
+        String dataType = generateDataType(columnType);
+        if(dataType == null) {
+            return;
+        }
+        String columnName = sqlContentArray[0];
         String parameterName = generateParameterName(columnName);
-        String dataType = generateDataType(sqlContent[1]);
+        String columnDefinition = generateColumnDefinition(columnType);
+
         doCodeStringBuilder.append("\t").append("@Column(name = \"").append(columnName.toUpperCase());
-        if(sqlLine.contains("text")) {
-            doCodeStringBuilder.append("\", columnDefinition=\"text");
+        if(columnDefinition != null) {
+            doCodeStringBuilder.append("\", columnDefinition=\"").append(columnDefinition);
         }
         doCodeStringBuilder.append("\")").append("\n")
                 .append("\t").append("private ").append(dataType).append(" ").append(parameterName).append(";").append("\n");
     }
 
-    private static String generateDataType(String subSql) {
-        if(subSql.contains("bigint")) {
+    private static String generateColumnDefinition(String columnTypeSql) {
+        if(columnTypeSql.contains("tinyint(1)")) {
+            return "BIT";
+        } else if(columnTypeSql.contains("tinyint")) {
+            return "TINYINT";
+        } else if (columnTypeSql.contains("longtext")) {
+            return "LONGTEXT";
+        } else if(columnTypeSql.contains("text")) {
+            return "TEXT";
+        }
+        return null;
+    }
+
+    private static String generateDataType(String columnTypeSql) {
+        if(columnTypeSql.contains("bigint")) {
             return "Long";
-        } else if(subSql.contains("int")) {
-            return "Integer";
-        } else if(subSql.contains("boolean")) {
+        } else if (columnTypeSql.contains("tinyint(1)") || columnTypeSql.contains("boolean")) {
             return "Boolean";
-        } else if(subSql.contains("varchar")) {
+        } else if(columnTypeSql.contains("int") || columnTypeSql.contains("tinyint")) {
+            return "Integer";
+        } else if(columnTypeSql.contains("varchar") || columnTypeSql.contains("text")) {
             return "String";
-        } else if(subSql.contains("text")) {
-            return "String";
-        } else if(subSql.contains("decimal")) {
+        } else if(columnTypeSql.contains("decimal")) {
             return "BigDecimal";
-        } else if(subSql.contains("datetime")) {
-            return "Date";
-        } else if(subSql.contains("date")) {
+        } else if(columnTypeSql.contains("datetime") || columnTypeSql.contains("timestamp")) {
             return "Date";
         }
-        return "String";
+        return null;
     }
 
     private static String generateParameterName(String columnName) {
