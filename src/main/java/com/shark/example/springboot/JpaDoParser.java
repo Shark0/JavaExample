@@ -4,7 +4,7 @@ import java.io.*;
 
 public class JpaDoParser {
     public static void main(String[] argv) throws IOException {
-        File sqlFile = new File("file/parser.sql");
+        File sqlFile = new File("mmsFile/parser.sql");
         BufferedReader sqlBufferReader = new BufferedReader(new FileReader(sqlFile));
         StringBuilder doCodeStringBuilder = new StringBuilder();
         doCodeStringBuilder.append("import java.util.Date;").append("\n")
@@ -26,7 +26,6 @@ public class JpaDoParser {
                     sqlLine.contains("date") ) {
                 handleParameter(doCodeStringBuilder, sqlLine);
             }
-
         }
         doCodeStringBuilder.append("}");
         System.out.println(doCodeStringBuilder);
@@ -103,7 +102,7 @@ public class JpaDoParser {
             return "String";
         } else if(columnTypeSql.contains("decimal")) {
             return "BigDecimal";
-        } else if(columnTypeSql.contains("datetime") || columnTypeSql.contains("timestamp")) {
+        } else if(columnTypeSql.contains("date") || columnTypeSql.contains("datetime") || columnTypeSql.contains("timestamp")) {
             return "Date";
         }
         return null;

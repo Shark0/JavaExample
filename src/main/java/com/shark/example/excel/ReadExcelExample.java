@@ -64,7 +64,7 @@ public class ReadExcelExample {
                     j++;
                 }
                 stringBuilder.append("]");
-                System.out.println("row: " + i + ", cell: " + stringBuilder.toString());
+                System.out.println("row: " + i + ", cell: " + stringBuilder);
                 i ++;
             }
         } catch (IOException e) {
