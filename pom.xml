@@ -220,5 +220,12 @@
             <version>1.66</version>
         </dependency>
 
+        <!--MQTT-->
+        <dependency>
+            <groupId>org.fusesource.mqtt-client</groupId>
+            <artifactId>mqtt-client</artifactId>
+            <version>1.12</version>
+        </dependency>
+
     </dependencies>
 </project>
