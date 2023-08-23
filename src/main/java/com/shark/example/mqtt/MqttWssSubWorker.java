@@ -56,7 +56,7 @@ public class MqttWssSubWorker implements Runnable {
             });
             mqttClient.subscribe(topic);
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println("topic: " + topic + ", error = " + e);
         }
     }
 }

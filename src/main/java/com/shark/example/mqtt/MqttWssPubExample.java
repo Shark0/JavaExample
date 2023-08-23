@@ -7,7 +7,7 @@ import java.util.UUID;
 
 public class MqttWssPubExample {
     private static final int USER_ID_START_INDEX = 0;
-    private static final int USER_COUNT = 100;
+    private static final int USER_COUNT = 500;
     private static final int PUBLISH_TIMES = 10;
     private static final String HOST = "wss://mmschat-mq-dev.hkmpcl.com.hk/ws";
     private static final String USER_NAME = "default_user_SHYBB574Wt6XLIT4d-_";
@@ -25,6 +25,7 @@ public class MqttWssPubExample {
             connectOptions.setKeepAliveInterval(90);
             connectOptions.setConnectionTimeout(5000);
             connectOptions.setAutomaticReconnect(true);
+            connectOptions.setMaxInflight(1000000);
             connectOptions.setMqttVersion(MqttConnectOptions.MQTT_VERSION_3_1_1);
             mqttClient.connect(connectOptions);
 
@@ -36,14 +37,11 @@ public class MqttWssPubExample {
                 MqttMessage mqttMessage = new MqttMessage(message.getBytes(StandardCharsets.UTF_8));
                 mqttTopic.publish(mqttMessage);
                 System.out.println("topic = " + topic + ", message = " + message + ", sendTime = " + System.currentTimeMillis());
-                Thread.sleep(10);
             }
             mqttClient.disconnect();
             mqttClient.close();
         } catch (MqttException e) {
             e.printStackTrace();
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
         }
     }
 }

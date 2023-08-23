@@ -6,7 +6,7 @@ import java.util.List;
 public class MqttWssSubExample {
 
     private static final int USER_ID_START_INDEX = 0;
-    private static final int USER_COUNT = 100;
+    private static final int USER_COUNT = 500;
     private static final String HOST = "wss://mmschat-mq-dev.hkmpcl.com.hk/ws";
     private static final String USER_NAME = "default_user_SHYBB574Wt6XLIT4d-_";
     private static final String PASSWORD = "Ku-0DBmqplo38xTCOZaBW-bcMhvE12uV";
