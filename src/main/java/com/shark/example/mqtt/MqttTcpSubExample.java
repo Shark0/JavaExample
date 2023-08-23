@@ -1,13 +1,9 @@
 package com.shark.example.mqtt;
 
-import org.fusesource.mqtt.client.*;
-
-import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
-public class MqttSubExample {
+public class MqttTcpSubExample {
 
     private static final int USER_ID_START_INDEX = 0;
     private static final int USER_COUNT = 100;
@@ -21,8 +17,8 @@ public class MqttSubExample {
         List<Thread> threads = new ArrayList<>();
         for(int i = 0; i < USER_COUNT ; i ++) {
             String topic = TOPIC + (USER_ID_START_INDEX + (i % USER_COUNT)  + 1);
-            MqttSubWorker mqttSubWorker = new MqttSubWorker(HOST, PORT, USER_NAME, PASSWORD, topic);
-            Thread thread = new Thread(mqttSubWorker);
+            MqttTcpSubWorker mqttTcpSubWorker = new MqttTcpSubWorker(HOST, PORT, USER_NAME, PASSWORD, topic);
+            Thread thread = new Thread(mqttTcpSubWorker);
             threads.add(thread);
             thread.start();
         }

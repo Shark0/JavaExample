@@ -6,7 +6,7 @@ import org.fusesource.mqtt.client.QoS;
 
 import java.nio.charset.StandardCharsets;
 
-public class MqttPubExample {
+public class MqttTcpPubExample {
 
     private static final int USER_ID_START_INDEX = 0;
     private static final int USER_COUNT = 100;

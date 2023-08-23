@@ -4,7 +4,7 @@ import org.fusesource.mqtt.client.*;
 
 import java.util.concurrent.TimeUnit;
 
-public class MqttSubWorker implements Runnable {
+public class MqttTcpSubWorker implements Runnable {
 
     private String host;
     private int port;
@@ -12,7 +12,7 @@ public class MqttSubWorker implements Runnable {
     private String password;
     private String topic;
 
-    public MqttSubWorker(String host, int port, String user, String password, String topic) {
+    public MqttTcpSubWorker(String host, int port, String user, String password, String topic) {
         this.host = host;
         this.port = port;
         this.user = user;
