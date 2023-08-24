@@ -9,7 +9,7 @@ import java.nio.charset.StandardCharsets;
 public class MqttTcpPubExample {
 
     private static final int USER_ID_START_INDEX = 0;
-    private static final int USER_COUNT = 100;
+    private static final int USER_COUNT = 1000;
     private static final int PUBLISH_TIMES = 10;
     private static final String HOST = "127.0.0.1";
     private static final int PORT = 1883;

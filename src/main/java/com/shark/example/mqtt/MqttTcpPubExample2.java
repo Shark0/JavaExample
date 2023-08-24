@@ -5,13 +5,13 @@ import org.eclipse.paho.client.mqttv3.*;
 import java.nio.charset.StandardCharsets;
 import java.util.UUID;
 
-public class MqttWssPubExample {
+public class MqttTcpPubExample2 {
     private static final int USER_ID_START_INDEX = 0;
-    private static final int USER_COUNT = 1000;
+    private static final int USER_COUNT = 100;
     private static final int PUBLISH_TIMES = 10;
-    private static final String HOST = "wss://mmschat-mq-dev.hkmpcl.com.hk/ws";
-    private static final String USER_NAME = "default_user_SHYBB574Wt6XLIT4d-_";
-    private static final String PASSWORD = "Ku-0DBmqplo38xTCOZaBW-bcMhvE12uV";
+    private static final String HOST = "tcp://127.0.0.1:1883";
+    private static final String USER_NAME = "root";
+    private static final String PASSWORD = "root";
     private static final String TOPIC = "user/";
 
     public static void main(String[] argv) {
