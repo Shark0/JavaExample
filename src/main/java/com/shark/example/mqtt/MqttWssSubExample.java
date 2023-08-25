@@ -16,7 +16,7 @@ public class MqttWssSubExample {
         List<Thread> threads = new ArrayList<>();
         for(int i = 0; i < USER_COUNT ; i ++) {
             String topic = TOPIC + (USER_ID_START_INDEX + (i % USER_COUNT)  + 1);
-            MqttWssSubWorker mqttTcpSubWorker = new MqttWssSubWorker(HOST, USER_NAME, PASSWORD, topic);
+            MqttSubWorker mqttTcpSubWorker = new MqttSubWorker(HOST, USER_NAME, PASSWORD, topic);
             Thread thread = new Thread(mqttTcpSubWorker);
             threads.add(thread);
             thread.start();

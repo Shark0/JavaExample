@@ -7,10 +7,10 @@ import java.util.UUID;
 
 public class MqttTcpPubExample2 {
     private static final int USER_ID_START_INDEX = 0;
-    private static final int USER_COUNT = 100;
+    private static final int USER_COUNT = 2000;
     private static final int PUBLISH_TIMES = 10;
-    private static final String HOST = "tcp://127.0.0.1:1883";
-    private static final String USER_NAME = "root";
+    private static final String HOST = "tcp://127.0.0.1:55411";
+    private static final String USER_NAME = "admin";
     private static final String PASSWORD = "root";
     private static final String TOPIC = "user/";
 

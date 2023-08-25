@@ -1,19 +1,17 @@
 package com.shark.example.mqtt;
 
 import org.eclipse.paho.client.mqttv3.*;
-import org.fusesource.mqtt.client.*;
 
 import java.util.UUID;
-import java.util.concurrent.TimeUnit;
 
-public class MqttWssSubWorker implements Runnable {
+public class MqttSubWorker implements Runnable {
 
     private String host;
     private String user;
     private String password;
     private String topic;
 
-    public MqttWssSubWorker(String host, String user, String password, String topic) {
+    public MqttSubWorker(String host, String user, String password, String topic) {
         this.host = host;
         this.user = user;
         this.password = password;
@@ -24,7 +22,7 @@ public class MqttWssSubWorker implements Runnable {
     @Override
     public void run() {
         System.out.println("topic = " + topic);
-        String clientId = UUID.randomUUID().toString();
+        String clientId = UUID.randomUUID() + topic;
         try {
             MqttClient mqttClient = new MqttClient(host, clientId);
             MqttConnectOptions connectOptions = new MqttConnectOptions();
