@@ -6,12 +6,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Data
-public class DirtyWordTreeNode {
+public class DirtyWordTreeNodeDto {
     private String charValue;
     private String dirtyWord;
-    private Map<String, DirtyWordTreeNode> childMap;
+    private Map<String, DirtyWordTreeNodeDto> childMap;
 
-    public DirtyWordTreeNode(String charValue) {
+    public DirtyWordTreeNodeDto(String charValue) {
         this.charValue = charValue;
         childMap = new HashMap<>();
     }
