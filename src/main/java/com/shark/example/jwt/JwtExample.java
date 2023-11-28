@@ -19,22 +19,32 @@ import java.security.spec.PKCS8EncodedKeySpec;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Base64;
+import java.util.Calendar;
 import java.util.Date;
+import java.util.HashMap;
 
 public class JwtExample {
     public static void main(String[] argv) throws IOException, ParseException {
-        String key = "MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQC4ZtdaIrd1BPIJtfnF0TjIK5inQAXZ3XlCrUlJdP+XHwIRxdv1FsN12XyMYO/6ymLmo9ryoQeIrsXBXYqlET3zfAY+diwCb0HEsVvhisthwMU4gZQu6TYW2s9LnXZB5rVtcBK69hcSlA2kZudMZWxZcj0L7KMfO2rIvaHw/qaVOE9j0T257Z8Kp2CLF9MUgX0ObhIsdumFRLaLDvDUmBPr2zuh/34j2XmWwn1yjN/WvGtdfhXW79Ki1S40HcWnygHgLV8sESFKUxxQmKvPUTwDOIwLFL5WtE8Mz7N++kgmDcmWMCHc8kcOIu73Ta/3D4imW7VbKgHZo9+K3ESFE3RjAgMBAAECggEBAJTEIyjMqUT24G2FKiS1TiHvShBkTlQdoR5xvpZMlYbNtVWxUmrAGqCQ/TIjYnfpnzCDMLhdwT48Ab6mQJw69MfiXwc1PvwX1e9hRscGul36ryGPKIVQEBsQG/zc4/L2tZe8ut+qeaK7XuYrPp8bk/X1e9qK5m7j+JpKosNSLgJjNIbYsBkG2Mlq671irKYj2hVZeaBQmWmZxK4fw0Istz2WfN5nUKUeJhTwpR+JLUg4ELYYoB7EO0Cej9UBG30hbgu4RyXA+VbptJ+H042K5QJROUbtnLWuuWosZ5ATldwOu03dIXL0SH0ao5NcWBzxU4F2sBXZRGP2x/jiSLHcqoECgYEA4qD7mXQpu1b8XO8U6abpKloJCatSAHzjgdR2eRDRx5PMvloipfwqA77pnbjTUFajqWQgOXsDTCjcdQuiwf5XAaWu+TeAVTytLQbSiTsBhrnoqVrr3RoyDQmdnwHT8aCMouOgcC5thP9vQ8UsrVdjvRRbnJpg3BeSNimH+u9AHgsCgYEA0EzcbOltCWPHRAY7B3Ge/AKBjBQr86KvTdpTlxePBDVIlH+BM6oct2gaSZZoHbqPjbq5v7yf0fKVcXE4bSVgqfDJ/sZQu9LpPTeV7wkk0OsAMKk7QukEpPno5q6tOTNnFecpUhVLLlqbfqkB2baYYwLJR3IRzboJFQbLY93E8gkCgYB+zlC5VlQbbNqcLXJoImqItgQkkuW5PCgYdwcrSov2ve5r/AczFNt1aRdSlx4176R3nXyibQA1Vw+ztiUFowiP9WLoM3PtPZwwe4bGHmwGNHPIfwVGm+exf9XgKKespYbLhc45tuC08DATnXoYK7O1EnUINSFJRS8cezSI5eHcbQKBgQDCPgqHXZ2aVftqCc1eAaxaIRQhRmY+CgUjumaczRFGwVFveP9I6Gdi+Kca3DE3F9PqPKgejo0SwP5vDT+rOGHN14bmGJUMsX9i4MTmZUZ5s8s3lXh3ysfT+GAhTd6nKrIEkM3Nh6HWFhROptfc6BNusRh1kX/cspDplK5x8EpJ0QKBgQDWFg6S2je0KtbV5PYeRultUEe2C0jYMDQx+JYxbPmtcopvZQrFEur3WKVuLy5UAy7EBvwMnZwIG7OOohJbvkSpADK6VPn9lbqq7O8cTedEHttm6otmLt8ZyEl3hZMaL3hbuRj6ysjmoFKx6CrXrK0/Ikt5ybqUzKCMJZg2VKGTxg==";
+        String key = "MIIEpAIBAAKCAQEAxujmi+Df8mldeI06a23luII4vYBNgAVM00qcB/2gKXZ2fRz5sbar0axKbSaNoqe9bwy4MPzVk2e0jytYPvkWfi1OhCafeSECtv56g5RAGG3Yq4gAhDIJHJIJcsF2sinw3pqZ/WqSGgFk0xFF4TVIaOjL4RWAO3o6/wZfuiaIVkvZmVvx2Q1QTjG2Bl+PiJtjcrzPRiDQTBQCc5KIRsyxtk8sO2SZkA+F7dUDhAKCHQnuOyV3vF59Q8YqLlZsqjfJ0FZojO2cc/6PSvn/YKzBs6qadCYxTJtT9OUe4VoIwj9FGMQvyjFpGft9M0E7GxRX8yfuJqDZwt0EeEshX4DfpwIDAQABAoIBAQC6cp+AaGai/J7wHDmxb48QV4hGIVkD8nPj7qC5YMTbeL5yYlGvglImNQCCtcu3ttH7oQmaabTs+h2mwfNy+9tYpLFfcDC1wvqfe4Rth+5Yt8aMauxI/fnKfR08IxpWwLeWgYZso5OVqs7OhfdhtadNJ0HMl3HezqE0Yc4jWHEdqUxpuhGvkegaxR5Wm3O+wlGQ2EQYSpuRBu3IfoMm5TRT4V/6Rjv6W17p8Kh5el3o3v32UkxKEfEnJcvZyCw/B5IosWCyCYS4HtreUZxL1jCalkeyDp8R61NDs9t8wbLXH0T55cCOWY6Tmmt4IaxRh4hVSTwAgiEkTfJkNjiDjk0hAoGBAPn0Ygvh0xnPGJMuy7Vo1BIFGTcDc6aQoieUTAzcQbGvjckW9UV3D/zWA/ZBliUinQkG0z7VrALth7cxFk+EoYAZ7oTQOIvuEVyOqX1wjVrUlOiaguYkYtgLkT3TegQ2RV+G9tYtaN4dXaqVLr9p7XfRnT/BBatMQYCi2oHJgPj3AoGBAMu4d/tSA2Knf78bmMJ3Mw/J78TIBJ0pw1SHpyXRkJ3dppAnkElUw4nBHB+h5oNHV1noXPaE4cNWwKffrvrf0bu9mbhkPUCOg07Gx9sXQWrgiiPIN6K3uj5yuffhRq4o7YgzdMS9fepmbHYFvsCa/Jps/Oe01GmEF6jQQejLHdLRAoGBAMCvNLoGLu8RZ9dmVqEVG458obB4F7pKesZaGro7POVV+M4Qxaj0HL4C2XEHpFAiO75OpaAlpYFoTJva2mEYVEtlMiruPPkZ4AZi76OElWN0xwn8unXhjNURLbjkgoYmtBns9/GpddLr/l3WvP/QD8CzNS6FhPJFSaV5ZUpx5NuHAoGAOqKirgyB+vA4/ZmE01wZr06xG1NyuIWfugG9Y045MKbuXQl2JxUlns2dOaGQxnJPOwp9T1sZ2+5pTyg7peur4zyENSVs19rtAkyGk5HS+18bg4cKNGRrT7QXwLfvbwtKquwcjM/5oPDQAPxQVgGF+TCrbkmG5cPmR2mBvu5PbDECgYBlb8IpuGJ7DihuJ/tnxYLsc1Hfq4MpTlU49nfCB1myf8khH3iwZAwqynNKixPG2PVoAqhiLyC6oshAhuBIZ2+Gn4VHFaDJPg6DynHG+BSanVcggpYe+kA1r1KXBbjwXHuYAHaOno/OPemjRZyh27b/+MxvH+RLutcrR7fq+OTOkw==";
         File file = new File("mmsFile/jwt.pem");
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
-        Date date = simpleDateFormat.parse("2023-06-19");
+
+
         byte[] bytes = parsePEMFile(file);
+        Date issueAtDate = new Date();
+        Calendar calendar = Calendar.getInstance();
+        calendar.add(Calendar.MONTH, 1);
+        Date expirationDate = calendar.getTime();
+
+        HashMap<String, Object> claims = new HashMap<>();
+        claims.put("username", "shark");
+        claims.put("clientid", "shark");
+
         String jwt = Jwts.builder()
-                .setAudience("hktv-databank")
-                .setIssuer("hktv-mms-s2s-call")
+                .setClaims(claims)
                 .setHeaderParam("alg", "RS256")
                 .setHeaderParam("typ", "JWT")
-                .setIssuedAt(date)
-                .setSubject("hktv")
+                .setIssuedAt(issueAtDate)
+                .setExpiration(expirationDate)
                 .signWith(SignatureAlgorithm.RS256, generatePrivateKey(key, "RSA"))
                 .compact();
 
