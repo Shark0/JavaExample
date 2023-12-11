@@ -28,7 +28,7 @@ public class MultiQueenExample {
             if (isValid(result, x, y)) {
                 result[x][y] = 'Q';
                 if (x == checkerboardSize - 1) {
-                    showResult(results, result);
+                    addResult(results, result);
                 } else {
                     backtrack(results, result, checkerboardSize, x + 1);
                 }
@@ -50,7 +50,7 @@ public class MultiQueenExample {
                 return false;
             }
         }
-        //又上
+        //右上
         for (int i = x - 1, j = y + 1; i >= 0 && j < result.length; i--, j++) {
             if (result[i][j] == 'Q') {
                 return false;
@@ -59,7 +59,7 @@ public class MultiQueenExample {
         return true;
     }
 
-    private void showResult(List<List<String>> results, char[][] result) {
+    private void addResult(List<List<String>> results, char[][] result) {
         List<String> list = new ArrayList<>(result.length);
         for (char[] value : result) {
             list.add(new String(value));
