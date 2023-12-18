@@ -103,7 +103,7 @@ public class JpaDoParser {
         } else if(columnTypeSql.contains("decimal")) {
             return "BigDecimal";
         } else if(columnTypeSql.contains("date") || columnTypeSql.contains("datetime") || columnTypeSql.contains("timestamp")) {
-            return "Date";
+            return "Instant";
         }
         return null;
     }
