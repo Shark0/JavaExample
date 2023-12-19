@@ -7,9 +7,10 @@ public class JpaDoParser {
         File sqlFile = new File("mmsFile/parser.sql");
         BufferedReader sqlBufferReader = new BufferedReader(new FileReader(sqlFile));
         StringBuilder doCodeStringBuilder = new StringBuilder();
-        doCodeStringBuilder.append("import java.util.Date;").append("\n")
+        doCodeStringBuilder.append("import java.time.Instant;").append("\n")
                 .append("import java.math.BigDecimal;").append("\n")
-                .append("import lombok.Data;").append("\n").append("import javax.persistence.*;").append("\n");
+                .append("import lombok.Data;").append("\n")
+                .append("import javax.persistence.*;").append("\n");
         String sqlLine;
         while ((sqlLine = sqlBufferReader.readLine()) != null) {
             sqlLine = sqlLine.trim().toLowerCase();
