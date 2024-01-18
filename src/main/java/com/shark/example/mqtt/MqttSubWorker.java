@@ -11,6 +11,8 @@ public class MqttSubWorker implements Runnable {
     private String password;
     private String topic;
 
+    public boolean isConnect;
+
     public MqttSubWorker(String host, String user, String password, String topic) {
         this.host = host;
         this.user = user;
@@ -29,16 +31,18 @@ public class MqttSubWorker implements Runnable {
             connectOptions.setUserName(user);
             connectOptions.setPassword(password.toCharArray());
             connectOptions.setCleanSession(true);
-            connectOptions.setKeepAliveInterval(90);
-            connectOptions.setConnectionTimeout(5000);
-            connectOptions.setAutomaticReconnect(true);
+            connectOptions.setKeepAliveInterval(30);
+            connectOptions.setConnectionTimeout(60000);
+            connectOptions.setAutomaticReconnect(false);
             connectOptions.setMqttVersion(MqttConnectOptions.MQTT_VERSION_3_1_1);
             mqttClient.connect(connectOptions);
+            isConnect = true;
 
             mqttClient.setCallback(new MqttCallback() {
                 @Override
                 public void connectionLost(Throwable throwable) {
-
+                    System.out.println(throwable.toString());
+                    isConnect = false;
                 }
 
                 @Override
