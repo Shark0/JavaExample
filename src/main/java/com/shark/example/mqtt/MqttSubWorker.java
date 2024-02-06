@@ -23,15 +23,14 @@ public class MqttSubWorker implements Runnable {
 
     @Override
     public void run() {
-        System.out.println("topic = " + topic);
-        String clientId = UUID.randomUUID() + topic;
-        try {
-            MqttClient mqttClient = new MqttClient(host, clientId);
+        String clientId = UUID.randomUUID() + "_" + topic;
+        System.out.println("clientId = " + clientId);
+        try(MqttClient mqttClient = new MqttClient(host, clientId)) {
             MqttConnectOptions connectOptions = new MqttConnectOptions();
             connectOptions.setUserName(user);
             connectOptions.setPassword(password.toCharArray());
             connectOptions.setCleanSession(true);
-            connectOptions.setKeepAliveInterval(30);
+            connectOptions.setKeepAliveInterval(15);
             connectOptions.setConnectionTimeout(60000);
             connectOptions.setAutomaticReconnect(false);
             connectOptions.setMqttVersion(MqttConnectOptions.MQTT_VERSION_3_1_1);
@@ -47,7 +46,9 @@ public class MqttSubWorker implements Runnable {
 
                 @Override
                 public void messageArrived(String topics, MqttMessage mqttMessage) throws Exception {
-                    System.out.println("topic = " + topic + ", message = " + new String(mqttMessage.getPayload()) +
+                    System.out.println("topic = " + topic +
+                            ", messageId = " + mqttMessage.getId() +
+                            ", message = " + new String(mqttMessage.getPayload()) +
                             ", time = " + System.currentTimeMillis());
                 }
 

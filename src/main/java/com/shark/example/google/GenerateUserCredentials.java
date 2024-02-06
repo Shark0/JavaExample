@@ -53,8 +53,8 @@ public class GenerateUserCredentials {
         // desktop app OAuth client ID.
         // If using a web application, add the following to its "Authorized redirect URIs":
         //   http://127.0.0.1
-        String clientId = "this_is_client_id";
-        String clientSecret = "this_is_client_secret";
+        String clientId = "664966733704-e18h2ui71bjbr9rl0thsr3d7mn9oofc0.apps.googleusercontent.com";
+        String clientSecret = "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";
         String loginEmailAddressHint = "";
 
         // Ensures that the client ID and client secret are not the "INSERT_..._HERE" values.

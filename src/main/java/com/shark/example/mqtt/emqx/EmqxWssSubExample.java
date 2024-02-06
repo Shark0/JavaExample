@@ -1,7 +1,6 @@
 package com.shark.example.mqtt.emqx;
 
 import com.shark.example.mqtt.MqttSubWorker;
-import org.joda.time.format.DateTimeFormat;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -11,7 +10,7 @@ public class EmqxWssSubExample {
 
     private static final String HOST = "wss://mqttws-emqx-group-chat-dev.hkmpcl.com.hk/mqtt";
     private static final String USER_NAME = "";
-    private static final String TOPIC = "hktv/group_chat/chatroom/5";
+    private static final String TOPIC = "hktv/group_chat/chatroom/999";
 
     public static void main(String[] argv) {
         String password = new EmqxJwtExample().generate();
@@ -20,7 +19,6 @@ public class EmqxWssSubExample {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
         System.out.println("start connection time: " + simpleDateFormat.format(new Date()));
         mqttTcpSubWorker.run();
-
 
         while (mqttTcpSubWorker.isConnect) {
             try {

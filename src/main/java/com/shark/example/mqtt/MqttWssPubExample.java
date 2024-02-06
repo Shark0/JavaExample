@@ -15,9 +15,8 @@ public class MqttWssPubExample {
     private static final String TOPIC = "user/";
 
     public static void main(String[] argv) {
-        String clientId = UUID.randomUUID().toString();
         try {
-            MqttClient mqttClient = new MqttClient(HOST, clientId);
+            MqttClient mqttClient = new MqttClient(HOST, UUID.randomUUID().toString());
             MqttConnectOptions connectOptions = new MqttConnectOptions();
             connectOptions.setUserName(USER_NAME);
             connectOptions.setPassword(PASSWORD.toCharArray());
