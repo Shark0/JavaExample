@@ -1,6 +1,10 @@
 package com.shark.example.mqtt;
 
-import org.eclipse.paho.client.mqttv3.*;
+import org.eclipse.paho.mqttv5.client.MqttClient;
+import org.eclipse.paho.mqttv5.client.MqttConnectionOptions;
+import org.eclipse.paho.mqttv5.client.MqttTopic;
+import org.eclipse.paho.mqttv5.common.MqttException;
+import org.eclipse.paho.mqttv5.common.MqttMessage;
 
 import java.nio.charset.StandardCharsets;
 import java.util.UUID;
@@ -17,15 +21,12 @@ public class MqttWssPubExample {
     public static void main(String[] argv) {
         try {
             MqttClient mqttClient = new MqttClient(HOST, UUID.randomUUID().toString());
-            MqttConnectOptions connectOptions = new MqttConnectOptions();
+            MqttConnectionOptions connectOptions = new MqttConnectionOptions();
             connectOptions.setUserName(USER_NAME);
-            connectOptions.setPassword(PASSWORD.toCharArray());
-            connectOptions.setCleanSession(true);
+            connectOptions.setPassword(PASSWORD.getBytes());
             connectOptions.setKeepAliveInterval(90);
             connectOptions.setConnectionTimeout(5000);
             connectOptions.setAutomaticReconnect(true);
-            connectOptions.setMaxInflight(1000000);
-            connectOptions.setMqttVersion(MqttConnectOptions.MQTT_VERSION_3_1_1);
             mqttClient.connect(connectOptions);
 
             for(int i = 0; i < USER_COUNT * PUBLISH_TIMES; i ++) {

@@ -29,6 +29,7 @@ public class EmqxJwtExample {
         aclMap.put("sub", List.of("hktv/group_chat/user/" + user, "hktv/group_chat/chatroom/#"));
         HashMap<String, Object> claims = new HashMap<>();
         claims.put("acl", aclMap);
+        claims.put("username", user);
         return Jwts.builder()
                 .setClaims(claims)
                 .setHeaderParam("alg", "RS256")
