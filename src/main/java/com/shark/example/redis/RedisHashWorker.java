@@ -5,11 +5,11 @@ import redis.clients.jedis.Jedis;
 import java.util.Map;
 import java.util.Set;
 
-public class RedisWorker {
+public class RedisHashWorker {
 
     private final Jedis jedis;
 
-    public RedisWorker() {
+    public RedisHashWorker() {
         jedis = new Jedis();
         System.out.println("jedis.ping(): " + jedis.ping());
     }
