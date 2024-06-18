@@ -42,7 +42,7 @@ public class ParserXmlExample {
                 "</soap:Envelope>\n";
 
 
-        DocumentBuilder builder = null;
+        DocumentBuilder builder;
         try {
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
             builder = factory.newDocumentBuilder();
@@ -60,11 +60,7 @@ public class ParserXmlExample {
                         .getFirstChild().getNodeValue();
                 System.out.println("forecastQuantity:" + forecastQuantity);
             }
-        } catch (ParserConfigurationException e) {
-            e.printStackTrace();
-        } catch (SAXException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
+        } catch (ParserConfigurationException | SAXException | IOException e) {
             e.printStackTrace();
         }
     }
