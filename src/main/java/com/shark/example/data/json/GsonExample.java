@@ -1,4 +1,4 @@
-package com.shark.example.data.gson;
+package com.shark.example.data.json;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
