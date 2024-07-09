@@ -66,8 +66,6 @@ public class ReadExcelExample {
             }
         } catch (IOException e) {
             e.printStackTrace();
-        } catch (InvalidFormatException e) {
-            e.printStackTrace();
         }
     }
 }
