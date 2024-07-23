@@ -12,12 +12,12 @@ import java.nio.file.Paths;
 import java.util.Calendar;
 import java.util.Date;
 
-public class GenerateJwtMain {
+public class GenerateMmsJwtMain {
 
     public static void main(String[] args) throws IOException {
         String userFile = "user_steveng.json";
-        GenerateJwtMain generateJwtMain = new GenerateJwtMain();
-        String jwt = generateJwtMain.generateJwt(userFile);
+        GenerateMmsJwtMain generateMmsJwtMain = new GenerateMmsJwtMain();
+        String jwt = generateMmsJwtMain.generateJwt(userFile);
         System.out.println(jwt);
     }
 
