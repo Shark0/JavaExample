@@ -1,9 +1,7 @@
 package com.shark.example.shoalter.jwt;
 
-import com.google.gson.Gson;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
-import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;
 
 import java.io.IOException;
@@ -16,7 +14,8 @@ import java.util.Date;
 public class GenerateChatFileJwtMain {
 
     public static void main(String[] args) throws IOException {
-        String filePath = "example/shark.jpg";
+//        String filePath = "MMS_CHAT/jdcr/kyT4/56d0c611876242b2a1d4e60a03bb3fe1.png";
+        String filePath = "example/shark.png";
         GenerateChatFileJwtMain generateMmsJwtMain = new GenerateChatFileJwtMain();
         String jwt = generateMmsJwtMain.generateJwt(filePath);
         System.out.println(jwt);
