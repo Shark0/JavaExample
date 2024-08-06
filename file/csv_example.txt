@@ -1,0 +1,6 @@
+Report Name,Signature Orders Report
+Date Run,8/5/24
+Filters,Transaction Date >= 3/1/24,Transaction Date <= 8/1/24,Time Zone = GMT
+
+Member ID (U1),MID,Advertiser Name,Order ID,Transaction Date,Transaction Time,SKU,Sales,# of Items,Total Commission,Process Date,Process Time
+"9002466017284",40988,"Cotton On (AU)","082200491657",7/4/24,"08:16:59","9359195027776",8.65,1,1.038,7/4/24,"08:16:59"

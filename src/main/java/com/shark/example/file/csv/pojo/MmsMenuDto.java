@@ -1,4 +1,4 @@
-package com.shark.example.file.csv;
+package com.shark.example.file.csv.pojo;
 
 import lombok.Data;
 

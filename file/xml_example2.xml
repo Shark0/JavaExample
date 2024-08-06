@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ImpactRadiusResponse>
+    <Reports page="1" numpages="1" pagesize="100" total="75" start="0" end="74" uri="/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports" firstpageuri="/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports?Page=1" previouspageuri="" nextpageuri="" lastpageuri="/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports?Page=1">
+        <Report>
+            <Name>Action Listing</Name>
+            <Id>mp_action_listing_fast</Id>
+            <Description>Displays data for each individual action that has been credited to you.</Description>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/mp_action_listing_fast</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/mp_action_listing_fast</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/mp_action_listing_fast/MetaData</MetaDataUri>
+        </Report>
+        <Report>
+            <Name>Action Listing based on Clearing Date</Name>
+            <Id>mp_action_listing_clearing_date</Id>
+            <Description>Shows action listing by clearing date.  The date the payout gets credited to the Media Partner account.</Description>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/mp_action_listing_clearing_date</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/mp_action_listing_clearing_date</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/mp_action_listing_clearing_date/MetaData</MetaDataUri>
+        </Report>
+        <Report>
+            <Name>Action Listing for a Paystub</Name>
+            <Id>action_listing_paystub</Id>
+            <Description>Shows listing of actions associated  with a paystub.</Description>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/action_listing_paystub</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/action_listing_paystub</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/action_listing_paystub/MetaData</MetaDataUri>
+        </Report>
+        <Report>
+            <Name>Action SKU Listing</Name>
+            <Id>mp_action_sku_listing</Id>
+            <Description/>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/mp_action_sku_listing</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/mp_action_sku_listing</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/mp_action_sku_listing/MetaData</MetaDataUri>
+        </Report>
+        <Report>
+            <Name>Advanced Action Listing</Name>
+            <Id>mp_action_listing_sku</Id>
+            <Description>Detailed information on the actions that occurred during a specified date range.  The show button allows a view of SKU level data.</Description>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/mp_action_listing_sku</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/mp_action_listing_sku</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/mp_action_listing_sku/MetaData</MetaDataUri>
+        </Report>
+        <Report>
+            <Name>Airbnb - Custom Partner Listing Report</Name>
+            <Id>airbnb_partner_listing</Id>
+            <Description/>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/airbnb_partner_listing</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/airbnb_partner_listing</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/airbnb_partner_listing/MetaData</MetaDataUri>
+        </Report>
+        <Report>
+            <Name>Airbnb Advanced Action Listing</Name>
+            <Id>airbnb_mp_action_listing_sku</Id>
+            <Description>Displays very detailed data for each individual action that has been credited to you.</Description>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/airbnb_mp_action_listing_sku</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/airbnb_mp_action_listing_sku</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/airbnb_mp_action_listing_sku/MetaData</MetaDataUri>
+        </Report>
+        <Report>
+            <Name>Airbnb Demand - Custom Partner Listing by Locking Date Report</Name>
+            <Id>airbnb_partner_listing_by_locking_date</Id>
+            <Description>Basic information on the actions that occurred during a specified date range.  The show button allows a view of SKU level data.</Description>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/airbnb_partner_listing_by_locking_date</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/airbnb_partner_listing_by_locking_date</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/airbnb_partner_listing_by_locking_date/MetaData</MetaDataUri>
+        </Report>
+        <Report>
+            <Name>AMEX Field Partnerships - Advanced Action Listing</Name>
+            <Id>mp_action_listing_sku_ae</Id>
+            <Description>Detailed information on the actions that occurred during a specified date range.  The show button allows a view of SKU level data.</Description>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/mp_action_listing_sku_ae</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/mp_action_listing_sku_ae</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/mp_action_listing_sku_ae/MetaData</MetaDataUri>
+        </Report>
+        <Report>
+            <Name>Bonus &amp; Make Good Listing</Name>
+            <Id>mp_bonus_make_good_listing</Id>
+            <Description/>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/mp_bonus_make_good_listing</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/mp_bonus_make_good_listing</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/mp_bonus_make_good_listing/MetaData</MetaDataUri>
+        </Report>
+        <Report>
+            <Name>Capital One - Advanced Action Listing /w Text1,Text2 and Text3</Name>
+            <Id>mp_action_listing_sku_custom_cap_one</Id>
+            <Description>Detailed information on the actions that occurred during a specified date range.  The show button allows a view of SKU level data.</Description>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/mp_action_listing_sku_custom_cap_one</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/mp_action_listing_sku_custom_cap_one</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/mp_action_listing_sku_custom_cap_one/MetaData</MetaDataUri>
+        </Report>
+        <Report>
+            <Name>Caring - Advanced Action Listing /w Text1,Text2,Text3,Text4,Text5 and Text6</Name>
+            <Description>Detailed information on the actions that occurred during a specified date range.  The show button allows a view of SKU level data /w Text1,Text2,Text3,Text4,Text5 and Text6</Description>
+            <ApiAccessible>false</ApiAccessible>
+            <RunUri>/secure/mediapartner/report/viewReport.report?id=16115</RunUri>
+        </Report>
+        <Report>
+            <Name>Carter's - Advanced Action Listing /w Text1</Name>
+            <Id>12172</Id>
+            <Description>Detailed information on the actions that occurred during a specified date range.  The show button allows a view of SKU level data.</Description>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/12172</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/12172</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/12172/MetaData</MetaDataUri>
+        </Report>
+        <Report>
+            <Name>Click Tracker CPC Earnings</Name>
+            <Id>mp_action_listing_cpc_action</Id>
+            <Description/>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/mp_action_listing_cpc_action</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/mp_action_listing_cpc_action</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/mp_action_listing_cpc_action/MetaData</MetaDataUri>
+        </Report>
+        <Report>
+            <Name>Contract History Detail</Name>
+            <Id>io_history_detail</Id>
+            <Description>Show history of all IOs for a given media partner.</Description>
+            <ApiAccessible>false</ApiAccessible>
+            <RunUri>/secure/mediapartner/report/viewReport.report?id=4016</RunUri>
+        </Report>
+        <Report>
+            <Name>Creator - Performance by Brand</Name>
+            <Id>creator_partner_perf_by_brand</Id>
+            <Description>Aggregate Creator performance by brand over a specified date range.</Description>
+            <ApiAccessible>false</ApiAccessible>
+            <RunUri>/secure/mediapartner/report/viewReport.report?id=14359</RunUri>
+        </Report>
+        <Report>
+            <Name>Creator - Performance by Campaign</Name>
+            <Id>creator_partner_perf_by_campaign</Id>
+            <Description>Aggregate Creator performance by campaign over a specified date range.</Description>
+            <ApiAccessible>false</ApiAccessible>
+            <RunUri>/secure/mediapartner/report/viewReport.report?id=14354</RunUri>
+        </Report>
+        <Report>
+            <Name>Creator - Performance by Social Platform</Name>
+            <Id>creator_partner_perf_by_social_platform</Id>
+            <Description>Aggregate Creator performance by social platform over a specified date range.</Description>
+            <ApiAccessible>false</ApiAccessible>
+            <RunUri>/secure/mediapartner/report/viewReport.report?id=14341</RunUri>
+        </Report>
+        <Report>
+            <Name>Credit Karma - American Express Advanced Action Listing </Name>
+            <Id>ck_amex_aal</Id>
+            <Description>Displays very detailed data for each individual action that has been credited to you.</Description>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/ck_amex_aal</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/ck_amex_aal</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/ck_amex_aal/MetaData</MetaDataUri>
+        </Report>
+        <Report>
+            <Name>Credit Karma - Capital One Canada Advanced Action Listing </Name>
+            <Id>ck_capone_aal</Id>
+            <Description>Displays very detailed data for each individual action that has been credited to you.</Description>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/ck_capone_aal</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/ck_capone_aal</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/ck_capone_aal/MetaData</MetaDataUri>
+        </Report>
+        <Report>
+            <Name>Credit Karma - Discover Card Advanced Action Listing </Name>
+            <Id>ck_discover_aal</Id>
+            <Description>Displays very detailed data for each individual action that has been credited to you.</Description>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/ck_discover_aal</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/ck_discover_aal</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/ck_discover_aal/MetaData</MetaDataUri>
+        </Report>
+        <Report>
+            <Name>Credit Karma - Individual Click Action Listing</Name>
+            <Id>credit_karma_individual_click_action_listing</Id>
+            <Description/>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/credit_karma_individual_click_action_listing</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/credit_karma_individual_click_action_listing</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/credit_karma_individual_click_action_listing/MetaData</MetaDataUri>
+        </Report>
+        <Report>
+            <Name>Credit Karma - Petal Advanced Action Listing </Name>
+            <Id>ck_petal_aal</Id>
+            <Description>Displays very detailed data for each individual action that has been credited to you.</Description>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/ck_petal_aal</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/ck_petal_aal</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/ck_petal_aal/MetaData</MetaDataUri>
+        </Report>
+        <Report>
+            <Name>Custom Advanced Action Listing /w Text1 and String1</Name>
+            <Id>cust_mp_action_listing_sku_text1_string1</Id>
+            <Description>Detailed information on the actions that occurred during a specified date range.  The show button allows a view of SKU level data.</Description>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/cust_mp_action_listing_sku_text1_string1</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/cust_mp_action_listing_sku_text1_string1</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/cust_mp_action_listing_sku_text1_string1/MetaData</MetaDataUri>
+        </Report>
+        <Report>
+            <Name>Custom Advanced Action Listing w/ OID</Name>
+            <Id>mp_action_listing_sku_oid</Id>
+            <Description>Detailed information on the actions that occurred during a specified date range.  The show button allows a view of SKU level data.</Description>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/mp_action_listing_sku_oid</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/mp_action_listing_sku_oid</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/mp_action_listing_sku_oid/MetaData</MetaDataUri>
+        </Report>
+        <Report>
+            <Name>Custom Advanced Action Listing with Customer ID</Name>
+            <Id>custom_mp_action_listing_sku</Id>
+            <Description>Detailed information on the actions that occurred during a specified date range.  The show button allows a view of SKU level data.</Description>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/custom_mp_action_listing_sku</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/custom_mp_action_listing_sku</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/custom_mp_action_listing_sku/MetaData</MetaDataUri>
+        </Report>
+        <Report>
+            <Name>Custom Performance by Product</Name>
+            <Id>custom_partner_performance_by_product</Id>
+            <Description>Displays performance data aggregated by product.</Description>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/custom_partner_performance_by_product</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/custom_partner_performance_by_product</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/custom_partner_performance_by_product/MetaData</MetaDataUri>
+        </Report>
+        <Report>
+            <Name>Custom Walmart Advanced Action Listing w/Numeric1</Name>
+            <Id>custom_walmart_mp_action_listing_sku</Id>
+            <Description>Detailed information on the actions that occurred during a specified date range.  The show button allows a view of SKU level data.</Description>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/custom_walmart_mp_action_listing_sku</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/custom_walmart_mp_action_listing_sku</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/custom_walmart_mp_action_listing_sku/MetaData</MetaDataUri>
+        </Report>
+        <Report>
+            <Name>Earnings by Campaign</Name>
+            <Id>mp_earnings_by_campaign</Id>
+            <Description/>
+            <ApiAccessible>false</ApiAccessible>
+            <RunUri>/secure/mediapartner/report/viewReport.report?id=826</RunUri>
+        </Report>
+        <Report>
+            <Name>Figure Home Equity - Advanced Action Listing /w Text1,2,3 and Numeric 1,2 </Name>
+            <Id>mp_action_listing_sku_custom_figure_one</Id>
+            <Description>Detailed information on the actions that occurred during a specified date range.  The show button allows a view of SKU level data.</Description>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/mp_action_listing_sku_custom_figure_one</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/mp_action_listing_sku_custom_figure_one</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/mp_action_listing_sku_custom_figure_one/MetaData</MetaDataUri>
+        </Report>
+        <Report>
+            <Name>Getty AdPlacement Advanced Action Listing</Name>
+            <Id>getty_adplacement_mp_action_listing_sku</Id>
+            <Description>Detailed information on the actions that occurred during a specified date range.  The show button allows a view of SKU level data.</Description>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/getty_adplacement_mp_action_listing_sku</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/getty_adplacement_mp_action_listing_sku</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/getty_adplacement_mp_action_listing_sku/MetaData</MetaDataUri>
+        </Report>
+        <Report>
+            <Name>Honeybook - Advanced Action Listing /w Numeric1</Name>
+            <Id>honeybook_advanced_action_listing_numeric1</Id>
+            <Description>Detailed information on the actions that occurred during a specified date range.  The show button allows a view of SKU level data.</Description>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/honeybook_advanced_action_listing_numeric1</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/honeybook_advanced_action_listing_numeric1</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/honeybook_advanced_action_listing_numeric1/MetaData</MetaDataUri>
+        </Report>
+        <Report>
+            <Name>Ipsos Advanced Action Listing /w Text1,Text2,Numeric1,Numeric2,Numeric3</Name>
+            <Id>mp_action_listing_sku_ipsos</Id>
+            <Description>Detailed information on the actions that occurred during a specified date range.  The show button allows a view of SKU level data.</Description>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/mp_action_listing_sku_ipsos</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/mp_action_listing_sku_ipsos</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/mp_action_listing_sku_ipsos/MetaData</MetaDataUri>
+        </Report>
+        <Report>
+            <Name>My Leads</Name>
+            <Description/>
+            <ApiAccessible>false</ApiAccessible>
+            <RunUri>/secure/mediapartner/report/viewReport.report?id=11703</RunUri>
+        </Report>
+        <Report>
+            <Name>Omio-Advanced Action Listing</Name>
+            <Id>omio_mp_action_listing_sku</Id>
+            <Description>Detailed information on the actions that occurred during a specified date range.  The show button allows a view of SKU level data.</Description>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/omio_mp_action_listing_sku</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/omio_mp_action_listing_sku</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/omio_mp_action_listing_sku/MetaData</MetaDataUri>
+        </Report>
+        <Report>
+            <Name>Other Earnings</Name>
+            <Id>other_earnings</Id>
+            <Description>Shows a list of Other Earnings such as Partner Funds Transfer, Performance Bonus given by the brands.</Description>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/other_earnings</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/other_earnings</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/other_earnings/MetaData</MetaDataUri>
+        </Report>
+        <Report>
+            <Name>Overdue Action Earnings</Name>
+            <Id>mp_overdue_payouts</Id>
+            <Description>Shows overdue action earnings based on each actions scheduled clearing date.   These are actions that could not be credit to your account balance on the action due date because the Advertiser had insufficient funds to cover the payment.</Description>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/mp_overdue_payouts</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/mp_overdue_payouts</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/mp_overdue_payouts/MetaData</MetaDataUri>
+        </Report>
+        <Report>
+            <Name>Partner Funds Transfer Listing</Name>
+            <Id>partner_funds_transfer_listing</Id>
+            <Description>Displays listing of Partner Funds Transfers that have been captured, where your account is either the intended recipient, or where you are the payor. The listing is provided by the scheduled (based on the payment date set) year and month.</Description>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/partner_funds_transfer_listing</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/partner_funds_transfer_listing</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/partner_funds_transfer_listing/MetaData</MetaDataUri>
+        </Report>
+        <Report>
+            <Name>Payable Click Data</Name>
+            <Id>partner_payable_click_data</Id>
+            <Description>Excludes duplicate click records.  Limited to 100,000 records.  If you need an large export of clicks then create a support ticket.</Description>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/partner_payable_click_data</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/partner_payable_click_data</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/partner_payable_click_data/MetaData</MetaDataUri>
+        </Report>
+        <Report>
+            <Name>PaystubAction</Name>
+            <Id>PaystubActions</Id>
+            <Description>Shows listing of payable actions associated with a given paystub id.</Description>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/PaystubActions</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/PaystubActions</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/PaystubActions/MetaData</MetaDataUri>
+        </Report>
+        <Report>
+            <Name>Performance by Ad</Name>
+            <Id>partner_performance_by_ad</Id>
+            <Description>Aggregate performance by ad over a specified date range.</Description>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/partner_performance_by_ad</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/partner_performance_by_ad</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/partner_performance_by_ad/MetaData</MetaDataUri>
+        </Report>
+        <Report>
+            <Name>Performance by Ad - Legacy</Name>
+            <Id>partner_performance_by_ad_legacy</Id>
+            <Description>Aggregate performance by ad over a specified date range. This report only shows data prior to Feb 1, 2021.</Description>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/partner_performance_by_ad_legacy</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/partner_performance_by_ad_legacy</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/partner_performance_by_ad_legacy/MetaData</MetaDataUri>
+        </Report>
+        <Report>
+            <Name>Performance by Brand</Name>
+            <Id>partner_performance_by_program</Id>
+            <Description>Aggregate performance by brand over a specified date range.</Description>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/partner_performance_by_program</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/partner_performance_by_program</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/partner_performance_by_program/MetaData</MetaDataUri>
+        </Report>
+        <Report>
+            <Name>Performance by Brand - Legacy</Name>
+            <Id>partner_performance_by_program_legacy</Id>
+            <Description>Aggregate performance by brand over a specified date range. This report only shows data prior to Feb 1, 2021.</Description>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/partner_performance_by_program_legacy</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/partner_performance_by_program_legacy</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/partner_performance_by_program_legacy/MetaData</MetaDataUri>
+        </Report>
+        <Report>
+            <Name>Performance by Category</Name>
+            <Id>partner_performance_by_category</Id>
+            <Description>Displays performance data aggregated by category.</Description>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/partner_performance_by_category</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/partner_performance_by_category</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/partner_performance_by_category/MetaData</MetaDataUri>
+        </Report>
+        <Report>
+            <Name>Performance by Country</Name>
+            <Id>partner_performance_by_country</Id>
+            <Description>Aggregate performance by region and city.</Description>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/partner_performance_by_country</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/partner_performance_by_country</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/partner_performance_by_country/MetaData</MetaDataUri>
+        </Report>
+        <Report>
+            <Name>Performance by Day</Name>
+            <Id>partner_performance_by_day</Id>
+            <Description>Aggregate performance for each day in a specified date range.</Description>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/partner_performance_by_day</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/partner_performance_by_day</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/partner_performance_by_day/MetaData</MetaDataUri>
+        </Report>
+        <Report>
+            <Name>Performance by Day - Legacy</Name>
+            <Id>partner_performance_by_day_legacy</Id>
+            <Description>Aggregate performance for each day in a specified date range. This report only shows data prior to Feb 1, 2021.</Description>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/partner_performance_by_day_legacy</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/partner_performance_by_day_legacy</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/partner_performance_by_day_legacy/MetaData</MetaDataUri>
+        </Report>
+        <Report>
+            <Name>Performance by Event Type</Name>
+            <Id>partner_performance_by_event_type</Id>
+            <Description>Displays performance data aggregated by Event Type.</Description>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/partner_performance_by_event_type</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/partner_performance_by_event_type</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/partner_performance_by_event_type/MetaData</MetaDataUri>
+        </Report>
+        <Report>
+            <Name>Performance by Media Properties</Name>
+            <Description>Aggregate performance by media properties</Description>
+            <ApiAccessible>false</ApiAccessible>
+            <RunUri>/secure/mediapartner/report/viewReport.report?id=16102</RunUri>
+        </Report>
+        <Report>
+            <Name>Performance by Month</Name>
+            <Id>partner_performance_by_month</Id>
+            <Description>Monthly performance snapshot for the last 24 months.</Description>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/partner_performance_by_month</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/partner_performance_by_month</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/partner_performance_by_month/MetaData</MetaDataUri>
+        </Report>
+        <Report>
+            <Name>Performance by Month - Legacy</Name>
+            <Id>partner_performance_by_month_legacy</Id>
+            <Description>Monthly performance snapshot. This report only shows data prior to Feb 1, 2021.</Description>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/partner_performance_by_month_legacy</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/partner_performance_by_month_legacy</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/partner_performance_by_month_legacy/MetaData</MetaDataUri>
+        </Report>
+        <Report>
+            <Name>Performance by Product</Name>
+            <Id>partner_performance_by_product</Id>
+            <Description>Displays performance data aggregated by product.</Description>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/partner_performance_by_product</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/partner_performance_by_product</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/partner_performance_by_product/MetaData</MetaDataUri>
+        </Report>
+        <Report>
+            <Name>Performance by Promo Code</Name>
+            <Id>partner_performance_by_promo_code</Id>
+            <Description>Displays performance data aggregated by promo code.</Description>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/partner_performance_by_promo_code</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/partner_performance_by_promo_code</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/partner_performance_by_promo_code/MetaData</MetaDataUri>
+        </Report>
+        <Report>
+            <Name>Performance by Referral Type</Name>
+            <Id>partner_performance_by_referral_type</Id>
+            <Description>Displays performance data aggregated by referral type.</Description>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/partner_performance_by_referral_type</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/partner_performance_by_referral_type</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/partner_performance_by_referral_type/MetaData</MetaDataUri>
+        </Report>
+        <Report>
+            <Name>Performance by Referring Domain</Name>
+            <Id>partner_performance_by_ref_domain</Id>
+            <Description>Aggregate performance by referring domain.</Description>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/partner_performance_by_ref_domain</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/partner_performance_by_ref_domain</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/partner_performance_by_ref_domain/MetaData</MetaDataUri>
+        </Report>
+        <Report>
+            <Name>Performance by Referring URL</Name>
+            <Id>partner_performance_by_ref_url</Id>
+            <Description>Displays performance data aggregated by Event Type.</Description>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/partner_performance_by_ref_url</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/partner_performance_by_ref_url</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/partner_performance_by_ref_url/MetaData</MetaDataUri>
+        </Report>
+        <Report>
+            <Name>Performance by Sub ID and Shared ID</Name>
+            <Id>partner_performance_by_subid</Id>
+            <Description>Aggregate performance by sub ID.</Description>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/partner_performance_by_subid</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/partner_performance_by_subid</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/partner_performance_by_subid/MetaData</MetaDataUri>
+        </Report>
+        <Report>
+            <Name>PerformanceByCampaign</Name>
+            <Id>PerformanceByCampaigns</Id>
+            <Description/>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/PerformanceByCampaigns</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/PerformanceByCampaigns</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/PerformanceByCampaigns/MetaData</MetaDataUri>
+        </Report>
+        <Report>
+            <Name>RMNPaymentNonAction</Name>
+            <Id>RMNPaymentNonActions</Id>
+            <Description/>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/RMNPaymentNonActions</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/RMNPaymentNonActions</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/RMNPaymentNonActions/MetaData</MetaDataUri>
+        </Report>
+        <Report>
+            <Name>Shopify Advanced Action Listing</Name>
+            <Id>mp_action_listing_sku_shopify</Id>
+            <Description>Detailed information on the actions that occurred during a specified date range.  The show button allows a view of SKU level data.</Description>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/mp_action_listing_sku_shopify</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/mp_action_listing_sku_shopify</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/mp_action_listing_sku_shopify/MetaData</MetaDataUri>
+        </Report>
+        <Report>
+            <Name>Skimbit Other Earnings</Name>
+            <Id>skimbit_other_earnings</Id>
+            <Description/>
+            <ApiAccessible>false</ApiAccessible>
+            <RunUri>/secure/mediapartner/report/viewReport.report?id=14839</RunUri>
+        </Report>
+        <Report>
+            <Name>SkuLevelAction</Name>
+            <Id>SkuLevelActions</Id>
+            <Description>Shows listing of actions with sku level date based on action event date or date action is modified.</Description>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/SkuLevelActions</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/SkuLevelActions</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/SkuLevelActions/MetaData</MetaDataUri>
+        </Report>
+        <Report>
+            <Name>SoFi - Advanced Action Listing /w Numeric 1,2 &amp; Text4</Name>
+            <Id>sofi_advanced_action_listing_numeric1_2_text4</Id>
+            <Description>Detailed information on the actions that occurred during a specified date range.  The show button allows a view of SKU level data.</Description>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/sofi_advanced_action_listing_numeric1_2_text4</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/sofi_advanced_action_listing_numeric1_2_text4</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/sofi_advanced_action_listing_numeric1_2_text4/MetaData</MetaDataUri>
+        </Report>
+        <Report>
+            <Name>Tesco Advanced Action Listing /w Text1 and Money1</Name>
+            <Id>mp_action_listing_sku_custom</Id>
+            <Description>Detailed information on the actions that occurred during a specified date range.  The show button allows a view of SKU level data.</Description>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/mp_action_listing_sku_custom</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/mp_action_listing_sku_custom</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/mp_action_listing_sku_custom/MetaData</MetaDataUri>
+        </Report>
+        <Report>
+            <Name>TopCashBack Action Listing</Name>
+            <Id>topcashback</Id>
+            <Description>Shows listing of actions that orignated as action enquiries</Description>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/topcashback</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/topcashback</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/topcashback/MetaData</MetaDataUri>
+        </Report>
+        <Report>
+            <Name>Tracking Value Assignments</Name>
+            <Id>mp_assigned_tracking_values</Id>
+            <Description>Displays a listing of unique promo codes, phone numbers, and domains that advertisers have assigned to your media partner account</Description>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/mp_assigned_tracking_values</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/mp_assigned_tracking_values</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/mp_assigned_tracking_values/MetaData</MetaDataUri>
+        </Report>
+        <Report>
+            <Name>Vanity URLs</Name>
+            <Id>mp_vanity_links</Id>
+            <Description>Shows a list of all vanity links created</Description>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/mp_vanity_links</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/mp_vanity_links</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/mp_vanity_links/MetaData</MetaDataUri>
+        </Report>
+        <Report>
+            <Name>Walmart - Invoice History</Name>
+            <Id>mp_invoice_history_walmart</Id>
+            <Description/>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/mp_invoice_history_walmart</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/mp_invoice_history_walmart</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/mp_invoice_history_walmart/MetaData</MetaDataUri>
+        </Report>
+        <Report>
+            <Name>Walmart - Withdrawal History</Name>
+            <Id>mp_paystub_history_walmart</Id>
+            <Description/>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/mp_paystub_history_walmart</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/mp_paystub_history_walmart</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/mp_paystub_history_walmart/MetaData</MetaDataUri>
+        </Report>
+        <Report>
+            <Name>Walmart Custom Advanced Action Listing w/ OID</Name>
+            <Id>walmart_mp_action_listing_sku_oid</Id>
+            <Description>Detailed information on the actions that occurred during a specified date range.  The show button allows a view of SKU level data.</Description>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/walmart_mp_action_listing_sku_oid</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/walmart_mp_action_listing_sku_oid</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/walmart_mp_action_listing_sku_oid/MetaData</MetaDataUri>
+        </Report>
+        <Report>
+            <Name>WIthdrawal</Name>
+            <Id>Withdrawals</Id>
+            <Description>Shows listing of all withdrawals (i.e. payments).  Click on Pay stub Id to see details.</Description>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/Withdrawals</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/Withdrawals</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/Withdrawals/MetaData</MetaDataUri>
+        </Report>
+        <Report>
+            <Name>Withdrawal Details</Name>
+            <Id>withdrawal_details</Id>
+            <Description/>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/withdrawal_details</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/withdrawal_details</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/withdrawal_details/MetaData</MetaDataUri>
+        </Report>
+        <Report>
+            <Name>Withdrawal Details - Action Listing</Name>
+            <Id>action_listing_withdrawal</Id>
+            <Description>Displays data for each individual action that has been credited to you.</Description>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/action_listing_withdrawal</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/action_listing_withdrawal</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/action_listing_withdrawal/MetaData</MetaDataUri>
+        </Report>
+        <Report>
+            <Name>Withdrawal History</Name>
+            <Id>mp_paystub_history</Id>
+            <Description/>
+            <ApiAccessible>true</ApiAccessible>
+            <ApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/mp_paystub_history</ApiRunUri>
+            <DeferredApiRunUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/ReportExport/mp_paystub_history</DeferredApiRunUri>
+            <MetaDataUri>/Mediapartners/IRTFgDTqMyhE5400398MWbNkWpLWg26iu1/Reports/mp_paystub_history/MetaData</MetaDataUri>
+        </Report>
+    </Reports>
+</ImpactRadiusResponse>
