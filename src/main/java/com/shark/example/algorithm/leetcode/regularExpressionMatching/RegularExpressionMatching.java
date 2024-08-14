@@ -1,95 +1,79 @@
 package com.shark.example.algorithm.leetcode.regularExpressionMatching;
 
+import com.google.gson.Gson;
+
 public class RegularExpressionMatching {
-    public boolean isMatch(String sentence, String pattern) {
-        int currentSentenceIndex = 0;
 
-        String lastMatchPattern = "";
-        String lastMatchChar = "";
-
-        int currentMatchPatternIndex = 0;
-        String currentMatchPattern = "";
-        String currentMatchChar;
-
-        while (currentSentenceIndex < sentence.length()) {
-            boolean isMatch;
-            if(currentMatchPatternIndex == pattern.length()) {
+    public boolean isMatch(String s, String p) {
+        if (s == null || p == null) {
+            return false;
+        }
+        boolean[][] dp = new boolean[s.length() + 1][p.length() + 1];
+        printDp("init", dp);
+        dp[0][0] = true;
+        for (int i = 0; i < p.length(); i++) {
+            if (p.charAt(i) == '*' && dp[0][i - 1]) {
+                //a*b*c*d*e* 一開始連續的?*因為可以empty，所以可以為ture
+                dp[0][i + 1] = true;
+            }
+        }
+        printDp("parser p", dp);
+        for (int i = 0; i < s.length(); i++) {
+            boolean result = false;
+            for (int j = 0; j < p.length(); j++) {
+                System.out.println("i: " + i + ", j: " + j);
+                System.out.println("s.char: " + s.charAt(i) + ", p.char: " + p.charAt(j));
+                String title = "";
+                if (p.charAt(j) == s.charAt(i) || p.charAt(j) == '.') {
+                    title = "p.charAt(j) == s.charAt(i) || p.charAt(j) == '.'";
+                    dp[i + 1][j + 1] = dp[i][j];
+                }
+                if (p.charAt(j) == '*') {
+                    if (p.charAt(j - 1) == s.charAt(i) || p.charAt(j - 1) == '.') {
+//                        dp[i + 1][j + 1] = (dp[i + 1][j] || dp[i][j + 1] || dp[i + 1][j - 1]);
+                        //Single: [j] - [j + 1] = 1，看前面，前一個值得結果
+                        //Multi: [i] - [i + 1] = =1。看上面
+                        title = "p.charAt(j) == '*'" +
+                                "\n p.charAt(j - 1) == s.charAt(i) || p.charAt(j - 1) == '.'" +
+                                "\ni + 1: " + (i + 1)  + ", j: " + j +
+                                "\ni: " + i  + ", j + 1: " + (j + 1) ;
+                        dp[i + 1][j + 1] = (dp[i + 1][j] || dp[i][j + 1] || dp[i + 1][j - 1]);
+                    } else {
+                        //in this case, ?* only counts as empty
+                        //[j - 1] - [j + 1] = -2，看前兩個，上一個結果
+                        title = "p.charAt(j) == '*'" +
+                                "\n p.charAt(j - 1) != s.charAt(i) && p.charAt(j - 1) != '.'" +
+                                "\ni + 1: " + (i + 1)  + ", j - 1: " + (j - 1) ;
+                        dp[i + 1][j + 1] = dp[i + 1][j - 1];
+                    }
+                }
+                result = result || dp[i + 1][j + 1];
+                printDp(title, dp);
+            }
+            if(!result) {
                 return false;
             }
-
-            String currentSentenceChar = sentence.substring(currentSentenceIndex, currentSentenceIndex + 1);
-            currentMatchPattern = pattern.substring(currentMatchPatternIndex, currentMatchPatternIndex + 1);
-            currentMatchChar = currentMatchPattern;
-            if((currentMatchPatternIndex + 1) < pattern.length() &&
-                    "*".equalsIgnoreCase(pattern.substring(currentMatchPatternIndex + 1, currentMatchPatternIndex + 2))) {
-                currentMatchPattern = currentMatchPattern + "*";
-                // ex: a*
-            }
-
-            isMatch = currentMatchChar.equals(".") || currentSentenceChar.equalsIgnoreCase(currentMatchChar);
-            System.out.println("isMatch: " + isMatch + ", currentMatchPatternIndex: " + currentMatchPatternIndex +
-                     ", currentMatchPattern: " + currentMatchPattern + ", currentSentenceChar: " + currentSentenceChar);
-            if(isMatch) {
-                currentSentenceIndex = currentSentenceIndex + 1;
-                lastMatchPattern = currentMatchPattern;
-                lastMatchChar = currentSentenceChar;
-                if(currentMatchPattern.length() == 1) {
-                    //! a*
-                    currentMatchPatternIndex = currentMatchPatternIndex + 1;
-                    currentMatchPattern = "";
-                }
-            } else {
-                if(currentMatchPattern.length() == 2) {
-                    currentMatchPatternIndex = currentMatchPatternIndex + 2;
-                    currentMatchPattern = "";
-                } else {
-                    return false;
-                }
-            }
         }
-        System.out.println("sentence check done");
-        if(currentMatchPattern.length() == 2) {
-            currentMatchPatternIndex = currentMatchPatternIndex + 2;
-            currentMatchPattern = "";
+        return dp[s.length()][p.length()];
+    }
+
+    public void printDp(String title, boolean[][] dp) {
+        System.out.println("title: " + title);
+        Gson gson = new Gson();
+        for (boolean[] row : dp) {
+            System.out.println(gson.toJson(row));
         }
-
-        while (currentMatchPatternIndex < pattern.length()) {
-            int nextMatchPatternIndex = currentMatchPatternIndex + currentMatchPattern.length();
-            String nextMatchPattern = pattern.substring(nextMatchPatternIndex, nextMatchPatternIndex + 1);
-            String nextMatchChar = nextMatchPattern;
-            if((nextMatchPatternIndex + 1) < pattern.length() &&
-                    "*".equalsIgnoreCase(pattern.substring(nextMatchPatternIndex + 1, nextMatchPatternIndex + 2))) {
-                nextMatchPattern = nextMatchPattern + "*";
-                // ex: a*
-            }
-            System.out.println("nextMatchPatternIndex: " + nextMatchPatternIndex + ", nextMatchPattern: " + nextMatchPattern +
-                    ", nextMatchChar = " + nextMatchChar + ", lastMatchChar = " + lastMatchChar + ", lastMatchPattern = " + lastMatchPattern);
-            if(nextMatchPattern.length() == 1) {
-                if((lastMatchChar.equalsIgnoreCase(nextMatchChar) || nextMatchChar.equalsIgnoreCase(".")) &&
-                        lastMatchPattern.length() == 2) {
-                    //ex last: a* //next: a
-                    currentMatchPatternIndex = nextMatchPatternIndex + nextMatchPattern.length();
-                    lastMatchChar = nextMatchChar;
-                    lastMatchPattern = nextMatchPattern;
-                } else {
-                    return false;
-                }
-            } else {
-                currentMatchPatternIndex = nextMatchPatternIndex + nextMatchPattern.length();
-            }
-            System.out.println("currentMatchPatternIndex: " + currentMatchPatternIndex + ", currentMatchPattern: " + currentMatchPattern);
-        }
-
-
-        return true;
+        System.out.println();
     }
 
     public static void main(String[] args) {
         RegularExpressionMatching regularExpressionMatching = new RegularExpressionMatching();
-        System.out.println(regularExpressionMatching.isMatch("a", ".*..a*"));
-//        System.out.println(regularExpressionMatching.isMatch("ab", ".*.."));
+        System.out.println("result: " + regularExpressionMatching.isMatch("a", "..*"));
+//        System.out.println(regularExpressionMatching.isMatch("a", ".*..a*"));
+//        System.out.println(regularExpressionMatching.isMatch2("a", ".*..a*"));
+//        System.out.println(regularExpressionMatching.isMatch2("ab", ".*.."));
 //        System.out.println(regularExpressionMatching.isMatch("bbbba", ".*a*a"));
 //        System.out.println(regularExpressionMatching.isMatch("ab", ".*"));
-//        System.out.println(regularExpressionMatching.isMatch("aaba", "ab*a*c*a"));
+//        System.out.println(regularExpressionMatching.isMatch2("aaba", "ab*a*c*a"));
     }
 }
