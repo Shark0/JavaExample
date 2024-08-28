@@ -1,6 +1,5 @@
 package com.shark.example.file.html;
 
-import com.itextpdf.text.DocumentException;
 import com.openhtmltopdf.pdfboxout.PdfRendererBuilder;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.rendering.ImageType;
@@ -8,8 +7,6 @@ import org.apache.pdfbox.rendering.PDFRenderer;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
-import org.xhtmlrenderer.layout.SharedContext;
-import org.xhtmlrenderer.pdf.ITextRenderer;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
@@ -34,14 +31,6 @@ public class HtmlToFileExample {
             builder.withHtmlContent(html, null);
             builder.toStream(fileOutputStream);
             builder.run();
-
-//            ITextRenderer renderer = new ITextRenderer();
-//            SharedContext sharedContext = renderer.getSharedContext();
-//            sharedContext.setPrint(true);
-//            sharedContext.setInteractive(false);
-//            renderer.setDocumentFromString(html);
-//            renderer.layout();
-//            renderer.createPDF(fileOutputStream);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
