@@ -1,4 +1,4 @@
-package com.shark.example.algorithm.leetcode.numberOfProvinces;
+package com.shark.example.algorithm.leetcode.program547;
 
 import java.util.*;
 

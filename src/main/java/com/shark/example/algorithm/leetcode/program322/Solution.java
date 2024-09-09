@@ -1,4 +1,4 @@
-package com.shark.example.algorithm.leetcode.coin;
+package com.shark.example.algorithm.leetcode.program322;
 
 import java.util.Arrays;
 import java.util.HashMap;

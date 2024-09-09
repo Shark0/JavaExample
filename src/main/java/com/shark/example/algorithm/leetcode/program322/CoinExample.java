@@ -1,4 +1,4 @@
-package com.shark.example.algorithm.leetcode.coin;
+package com.shark.example.algorithm.leetcode.program322;
 
 public class CoinExample {
     public static void main(String[] argv) {
