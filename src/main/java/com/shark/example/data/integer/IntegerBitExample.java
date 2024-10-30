@@ -1,6 +1,6 @@
 package com.shark.example.data.integer;
 
-public class IntegerShiftExample {
+public class IntegerBitExample {
     public static void main(String[] args) {
         int value = 8 << 1;
         System.out.println("8 << 1: " + value);

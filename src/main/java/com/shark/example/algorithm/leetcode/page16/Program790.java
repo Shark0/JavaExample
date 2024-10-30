@@ -1,33 +1,21 @@
 package com.shark.example.algorithm.leetcode.page16;
 
-import java.util.HashMap;
-
 public class Program790 {
 
     public int numTilings(int n) {
-        int[] dominoSets = new int[] {3, 2, 1};
-        int[] dominoCounts = new int[]{5, 2, 1};
-        HashMap<Integer, Integer> map = new HashMap<>();
-
-        for (int i = 0; i < dominoSets.length; i++) {
-            int count = n / dominoSets[i];
-            map.put(i, count);
-            n = n - count * dominoSets[i];
-            if(n == 0) {
-                break;
-            }
+        long[] dp = new long[n + 3];
+        dp[0] = 1;
+        dp[1] = 2;
+        dp[2] = 5;
+        for (int i = 3; i < n; i ++) {
+            dp[i] = (dp[i - 1] * 2 + dp[i - 3]) % 1000000007;
         }
-
-        int result = 0;
-        for(int index: map.keySet()) {
-            int count = map.get(index);
-            result = result + count * dominoCounts[index];
-        }
-        return result;
+        return (int)dp[n - 1];
     }
 
     public static void main(String[] args) {
-        int n = 3;
+        //https://leetcode.cn/problems/domino-and-tromino-tiling/solutions/1968516/by-endlesscheng-umpp/
+        int n = 4;
         System.out.println("result: " + new Program790().numTilings(n));
     }
 }
