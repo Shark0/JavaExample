@@ -13,7 +13,7 @@ import java.util.List;
 
 public class IgPostCrawlerExample {
 
-    public PostDto example3(String url) {
+    public PostDto crawlPost(String url) {
         PostDto postDto = new PostDto();
         try {
             Document document = Jsoup.connect(url).userAgent("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36").get();
@@ -28,7 +28,7 @@ public class IgPostCrawlerExample {
         return postDto;
     }
 
-    public List<PostDto> example2() {
+    public List<PostDto> crawlPostLinkList() {
         List<PostDto> posts = new ArrayList<>();
         File file = new File("file/html/ig.html");
         try {
@@ -50,7 +50,7 @@ public class IgPostCrawlerExample {
         return posts;
     }
 
-    public ProfileDto fetchProfile(String url) {
+    public ProfileDto crawlProfile(String url) {
         ProfileDto profile = new ProfileDto();
         try {
             Document document = Jsoup.connect(url).userAgent("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36").get();
@@ -71,14 +71,14 @@ public class IgPostCrawlerExample {
 
         IgPostCrawlerExample example = new IgPostCrawlerExample();
         Gson gson = new Gson();
-        ProfileDto profileDto = example.fetchProfile("https://www.instagram.com/bluebottle/");
+        ProfileDto profileDto = example.crawlProfile("https://www.instagram.com/bluebottle/");
         System.out.println("profile: " + gson.toJson(profileDto));
 
-        List<PostDto> postLinks = example.example2();
-        System.out.println("example2Results: " + new Gson().toJson(postLinks));
+        List<PostDto> postLinkList = example.crawlPostLinkList();
+        System.out.println("example2Results: " + new Gson().toJson(postLinkList));
 
-        for(PostDto postLink : postLinks) {
-            PostDto post = example.example3(postLink.getLink());
+        for(PostDto postLink : postLinkList) {
+            PostDto post = example.crawlPost(postLink.getLink());
             System.out.println("post: " + new Gson().toJson(post));
             try {
                 Thread.sleep(2000);
