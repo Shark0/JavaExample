@@ -1,38 +1,48 @@
 package com.shark.example.shoalter.poc;
 
 import com.google.gson.Gson;
+import org.apache.xmlbeans.impl.jam.JSourcePosition;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
 public class IgPostCrawlerExample {
 
-    public PostDto crawlPost(String url) {
-        PostDto postDto = new PostDto();
+    public void start(String url) {
+        Gson gson = new Gson();
+        System.setProperty("webdriver.chrome.driver", "file/driver/chrome/chromedriver.exe");
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--remote-allow-origins=*");
+        options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
+        WebDriver driver = new ChromeDriver(options);
         try {
-            Document document = Jsoup.connect(url).userAgent("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36").get();
-            Element titleElement = document.getElementsByAttributeValue("property", "og:title").get(0);
-            postDto.setContent(titleElement.attr("content"));
-
-            Element imageElement = document.getElementsByAttributeValue("property", "og:image").get(0);
-            postDto.setImageUrl(imageElement.attr("content"));
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-        return postDto;
-    }
-
-    public List<PostDto> crawlPostLinkList() {
-        List<PostDto> posts = new ArrayList<>();
-        File file = new File("file/html/ig.html");
-        try {
-            Document document = Jsoup.parse(file, "UTF-8");
+            driver.get(url);
+            Thread.sleep(10000);
+            String pageSource = driver.getPageSource();
+            Files.write(Paths.get("file/html/ig.html"), pageSource.getBytes());
+            Document document = Jsoup.parse(pageSource);
+            //profile
+            ProfileDto profileDto = new ProfileDto();
+            Element profileTitleElement = document.getElementsByAttributeValue("property", "og:title").get(0);
+            profileDto.setName(profileTitleElement.attr("content"));
+            Element profileDescriptionElement = document.getElementsByAttributeValue("property", "og:description").get(0);
+            profileDto.setDescription(profileDescriptionElement.attr("content"));
+            Element profileImageElement = document.getElementsByAttributeValue("property", "og:image").get(0);
+            profileDto.setImage(profileImageElement.attr("content"));
+            System.out.println("profile: " + gson.toJson(profileDto));
+            //post list
+            List<PostDto> postList = new ArrayList<>();
             Element body = document.body();
             Elements elements = body.select("a[href]");;
             for (Element element : elements) {
@@ -40,52 +50,27 @@ public class IgPostCrawlerExample {
                 if(href.contains("/p/")) {
                     PostDto post = new PostDto();
                     post.setLink(href);
-                    posts.add(post);
+                    Element imageElement = element.getElementsByTag("img").get(0);
+                    String imageDescription = imageElement.attr("alt");
+                    post.setContent(imageDescription);
+                    String imageUrl = imageElement.attr("src");
+                    post.setImageUrl(imageUrl);
+                    postList.add(post);
                 }
             }
-
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+            System.out.println("posts: " + gson.toJson(postList));
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            driver.quit();
         }
-        return posts;
     }
 
-    public ProfileDto crawlProfile(String url) {
-        ProfileDto profile = new ProfileDto();
-        try {
-            Document document = Jsoup.connect(url).userAgent("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36").get();
-            Element titleElement = document.getElementsByAttributeValue("property", "og:title").get(0);
-            profile.setName(titleElement.attr("content"));
-            Element descriptionElement = document.getElementsByAttributeValue("property", "og:description").get(0);
-            profile.setDescription(descriptionElement.attr("content"));
-            Element imageElement = document.getElementsByAttributeValue("property", "og:image").get(0);
-            profile.setImage(imageElement.attr("content"));
-
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-        return profile;
-    }
 
     public static void main(String[] args) {
-
         IgPostCrawlerExample example = new IgPostCrawlerExample();
-        Gson gson = new Gson();
-        ProfileDto profileDto = example.crawlProfile("https://www.instagram.com/bluebottle/");
-        System.out.println("profile: " + gson.toJson(profileDto));
-
-        List<PostDto> postLinkList = example.crawlPostLinkList();
-        System.out.println("example2Results: " + new Gson().toJson(postLinkList));
-
-        for(PostDto postLink : postLinkList) {
-            PostDto post = example.crawlPost(postLink.getLink());
-            System.out.println("post: " + new Gson().toJson(post));
-            try {
-                Thread.sleep(2000);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
-        }
+        String url = "https://www.instagram.com/bluebottle/";
+        example.start(url);
     }
 
 }
