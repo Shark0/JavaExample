@@ -3,6 +3,21 @@ package com.shark.example.algorithm.leetcode.page7;
 public class Program334 {
 
     public boolean increasingTriplet(int[] nums) {
+        int min1 = Integer.MAX_VALUE;
+        int min2 = Integer.MAX_VALUE;
+        for(int n : nums) {
+            if(n <= min1) {
+                min1 = n;
+            } else if(n <= min2) {
+                min2 = n;
+            } else {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public boolean increasingTriplet1(int[] nums) {
         if (nums.length < 3) {
             return false;
         }
@@ -18,7 +33,7 @@ public class Program334 {
                 value1 = value;
                 continue;
             } else {
-                if(value >= value1) {
+                if (value >= value1) {
                     continue;
                 }
                 if (value2 == -1) {
@@ -52,7 +67,7 @@ public class Program334 {
             }
 
             System.out.println("value1: " + value1 + ", value2: " + value2 + ", value3: " + value3);
-            if(value3 > value2) {
+            if (value3 > value2) {
                 return true;
             }
         }
@@ -66,9 +81,7 @@ public class Program334 {
 //        int[] input = new int[]{5, 4, 3, 2, 1};
 //        int[] input = new int[]{2, 1, 5, 0, 4, 6};
 //        int[] input = new int[]{20, 100, 10, 12, 5, 13};
-        int input[] = new int[]{
-
-        };
+        int[] input = new int[]{1, 5, 0, 4, 1, 3};
         boolean result = program334.increasingTriplet(input);
         System.out.println("result: " + result);
     }

@@ -1,7 +1,6 @@
 package com.shark.example.shoalter.poc;
 
 import com.google.gson.Gson;
-import org.apache.xmlbeans.impl.jam.JSourcePosition;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -10,8 +9,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
-import java.io.File;
-import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
@@ -24,7 +21,6 @@ public class IgPostCrawlerExample {
         System.setProperty("webdriver.chrome.driver", "file/driver/chrome/chromedriver.exe");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--remote-allow-origins=*");
-        options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
         WebDriver driver = new ChromeDriver(options);
         try {
             driver.get(url);
