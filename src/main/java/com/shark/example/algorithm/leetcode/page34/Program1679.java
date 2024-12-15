@@ -1,11 +1,36 @@
-package com.shark.example.algorithm.leetcode.page74;
+package com.shark.example.algorithm.leetcode.page34;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Program3679 {
+public class Program1679 {
 
     public int maxOperations(int[] nums, int k) {
+        int result = 0;
+        int start = 0;
+        int end = nums.length - 1;
+        Arrays.sort(nums);
+        while (start < end) {
+            int v1 = nums[start];
+            int v2 = nums[end];
+            int sum = v1 + v2;
+            if(sum < k) {
+                start++;
+            } else if (sum == k) {
+                result++;
+                start++;
+                end--;
+            } else {
+                end--;
+            }
+
+        }
+        return result;
+    }
+
+
+    public int maxOperations1(int[] nums, int k) {
         int result = 0;
         Map<Integer, Integer> numMap = new HashMap<>();
         for (int num : nums) {
@@ -35,7 +60,7 @@ public class Program3679 {
     }
 
     public static void main(String[] args) {
-        Program3679 program3679 = new Program3679();
+        Program1679 program3679 = new Program1679();
         int[] nums = new int[]{3, 1, 3, 4, 3};
         int k = 6;
         System.out.println(program3679.maxOperations(nums, k));
