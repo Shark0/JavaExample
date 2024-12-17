@@ -1,4 +1,4 @@
-package com.shark.example.algorithm.leetcode.page1.program46;
+package com.shark.example.algorithm.leetcode.page1;
 
 import com.google.gson.Gson;
 

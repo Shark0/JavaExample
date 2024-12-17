@@ -1,4 +1,4 @@
-package com.shark.example.algorithm.leetcode.page1.program50;
+package com.shark.example.algorithm.leetcode.page1;
 
 public class Program50 {
 
