@@ -13,8 +13,8 @@ public class ReadTxtFileExample {
     public String readFile(String fileName) {
         File file = new File(fileName);
         StringBuilder stringBuilder = new StringBuilder();
-        try {
-            InputStreamReader reader = new InputStreamReader(new FileInputStream(file));
+        try(InputStreamReader reader = new InputStreamReader(new FileInputStream(file))) {
+
             BufferedReader bufferedReader = new BufferedReader(reader);
             String line;
             while ((line = bufferedReader.readLine()) != null) {
