@@ -38,3 +38,4 @@ brown
 brush
 bun
 burst
+bury
