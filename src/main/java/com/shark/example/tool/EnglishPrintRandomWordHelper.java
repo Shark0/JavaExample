@@ -1,28 +1,34 @@
 package com.shark.example.tool;
 
-import com.google.gson.Gson;
-
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class EnglishHelper {
+public class EnglishPrintRandomWordHelper {
 
     List<String> loadWordList() {
         List<String> words = new ArrayList<>();
-        String fileName = "file/english/words.txt";
-        File file = new File(fileName);
+        List<String> fileNameList = List.of(
+                "a", "b", "c", "d", "e", "f", "g", "h", "i", "j",
+                "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v",
+                "w", "x", "y", "z");
 
-        try (FileInputStream fileInputStream = new FileInputStream(file);
-             InputStreamReader reader = new InputStreamReader(fileInputStream)) {
-            BufferedReader bufferedReader = new BufferedReader(reader);
-            String line;
-            while ((line = bufferedReader.readLine()) != null) {
-                words.add(line);
+        for (String fileName : fileNameList) {
+            File file = new File("file/english/" + fileName + ".txt");
+            try (FileInputStream fileInputStream = new FileInputStream(file);
+                 InputStreamReader reader = new InputStreamReader(fileInputStream)) {
+                BufferedReader bufferedReader = new BufferedReader(reader);
+                String line;
+                while ((line = bufferedReader.readLine()) != null) {
+                    if (!line.isEmpty()) {
+                        words.add(line);
+                    }
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
             }
-        } catch (IOException e) {
-            e.printStackTrace();
         }
+
         return words;
     }
 
@@ -43,7 +49,7 @@ public class EnglishHelper {
     }
 
     public static void main(String[] args) {
-        EnglishHelper englishHelper = new EnglishHelper();
+        EnglishPrintRandomWordHelper englishHelper = new EnglishPrintRandomWordHelper();
         List<String> words = englishHelper.loadWordList();
         englishHelper.randomSelect(words, 10);
     }
