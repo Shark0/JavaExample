@@ -3,6 +3,7 @@ lantern
 latter
 lawyer
 lay
+lead
 leaf
 least
 leather

@@ -3,6 +3,7 @@ mad
 magazine
 magician
 maize
+manifesto
 manner
 marvelous
 mass

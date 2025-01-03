@@ -8,6 +8,7 @@ glad
 glare
 glove
 glue
+goodwill
 goose
 grade
 grain

@@ -12,5 +12,6 @@ wilderness
 wise
 woods
 worm
+worth
 wound
 wrist

@@ -12,6 +12,8 @@ inspire
 instant
 instruction
 instrument
+intention
 invent
 investment
 invitation
+italics

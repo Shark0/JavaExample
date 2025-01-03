@@ -4,6 +4,7 @@ deaf
 decorate
 decoration
 deer
+defiance
 delight
 dentist
 desert
@@ -14,6 +15,7 @@ diet
 diligent
 dining room
 diplomat
+disaster
 dishonest
 distant
 dizzy
@@ -25,10 +27,12 @@ doughnut
 downstairs
 downtown
 dozen
+drawer
 dresser
 drop
 drum
 dryer
 due
+dull
 dumb
 duty

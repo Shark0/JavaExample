@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class EnglishPrintRandomWordHelper {
+public class EnglishPrintWordHelper {
 
     List<String> loadWordList() {
         List<String> words = new ArrayList<>();
@@ -49,7 +49,7 @@ public class EnglishPrintRandomWordHelper {
     }
 
     public static void main(String[] args) {
-        EnglishPrintRandomWordHelper englishHelper = new EnglishPrintRandomWordHelper();
+        EnglishPrintWordHelper englishHelper = new EnglishPrintWordHelper();
         List<String> words = englishHelper.loadWordList();
         englishHelper.randomSelect(words, 10);
     }

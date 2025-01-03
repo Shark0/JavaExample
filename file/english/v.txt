@@ -1,3 +1,4 @@
+vaguely
 valley
 vehicle
 vendor
@@ -5,6 +6,8 @@ verdict
 vest
 village
 vinegar
+violent
 violin
 vocabulary
+volunteer
 vote
