@@ -5,6 +5,7 @@ generous
 geography
 gesture
 glad
+glare
 glove
 glue
 goose
@@ -15,6 +16,7 @@ grape
 grass
 gravity
 grease
+greenhouse
 greet
 grind
 guard

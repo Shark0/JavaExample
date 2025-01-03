@@ -6,7 +6,9 @@ weekday
 wet
 whale
 wheat
+whole
 wide
+wilderness
 wise
 woods
 worm

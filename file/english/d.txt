@@ -2,6 +2,7 @@ damage
 dawn
 deaf
 decorate
+decoration
 deer
 delight
 dentist

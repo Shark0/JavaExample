@@ -8,6 +8,7 @@ admire
 advertisement
 advice
 advise
+agent
 album
 altogether
 ambulance
@@ -18,8 +19,12 @@ apartment
 appreciate
 argue
 armchair
+armed
 arrange
+asset
 assistant
 assume
+attend
 authority
 autumn
+awkward

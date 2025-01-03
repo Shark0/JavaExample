@@ -13,6 +13,7 @@ public class EnglishSortWordHelper {
                 "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v",
                 "w", "x", "y", "z");
 
+        int wordCount = 0;
         for (String fileName : fileNameList) {
             String path = "file/english/" + fileName + ".txt";
             File file = new File(path);
@@ -24,6 +25,7 @@ public class EnglishSortWordHelper {
                 while ((line = bufferedReader.readLine()) != null) {
                     if (!line.isEmpty()) {
                         wordList.add(line);
+                        wordCount ++;
                     }
                 }
 
@@ -38,6 +40,7 @@ public class EnglishSortWordHelper {
                 e.printStackTrace();
             }
         }
+        System.out.println("word count: " + wordCount);
     }
 
     public static void main(String[] args) {
