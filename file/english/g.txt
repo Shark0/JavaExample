@@ -1,6 +1,7 @@
 garage
 gas
 gather
+general
 generous
 geography
 gesture
@@ -11,6 +12,7 @@ glue
 goodwill
 goose
 grade
+gradient
 grain
 gram
 grape

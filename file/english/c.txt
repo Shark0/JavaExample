@@ -13,6 +13,7 @@ carpet
 carriage
 catching
 catholic
+cell
 cent
 centimeter
 cereal
@@ -42,6 +43,7 @@ coat
 cockroach
 comparison
 concert
+concrete
 confident
 congestion
 considerate

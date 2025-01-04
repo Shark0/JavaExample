@@ -1,7 +1,9 @@
 icing
 ill
+imitation
 impolite
 indicate
+infection
 influence
 injure
 ink
@@ -13,6 +15,7 @@ instant
 instruction
 instrument
 intention
+international
 invent
 investment
 invitation

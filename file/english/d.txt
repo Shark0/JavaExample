@@ -9,6 +9,7 @@ delight
 dentist
 desert
 dessert
+determination
 dial
 diary
 diet
@@ -29,6 +30,7 @@ downtown
 dozen
 drawer
 dresser
+drift
 drop
 drum
 dryer

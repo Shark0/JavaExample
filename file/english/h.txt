@@ -8,6 +8,7 @@ heat
 heater
 helicopter
 hen
+heroic
 highway
 hike
 hill
@@ -19,3 +20,4 @@ hop
 horrible
 humble
 humid
+hottie

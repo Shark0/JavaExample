@@ -5,6 +5,9 @@ either
 elder
 elect
 electric
+electrical
+electron
+electronic
 element
 elementary
 emphasize

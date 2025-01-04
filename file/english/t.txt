@@ -3,6 +3,7 @@ talkative
 tangerine
 tape
 teapot
+tease
 tell
 temple
 tent
@@ -23,6 +24,7 @@ toast
 tongue
 tortilla
 towel
+trail
 trap
 tray
 treasure

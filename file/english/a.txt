@@ -1,6 +1,7 @@
 abolish
 abroad
 absent
+academic
 accident
 achieve
 actress
@@ -17,6 +18,8 @@ angle
 ankle
 announcement
 apartment
+appalling
+appearance
 appreciate
 argue
 armchair
