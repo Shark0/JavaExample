@@ -4,6 +4,7 @@ European
 abolish
 abroad
 absent
+academic
 accident
 achieve
 actress
@@ -20,6 +21,8 @@ angle
 ankle
 announcement
 apartment
+appalling
+appearance
 appreciate
 argue
 armchair
@@ -39,6 +42,7 @@ bake
 bakery
 balcony
 balloon
+bamboo
 barbecue
 barber
 bark
@@ -69,17 +73,20 @@ boiled
 bookcase
 border
 borne
+botanist
 bother
 bow
 bowling
 brave
 breast
+breathtaking
 bridge
 bright
 bring
 brown
 brush
 bun
+burden
 burst
 bury
 cafeteria
@@ -97,11 +104,13 @@ carpet
 carriage
 catching
 catholic
+cell
 cent
 centimeter
 cereal
 certain
 chalk
+chas
 chauffeur
 chemical
 chemistry
@@ -127,6 +136,7 @@ coat
 cockroach
 comparison
 concert
+concrete
 confident
 congestion
 considerate
@@ -167,6 +177,7 @@ delight
 dentist
 desert
 dessert
+determination
 dial
 diary
 diet
@@ -187,6 +198,7 @@ downtown
 dozen
 drawer
 dresser
+drift
 drop
 drum
 dryer
@@ -200,6 +212,9 @@ either
 elder
 elect
 electric
+electrical
+electron
+electronic
 element
 elementary
 emphasize
@@ -219,6 +234,7 @@ exert
 exhibition
 expected
 express
+fair
 fall
 falling
 fancy
@@ -231,8 +247,10 @@ film
 firm
 firmly
 fist
+flaky
 flan
 flashlight
+flat
 flat tire
 flesh
 flour
@@ -254,6 +272,7 @@ frontier
 garage
 gas
 gather
+general
 generous
 geography
 gesture
@@ -264,6 +283,7 @@ glue
 goodwill
 goose
 grade
+gradient
 grain
 gram
 grape
@@ -286,6 +306,7 @@ heat
 heater
 helicopter
 hen
+heroic
 highway
 hike
 hill
@@ -295,12 +316,15 @@ homesick
 honesty
 hop
 horrible
+hottie
 humble
 humid
 icing
 ill
+imitation
 impolite
 indicate
+infection
 influence
 injure
 ink
@@ -311,6 +335,7 @@ instant
 instruction
 instrument
 intention
+international
 invent
 investigation
 investment
