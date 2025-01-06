@@ -8,39 +8,30 @@ import java.util.*;
 public class EnglishSortWordHelper {
 
     public void sort() {
-        List<String> fileNameList = List.of(
-                "a", "b", "c", "d", "e", "f", "g", "h", "i", "j",
-                "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v",
-                "w", "x", "y", "z");
-
-        int wordCount = 0;
-        for (String fileName : fileNameList) {
-            String path = "file/english/" + fileName + ".txt";
-            File file = new File(path);
-            List<String> wordList = new ArrayList<>();
-            try (FileInputStream fileInputStream = new FileInputStream(file);
-                 InputStreamReader reader = new InputStreamReader(fileInputStream)) {
-                BufferedReader bufferedReader = new BufferedReader(reader);
-                String line;
-                while ((line = bufferedReader.readLine()) != null) {
-                    if (!line.isEmpty()) {
-                        wordList.add(line);
-                        wordCount ++;
-                    }
+        String path = "file/english/words.txt";
+        File file = new File(path);
+        try (FileInputStream fileInputStream = new FileInputStream(file);
+             InputStreamReader reader = new InputStreamReader(fileInputStream)) {
+            BufferedReader bufferedReader = new BufferedReader(reader);
+            Set<String> wordSet = new HashSet<>();
+            String line;
+            while ((line = bufferedReader.readLine()) != null) {
+                if (!line.isEmpty()) {
+                    wordSet.add(line);
                 }
-
-                Collections.sort(wordList);
-                StringBuilder stringBuilder = new StringBuilder();
-                for (String word : wordList) {
-                    stringBuilder.append(word);
-                    stringBuilder.append("\n");
-                }
-                Files.write(Paths.get(path), stringBuilder.toString().getBytes());
-            } catch (IOException e) {
-                e.printStackTrace();
             }
+            List<String> wordList = new ArrayList<>(wordSet);
+            Collections.sort(wordList);
+            StringBuilder stringBuilder = new StringBuilder();
+            for (String word : wordList) {
+                stringBuilder.append(word);
+                stringBuilder.append("\n");
+            }
+            Files.write(Paths.get(path), stringBuilder.toString().getBytes());
+            System.out.println("word count: " + wordSet.size());
+        } catch (IOException e) {
+            e.printStackTrace();
         }
-        System.out.println("word count: " + wordCount);
     }
 
     public static void main(String[] args) {

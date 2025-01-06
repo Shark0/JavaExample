@@ -8,25 +8,20 @@ public class EnglishPrintWordHelper {
 
     List<String> loadWordList() {
         List<String> words = new ArrayList<>();
-        List<String> fileNameList = List.of(
-                "a", "b", "c", "d", "e", "f", "g", "h", "i", "j",
-                "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v",
-                "w", "x", "y", "z");
 
-        for (String fileName : fileNameList) {
-            File file = new File("file/english/" + fileName + ".txt");
-            try (FileInputStream fileInputStream = new FileInputStream(file);
-                 InputStreamReader reader = new InputStreamReader(fileInputStream)) {
-                BufferedReader bufferedReader = new BufferedReader(reader);
-                String line;
-                while ((line = bufferedReader.readLine()) != null) {
-                    if (!line.isEmpty()) {
-                        words.add(line);
-                    }
+
+        File file = new File("file/english/words.txt");
+        try (FileInputStream fileInputStream = new FileInputStream(file);
+             InputStreamReader reader = new InputStreamReader(fileInputStream)) {
+            BufferedReader bufferedReader = new BufferedReader(reader);
+            String line;
+            while ((line = bufferedReader.readLine()) != null) {
+                if (!line.isEmpty()) {
+                    words.add(line);
                 }
-            } catch (IOException e) {
-                e.printStackTrace();
             }
+        } catch (IOException e) {
+            e.printStackTrace();
         }
 
         return words;
