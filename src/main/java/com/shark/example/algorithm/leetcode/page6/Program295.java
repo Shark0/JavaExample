@@ -1,6 +1,5 @@
 package com.shark.example.algorithm.leetcode.page6;
 
-import com.google.api.client.json.gson.GsonFactory;
 import com.google.gson.Gson;
 
 import java.util.Collections;

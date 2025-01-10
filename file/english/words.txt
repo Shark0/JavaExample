@@ -8,6 +8,7 @@ absent
 absolutely
 academic
 accident
+accidentally
 achieve
 actress
 admire
@@ -78,6 +79,7 @@ biscuit
 bit
 bite
 bitter
+blade
 blame
 blanket
 blouse
@@ -97,6 +99,7 @@ breathtaking
 bridge
 bright
 bring
+brochure
 brown
 brush
 bun
@@ -122,6 +125,7 @@ cart
 cartridge
 catching
 catholic
+cause
 cell
 cent
 centimeter
@@ -153,6 +157,7 @@ club
 coast
 coat
 cockroach
+coloured
 comparison
 concert
 concrete
@@ -189,6 +194,7 @@ custom
 cut
 cylindrical
 damage
+damaged
 dawn
 deaf
 deal
@@ -264,6 +270,7 @@ excuse
 exert
 exhibition
 expected
+expedition
 express
 extremely
 fair
@@ -294,6 +301,7 @@ flute
 fog
 foggy
 force
+forcefully
 form
 formal
 former
@@ -304,6 +312,7 @@ freezing
 frighten
 frisbee
 frontier
+fuel
 garage
 gas
 gather
@@ -347,6 +356,7 @@ hike
 hill
 hip
 hippo
+hole
 homesick
 honesty
 hop
@@ -366,6 +376,7 @@ influence
 inform
 injure
 ink
+inquiry
 insect
 insist
 inspire
@@ -397,6 +408,7 @@ knee
 knock
 lamb
 lantern
+lap
 latter
 lawyer
 lay
@@ -432,6 +444,7 @@ magician
 maintenance
 maize
 mammal
+mandarin
 manifesto
 manner
 manual
@@ -750,6 +763,7 @@ treat
 treatment
 trial
 trick
+trim
 trouser
 trumpet
 tub
@@ -764,6 +778,7 @@ untidily
 vaguely
 valley
 various
+vase
 vehicle
 vendor
 verdict
