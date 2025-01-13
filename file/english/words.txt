@@ -1,6 +1,39 @@
+ adore
+ aerial
+ ambition
+ awake
+ blame
+ butter
+ career
+ deceive
+ delicate
+ director
+ directorship
+ disgusting
+ export
+ extremely
+ gently
+ herb
+ illegal
+ league
+ liberally
+ loathe
+ mat
+ melting
+ nude
+ objective
+ plate
+ principle
+ ruin
+ stick
+ thick
+ ultimately
+ verb
+ wardrobe
 Christian
 Easter
 European
+Irish
 Spanish
 abolish
 abroad
@@ -11,6 +44,7 @@ accident
 accidentally
 achieve
 actress
+administrative
 admire
 advertisement
 advice
@@ -134,6 +168,7 @@ certain
 chalk
 chas
 chauffeur
+cheek
 chemical
 chemistry
 chess
@@ -217,6 +252,7 @@ diligent
 dining room
 diplomat
 disaster
+disbelief
 dishonest
 dispute
 distant
@@ -668,6 +704,7 @@ skyscraper
 slender
 slightly
 slippers
+smashed
 snail
 snappy
 sneakers
@@ -711,6 +748,7 @@ struggle
 stuck
 stylish
 substance
+sudden
 suffering
 suitable
 supper
@@ -794,10 +832,12 @@ waist
 waitress
 waste
 waterfalls
+wave
 weekday
 wet
 whale
 wheat
+wheel
 whole
 wide
 wilderness
@@ -812,4 +852,5 @@ wound
 wrapped
 wrist
 yard
+yeast
 yell
