@@ -8,8 +8,6 @@ public class EnglishPrintWordHelper {
 
     List<String> loadWordList() {
         List<String> words = new ArrayList<>();
-
-
         File file = new File("file/english/words.txt");
         try (FileInputStream fileInputStream = new FileInputStream(file);
              InputStreamReader reader = new InputStreamReader(fileInputStream)) {

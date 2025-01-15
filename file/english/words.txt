@@ -1,35 +1,3 @@
- adore
- aerial
- ambition
- awake
- blame
- butter
- career
- deceive
- delicate
- director
- directorship
- disgusting
- export
- extremely
- gently
- herb
- illegal
- league
- liberally
- loathe
- mat
- melting
- nude
- objective
- plate
- principle
- ruin
- stick
- thick
- ultimately
- verb
- wardrobe
 Christian
 Easter
 European
@@ -42,17 +10,22 @@ absolutely
 academic
 accident
 accidentally
+accommodation
 achieve
 actress
 administrative
+admiration
 admire
+adore
 advertisement
 advice
 advise
+aerial
 agent
 aim
 aircraft
 album
+allegation
 altogether
 ambition
 ambulance
@@ -62,17 +35,20 @@ amuse
 angle
 ankle
 announcement
+annoyed
 apartment
 apology
 appalling
 appearance
 appreciate
+approval
 argue
 armchair
 armed
 arrange
 article
 artificial
+ashore
 asset
 assistant
 assume
@@ -81,6 +57,7 @@ attention
 attractive
 authority
 autumn
+awake
 awkward
 backpack
 bad-tempered
@@ -141,6 +118,7 @@ burden
 burst
 bury
 bush
+butter
 cafeteria
 cage
 camp
@@ -151,6 +129,7 @@ candle
 cap
 capital
 captain
+career
 careers
 careless
 carpet
@@ -166,6 +145,7 @@ centimeter
 cereal
 certain
 chalk
+characteristic
 chas
 chauffeur
 cheek
@@ -192,6 +172,7 @@ club
 coast
 coat
 cockroach
+coil
 coloured
 comparison
 concert
@@ -234,12 +215,14 @@ dawn
 deaf
 deal
 debate
+deceive
 decorate
 decoration
 deer
 defiance
 delicate
 delight
+demand
 dentist
 deprived
 desert
@@ -251,11 +234,17 @@ diet
 diligent
 dining room
 diplomat
+director
+directorship
+dirt
 disaster
 disbelief
+disease
+disgusting
 dishonest
 dispute
 distant
+ditch
 dizzy
 dodge ball
 dogged
@@ -307,6 +296,7 @@ exert
 exhibition
 expected
 expedition
+export
 express
 extremely
 fair
@@ -350,10 +340,12 @@ frisbee
 frontier
 fuel
 garage
+garlic
 gas
 gather
 general
 generous
+gently
 geography
 gesture
 glad
@@ -386,6 +378,7 @@ heat
 heater
 helicopter
 hen
+herb
 heroic
 highway
 hike
@@ -403,6 +396,7 @@ humid
 icing
 identity
 ill
+illegal
 illness
 imitation
 impolite
@@ -435,6 +429,7 @@ journalist
 judge
 kangaroo
 ketchup
+kettle
 kick
 kindergarten
 kingdom
@@ -443,6 +438,7 @@ kitten
 knee
 knock
 lamb
+land
 lantern
 lap
 latter
@@ -451,6 +447,7 @@ lay
 layer
 lead
 leaf
+league
 least
 leather
 lend
@@ -458,6 +455,7 @@ less
 let
 letter
 lettuce
+liberally
 lick
 lid
 lie
@@ -469,6 +467,7 @@ lip
 liquid
 liter
 loaf
+loathe
 locker
 loose
 lovely
@@ -497,6 +496,7 @@ meat
 mechanic
 mechanical
 medical
+melting
 mercury
 mesmerize
 met
@@ -528,6 +528,7 @@ niece
 noise
 noisy
 notch
+nude
 nut
 nuts
 obey
@@ -545,6 +546,7 @@ oven
 overgrown
 overpass
 overseas
+owe
 ox
 pajamas
 pale
@@ -560,6 +562,7 @@ pastry
 patrol
 paw
 pear
+pearl
 photograph
 physics
 picnic
@@ -584,12 +587,14 @@ pocket
 pod
 poem
 poison
+polished
 polite
 political
 pollute
 pollution
 pond
 pony
+post
 pot
 pound
 pour
@@ -626,6 +631,7 @@ radiation
 railroad
 railway
 raincoat
+reach
 react
 reaction
 refrigerator
@@ -667,6 +673,7 @@ satisfaction
 sauce
 saucer
 savoury
+scald
 scenery
 scientific
 secretary
@@ -682,6 +689,7 @@ shall
 sharp
 sheet
 shelf
+shepherd
 shift
 shine
 shopkeeper
@@ -701,6 +709,7 @@ sink
 situation
 skate
 skyscraper
+sleeve
 slender
 slightly
 slippers
@@ -735,6 +744,7 @@ steady
 steel
 steep
 stem
+stick
 stingy
 stormy
 stove
@@ -747,6 +757,7 @@ strip
 struggle
 stuck
 stylish
+subject
 substance
 sudden
 suffering
@@ -779,6 +790,7 @@ theatre
 thick
 thief
 though
+thread
 thriving
 throat
 through
@@ -786,6 +798,7 @@ throw
 thrust
 tidy
 tie
+timetable
 tin
 toast
 tongue
@@ -806,19 +819,24 @@ trouser
 trumpet
 tub
 turbulence
+twisted
+ultimately
 undercover
 underpass
+underwear
 unfaithful
 uniform
 union
 unpleasant
 untidily
+untrue
 vaguely
 valley
 various
 vase
 vehicle
 vendor
+verb
 verdict
 vest
 village
@@ -830,6 +848,8 @@ volunteer
 vote
 waist
 waitress
+wardrobe
+warmth
 waste
 waterfalls
 wave

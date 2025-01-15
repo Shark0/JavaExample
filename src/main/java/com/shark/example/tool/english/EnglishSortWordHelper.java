@@ -17,7 +17,7 @@ public class EnglishSortWordHelper {
             String line;
             while ((line = bufferedReader.readLine()) != null) {
                 if (!line.isEmpty()) {
-                    wordSet.add(line);
+                    wordSet.add(line.trim());
                 }
             }
             List<String> wordList = new ArrayList<>(wordSet);
