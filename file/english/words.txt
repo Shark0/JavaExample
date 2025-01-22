@@ -18,6 +18,7 @@ administrative
 admiration
 admire
 adore
+advance
 advertisement
 advice
 advise
@@ -34,10 +35,12 @@ ambulance
 among
 amount
 amuse
+ancestor
 angle
 ankle
 announcement
 annoyed
+apart
 apartment
 apology
 appalling
@@ -77,6 +80,7 @@ bathrobe
 beam
 bean
 beard
+beater
 belief
 bell
 belong
@@ -97,6 +101,7 @@ blade
 blame
 blanket
 blouse
+blow
 boil
 boiled
 bookcase
@@ -107,6 +112,7 @@ bother
 bow
 bowling
 bracket
+brag
 brave
 breast
 breathtaking
@@ -159,6 +165,7 @@ cheek
 chemical
 chemistry
 chess
+chick
 childhood
 childish
 childlike
@@ -195,6 +202,7 @@ continue
 contributor
 convenient
 conveniently
+costume
 cotton
 couch
 cough
@@ -235,6 +243,7 @@ defiance
 delicate
 delight
 demand
+demonstrate
 dentist
 deprived
 desert
@@ -249,14 +258,19 @@ diplomat
 director
 directorship
 dirt
+disappoint
+disappointment
 disaster
 disbelief
 disease
+disgust
+disgusted
 disgusting
 dishonest
 dispute
 distant
 ditch
+dive
 dizzy
 dodge ball
 dogged
@@ -291,6 +305,8 @@ electron
 electronic
 element
 elementary
+emotion
+emotionally
 emphasize
 encourage
 energetic
@@ -307,11 +323,14 @@ especially
 eve
 evidence
 exact
+exactly
 exam
 excuse
 exert
 exhaust
 exhibition
+exotic
+exoticize
 expected
 expedition
 export
@@ -344,6 +363,7 @@ flu
 flute
 fog
 foggy
+fold
 force
 forcefully
 form
@@ -374,6 +394,7 @@ glove
 glue
 goodwill
 goose
+gotta
 grade
 gradient
 grain
@@ -389,6 +410,7 @@ ground
 guard
 guava
 guilty
+guttural
 hair dresser
 hall
 ham
@@ -408,6 +430,7 @@ hip
 hippo
 hole
 homesick
+honest
 honesty
 hop
 horrible
@@ -443,6 +466,7 @@ invent
 investigation
 investment
 invitation
+ironically
 italics
 jam
 jar
@@ -478,6 +502,7 @@ least
 leather
 lend
 less
+lesson
 let
 letter
 lettuce
@@ -502,6 +527,7 @@ ma'am
 mad
 magazine
 magician
+magnet
 maintenance
 maize
 mammal
@@ -524,11 +550,13 @@ mechanical
 medical
 melting
 mercury
+mercy
 mesmerize
 met
 metal
 metro
 microwave
+military
 minor
 minus
 mistake
@@ -571,6 +599,8 @@ omit
 onion
 opposite
 ordinary
+orgasm
+oriental
 ought
 outcome
 oven
@@ -587,6 +617,8 @@ parking lot
 parrot
 particle
 passage
+passion
+passionate
 paste
 pastry
 patrol
@@ -670,6 +702,7 @@ raincoat
 reach
 react
 reaction
+recommend
 refrigerator
 refuse
 regular
@@ -716,6 +749,7 @@ scientific
 secretary
 seesaw
 seldom
+selfie
 selfish
 semester
 sentence
@@ -746,6 +780,7 @@ sincere
 sink
 situation
 skate
+skeptical
 skyscraper
 sleeve
 slender
@@ -756,6 +791,7 @@ snail
 snappy
 sneakers
 sneaky
+sneeze
 snooker
 snowman
 snowy
@@ -776,7 +812,9 @@ sprinkle
 squeal
 stairs
 stamp
+stance
 staple
+station
 stationery
 steady
 steel
@@ -791,12 +829,15 @@ stranger
 strap
 strategize
 straw
+stretch
 strict
 string
 strip
+strong
 struct
 struggle
 stuck
+stuff
 stylish
 subject
 substance
@@ -831,6 +872,7 @@ terrific
 theatre
 thick
 thief
+thirsty
 though
 thread
 thriving
@@ -841,6 +883,7 @@ thrust
 thumb
 tidy
 tie
+tighty-whities
 timetable
 tin
 toast
@@ -851,6 +894,7 @@ tough
 towel
 track
 trail
+translation
 trap
 tray
 treasure
@@ -863,6 +907,7 @@ trouser
 trousers
 truck
 trumpet
+tsunami
 tub
 turbulence
 twisted
@@ -896,19 +941,23 @@ vote
 waist
 waitress
 wardrobe
+warm
 warmth
 waste
 waterfalls
 wave
 weekday
+weirdo
 wet
 whale
 wheat
 wheel
 whole
 wide
+wife beater
 wilderness
 willingly
+wipe
 wise
 wit
 wood
