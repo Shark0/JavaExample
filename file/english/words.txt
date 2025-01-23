@@ -21,6 +21,7 @@ admiration
 admire
 adorable
 adore
+advance
 advertisement
 advice
 advise
@@ -38,10 +39,12 @@ ambulance
 among
 amount
 amuse
+ancestor
 angle
 ankle
 announcement
 annoyed
+apart
 apartment
 apology
 appalling
@@ -84,6 +87,7 @@ beam
 bean
 beard
 befall
+beater
 belief
 bell
 belong
@@ -105,6 +109,7 @@ blade
 blame
 blanket
 blouse
+blow
 boil
 boiled
 bookcase
@@ -116,6 +121,7 @@ bow
 bowel
 bowling
 bracket
+brag
 brave
 breast
 breathtaking
@@ -173,6 +179,7 @@ chemical
 chemistry
 chess
 chest
+chick
 childhood
 childish
 childlike
@@ -215,6 +222,7 @@ contributor
 convenient
 conveniently
 convent
+costume
 cotton
 couch
 cough
@@ -256,6 +264,7 @@ defiance
 delicate
 delight
 demand
+demonstrate
 dentist
 deprived
 desert
@@ -273,15 +282,20 @@ diplomat
 director
 directorship
 dirt
+disappoint
+disappointment
 disaster
 disbelief
 disease
+disgust
+disgusted
 disgusting
 dish
 dishonest
 dispute
 distant
 ditch
+dive
 dizzy
 dodge ball
 dogged
@@ -319,6 +333,8 @@ electronic
 element
 elementary
 embassy
+emotion
+emotionally
 emphasize
 encourage
 energetic
@@ -335,11 +351,14 @@ especially
 eve
 evidence
 exact
+exactly
 exam
 excuse
 exert
 exhaust
 exhibition
+exotic
+exoticize
 expected
 expedition
 explode
@@ -379,6 +398,7 @@ flu
 flute
 fog
 foggy
+fold
 force
 forcefully
 form
@@ -414,6 +434,7 @@ glove
 glue
 goodwill
 goose
+gotta
 grade
 gradient
 gradual
@@ -431,6 +452,7 @@ guard
 guava
 guilt
 guilty
+guttural
 hair dresser
 hall
 ham
@@ -451,6 +473,7 @@ hip
 hippo
 hole
 homesick
+honest
 honesty
 hop
 horrible
@@ -492,6 +515,7 @@ invent
 investigation
 investment
 invitation
+ironically
 italics
 jam
 jar
@@ -531,6 +555,7 @@ leather
 leaves
 lend
 less
+lesson
 let
 letter
 lettuce
@@ -557,6 +582,7 @@ ma'am
 mad
 magazine
 magician
+magnet
 maintenance
 maize
 mammal
@@ -581,12 +607,14 @@ medical
 melting
 memo
 mercury
+mercy
 mesmerize
 met
 metal
 metro
 microwave
 mine
+military
 minor
 minus
 mistake
@@ -638,6 +666,8 @@ opposite
 ordinary
 oregano
 original
+orgasm
+oriental
 ought
 outbreak
 outcome
@@ -656,6 +686,8 @@ parking lot
 parrot
 particle
 passage
+passion
+passionate
 paste
 pastry
 patrol
@@ -749,6 +781,7 @@ raincoat
 reach
 react
 reaction
+recommend
 refrigerator
 refugee
 refuse
@@ -798,6 +831,7 @@ scientific
 secretary
 seesaw
 seldom
+selfie
 selfish
 semester
 sentence
@@ -828,6 +862,7 @@ sincere
 sink
 situation
 skate
+skeptical
 skyscraper
 sleeve
 slender
@@ -838,6 +873,7 @@ snail
 snappy
 sneakers
 sneaky
+sneeze
 snooker
 snowman
 snowy
@@ -859,8 +895,10 @@ sprinkle
 squeal
 stairs
 stamp
+stance
 staple
 starvation
+station
 stationery
 steady
 steel
@@ -877,13 +915,16 @@ strap
 strategize
 straw
 stream
+stretch
 strict
 string
 strip
+strong
 struct
 struggle
 struggling
 stuck
+stuff
 stylish
 subject
 substance
@@ -926,6 +967,7 @@ thick
 thief
 thin
 thoroughly
+thirsty
 though
 thread
 threat
@@ -939,6 +981,7 @@ thumb
 thyme
 tidy
 tie
+tighty-whities
 timetable
 tin
 toast
@@ -949,6 +992,7 @@ tough
 towel
 track
 trail
+translation
 trap
 tray
 treasure
@@ -962,6 +1006,7 @@ trouser
 trousers
 truck
 trumpet
+tsunami
 tub
 turbulence
 twisted
@@ -997,6 +1042,7 @@ vote
 waist
 waitress
 wardrobe
+warm
 warmth
 waste
 waterfalls
@@ -1004,14 +1050,17 @@ wave
 wealthy
 wearer
 weekday
+weirdo
 wet
 whale
 wheat
 wheel
 whole
 wide
+wife beater
 wilderness
 willingly
+wipe
 wise
 wit
 wood
