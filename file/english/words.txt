@@ -86,11 +86,12 @@ bathrobe
 beam
 bean
 beard
-befall
 beater
+befall
 belief
 bell
 belong
+belonging
 below
 belt
 bench
@@ -201,11 +202,15 @@ climbing
 club
 coal
 coast
+coastal
 coat
 cockroach
 coil
 coloured
+comment
+commodity
 comparison
+compliment
 concert
 concrete
 confident
@@ -235,6 +240,7 @@ crayon
 crime
 criminal
 critic
+crocodile
 crop
 crowd
 crowded
@@ -268,6 +274,7 @@ demonstrate
 dentist
 deprived
 desert
+deserve
 dessert
 destroy
 determination
@@ -286,6 +293,7 @@ disappoint
 disappointment
 disaster
 disbelief
+discussion
 disease
 disgust
 disgusted
@@ -359,6 +367,7 @@ exhaust
 exhibition
 exotic
 exoticize
+expect
 expected
 expedition
 explode
@@ -486,6 +495,7 @@ identity
 ill
 illegal
 illness
+imagination
 imitation
 impolite
 inadequate
@@ -510,8 +520,11 @@ intellectually
 intend
 intended
 intention
+intermediate
 international
+interstate
 invent
+invest
 investigation
 investment
 invitation
@@ -524,6 +537,7 @@ jeep
 jigsaw
 jog
 journalist
+journey
 judge
 judgment
 junk
@@ -606,6 +620,7 @@ mechanical
 medical
 melting
 memo
+mention
 mercury
 mercy
 mesmerize
@@ -613,8 +628,8 @@ met
 metal
 metro
 microwave
-mine
 military
+mine
 minor
 minus
 mistake
@@ -655,19 +670,23 @@ objective
 obvious
 occasion
 offence
+offend
 offensive
+offer
+offering
 officer
 officially
 oil
 olive
 omit
 onion
+opinion
 opposite
 ordinary
 oregano
-original
 orgasm
 oriental
+original
 ought
 outbreak
 outcome
@@ -728,6 +747,7 @@ poison
 polished
 polite
 political
+politics
 pollute
 pollution
 pond
@@ -744,6 +764,7 @@ precious
 predict
 pregnant
 preheat
+preserve
 pretend
 prevent
 previously
@@ -762,6 +783,7 @@ pronounce
 pronouns
 pronunciation
 property
+prospect
 protest
 pump
 pumpkin
@@ -778,6 +800,7 @@ rail
 railroad
 railway
 raincoat
+rare
 reach
 react
 reaction
@@ -828,6 +851,7 @@ savoury
 scald
 scenery
 scientific
+scrupulously
 secretary
 seesaw
 seldom
@@ -890,6 +914,7 @@ spending
 spill
 spirit
 spot
+sprain
 spread
 sprinkle
 squeal
@@ -901,6 +926,7 @@ starvation
 station
 stationery
 steady
+steal
 steel
 steep
 stem
@@ -957,17 +983,19 @@ tease
 tell
 temperature
 temple
+tend
 tent
 term
 terrific
 theatre
 theft
+theoretical
 thermal
 thick
 thief
 thin
-thoroughly
 thirsty
+thoroughly
 though
 thread
 threat
@@ -1022,6 +1050,7 @@ unleaded
 unpleasant
 untidily
 untrue
+upset
 vaguely
 valley
 various
@@ -1039,6 +1068,7 @@ violin
 vocabulary
 volunteer
 vote
+wage
 waist
 waitress
 wardrobe
@@ -1068,6 +1098,7 @@ wooden
 woods
 woollen
 worm
+worrying
 worship
 worth
 wound

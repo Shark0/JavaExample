@@ -46,7 +46,7 @@ public class EnglishPrintWordHelper {
     public static void main(String[] args) {
         EnglishPrintWordHelper englishHelper = new EnglishPrintWordHelper();
         List<String> words = englishHelper.loadWordList();
-        englishHelper.randomSelect(words, 10);
+        englishHelper.randomSelect(words, 12);
     }
 
 }
