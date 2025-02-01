@@ -27,6 +27,7 @@ advice
 advise
 aerial
 afford
+agenda
 agent
 agility
 aim
@@ -42,16 +43,21 @@ amuse
 ancestor
 angle
 ankle
+anniversary
 announcement
 annoyed
+anxious
 apart
 apartment
 apology
 appalling
 appearance
+appetizer
+appointment
 appreciate
 approval
 argue
+arm
 armchair
 armed
 army
@@ -60,7 +66,9 @@ article
 artificial
 ashore
 asset
+assignment
 assistant
+associate
 assume
 attend
 attention
@@ -72,17 +80,20 @@ awkward
 backpack
 bad-tempered
 bag
+baggy
 bake
 bakery
 balcony
 balloon
 bamboo
+bao
 barbecue
 barber
 bark
 basement
 basil
 bathrobe
+battery
 beam
 bean
 beard
@@ -132,6 +143,7 @@ bring
 brochure
 brown
 brush
+budget
 bun
 burden
 burglar
@@ -159,6 +171,7 @@ carriage
 carry
 cart
 cartridge
+casual
 catching
 catholic
 cause
@@ -174,17 +187,20 @@ chalk
 characteristic
 chas
 chauffeur
+checkout
 cheek
 cheerful
 chemical
 chemistry
 chess
 chest
+chic
 chick
 childhood
 childish
 childlike
 chin
+chip
 chopsticks
 chubby
 cigarette
@@ -214,6 +230,7 @@ compliment
 concert
 concrete
 confident
+confuse
 congestion
 consider
 considerate
@@ -232,6 +249,7 @@ cotton
 couch
 cough
 council
+counter
 course
 court
 courtroom
@@ -244,6 +262,7 @@ crocodile
 crop
 crowd
 crowded
+crowed
 cruel
 cupboard
 curable
@@ -310,6 +329,7 @@ dogged
 dolphin
 donkey
 doubt
+dough
 doughnut
 downstairs
 downtown
@@ -327,6 +347,7 @@ dumb
 duty
 dying
 each
+earring
 effort
 either
 elbow
@@ -387,6 +408,7 @@ fasten
 fatal
 faucet
 fence
+ferry
 fever
 fibre
 field
@@ -401,6 +423,7 @@ flashlight
 flat
 flat tire
 flavour
+flea
 flesh
 flour
 flu
@@ -416,11 +439,14 @@ former
 fortune
 frame
 frank
+freeze
 freezer
 freezing
 frighten
 frisbee
 frontier
+frumpy
+frustrated
 fuel
 fulfil
 fumes
@@ -439,7 +465,10 @@ gesture
 girder
 glad
 glare
+glitch
+glitchy
 glove
+gloves
 glue
 goodwill
 goose
@@ -456,6 +485,7 @@ grease
 greenhouse
 greet
 grind
+grocery
 ground
 guard
 guava
@@ -471,6 +501,7 @@ hardly
 harmful
 heat
 heater
+heel
 helicopter
 hen
 herb
@@ -480,11 +511,14 @@ hike
 hill
 hip
 hippo
+hoarse
+hokey
 hole
 homesick
 honest
 honesty
 hop
+hopeful
 horrible
 horrifying
 hottie
@@ -498,6 +532,7 @@ illness
 imagination
 imitation
 impolite
+impressive
 inadequate
 incurable
 indicate
@@ -530,7 +565,9 @@ investment
 invitation
 ironically
 italics
+itches
 jam
+jamming
 jar
 jealous
 jeep
@@ -549,6 +586,7 @@ kindergarten
 kingdom
 kite
 kitten
+kneading
 knee
 knock
 lamb
@@ -564,6 +602,7 @@ lead
 leaf
 leaflet
 league
+leak
 least
 leather
 leaves
@@ -588,6 +627,7 @@ loaf
 loathe
 locker
 loose
+loud
 lovely
 loyalty
 lubricate
@@ -599,6 +639,7 @@ magician
 magnet
 maintenance
 maize
+malfunction
 mammal
 mandarin
 manifesto
@@ -656,6 +697,7 @@ neck
 necklace
 needle
 nephew
+nervous
 niece
 noise
 noisy
@@ -682,6 +724,7 @@ omit
 onion
 opinion
 opposite
+optimistic
 ordinary
 oregano
 orgasm
@@ -690,6 +733,7 @@ original
 ought
 outbreak
 outcome
+outfit
 oven
 overgrown
 overpass
@@ -697,6 +741,7 @@ overseas
 owe
 ox
 pace
+pack
 pale
 pan
 pants
@@ -764,6 +809,7 @@ precious
 predict
 pregnant
 preheat
+prescription
 preserve
 pretend
 prevent
@@ -777,18 +823,21 @@ prisoner
 procedure
 procession
 produce
+professor
 programme
 prolonged
 pronounce
 pronouns
 pronunciation
 property
+proposal
 prospect
 protest
 pump
 pumpkin
 punishment
 purse
+pursue
 put
 puzzle
 pyjamas
@@ -804,6 +853,7 @@ rare
 reach
 react
 reaction
+receipt
 recommend
 refrigerator
 refugee
@@ -814,12 +864,15 @@ relative
 religion
 religious
 remark
+reminder
 rendezvous
 rent
 represent
 resign
 resort
+restroom
 retire
+revealing
 reverse
 revise
 rid
@@ -843,6 +896,7 @@ sailor
 salted
 salty
 sand
+sandals
 satisfaction
 sauce
 saucepan
@@ -851,6 +905,8 @@ savoury
 scald
 scenery
 scientific
+scratch
+scratchy
 scrupulously
 secretary
 seesaw
@@ -890,22 +946,27 @@ skeptical
 skyscraper
 sleeve
 slender
+slice
 slightly
 slippers
 smashed
 snail
 snappy
+sneaker
 sneakers
 sneaky
 sneeze
 snooker
 snowman
 snowy
+snug
 society
+sock
 socks
 solicitor
 sore
 sour
+soy milk
 soy-sauce
 spectacular
 speculate
@@ -913,6 +974,7 @@ spell
 spending
 spill
 spirit
+spoon
 spot
 sprain
 spread
@@ -933,12 +995,14 @@ stem
 stick
 sticky
 stingy
+stolen
 stormy
 stove
 strange
 stranger
 strap
 strategize
+strategy
 straw
 stream
 stretch
@@ -975,6 +1039,7 @@ swing
 symptom
 syrup
 tackle
+tacky
 talkative
 tangerine
 tape
@@ -1000,6 +1065,7 @@ though
 thread
 threat
 threatening
+thrift
 thriving
 throat
 through
@@ -1026,6 +1092,7 @@ tray
 treasure
 treat
 treatment
+trendy
 trial
 trick
 trickle
@@ -1062,6 +1129,7 @@ verdict
 vest
 village
 vinegar
+vintage
 violation
 violent
 violin
