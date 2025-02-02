@@ -4,6 +4,7 @@ European
 Irish
 Spanish
 abandoned
+aboard
 abolish
 abroad
 absent
@@ -801,6 +802,7 @@ post
 pot
 pound
 pour
+poverty
 powder
 practical
 praise
@@ -980,6 +982,7 @@ sprain
 spread
 sprinkle
 squeal
+squeeze
 stairs
 stamp
 stance
@@ -1086,6 +1089,7 @@ tough
 towel
 track
 trail
+transform
 translation
 trap
 tray
