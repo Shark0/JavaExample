@@ -121,6 +121,7 @@ bitter
 blade
 blame
 blanket
+bleach
 blouse
 blow
 boil
@@ -145,6 +146,8 @@ brochure
 brown
 brush
 budget
+bully
+bumper
 bun
 burden
 burglar
@@ -236,6 +239,7 @@ congestion
 consider
 considerate
 considered
+construct
 consumption
 contact lens
 contagious
@@ -245,6 +249,7 @@ contributor
 convenient
 conveniently
 convent
+corridor
 costume
 cotton
 couch
@@ -259,6 +264,7 @@ crayon
 crime
 criminal
 critic
+critically
 crocodile
 crop
 crowd
@@ -271,6 +277,7 @@ cure
 curious
 curtain
 curve
+curved
 custom
 cut
 cylindrical
@@ -278,9 +285,11 @@ damage
 damaged
 dawn
 deaf
+deafen
 deal
 dealing
 debate
+debt
 deceive
 decline
 decorate
@@ -324,6 +333,7 @@ dispute
 distant
 ditch
 dive
+divorce
 dizzy
 dodge ball
 dogged
@@ -349,6 +359,7 @@ duty
 dying
 each
 earring
+economic
 effort
 either
 elbow
@@ -371,6 +382,7 @@ energetic
 enormous
 entertainment
 entrance
+entry
 envelope
 environmental
 envy
@@ -383,6 +395,7 @@ evidence
 exact
 exactly
 exam
+examine
 excuse
 exert
 exhaust
@@ -402,6 +415,7 @@ fabric
 fair
 fall
 falling
+fan
 fancy
 farm
 fashionable
@@ -414,6 +428,7 @@ fever
 fibre
 field
 fierce
+figure
 film
 firm
 firmly
@@ -434,6 +449,7 @@ foggy
 fold
 force
 forcefully
+forecast
 form
 formal
 former
@@ -453,6 +469,7 @@ fulfil
 fumes
 fungus
 furniture
+further
 gambol
 garage
 garlic
@@ -637,6 +654,7 @@ ma'am
 mad
 magazine
 magician
+magistrate
 magnet
 maintenance
 maize
@@ -705,6 +723,7 @@ noisy
 notch
 nuclear
 nude
+nurse
 nut
 nuts
 nylon
@@ -756,6 +775,7 @@ passionate
 paste
 pastry
 patrol
+pause
 paw
 peanut
 pear
@@ -798,6 +818,7 @@ pollute
 pollution
 pond
 pony
+portrait
 post
 pot
 pound
@@ -844,6 +865,7 @@ put
 puzzle
 pyjamas
 qualification
+quicken
 quite
 rack
 radiation
@@ -855,6 +877,7 @@ rare
 reach
 react
 reaction
+realize
 receipt
 recommend
 refrigerator
@@ -920,6 +943,7 @@ sentence
 servant
 severely
 sew
+sexually
 shall
 shampoo
 sharp
@@ -975,11 +999,13 @@ speculate
 spell
 spending
 spill
+spine
 spirit
 spoon
 spot
 sprain
 spread
+spring
 sprinkle
 squeal
 squeeze
@@ -1030,8 +1056,12 @@ supper
 surf
 surface
 surgery
+surgical
 surname
+surprise
+surprising
 survive
+sustained
 swallow
 swan
 sweater
@@ -1055,6 +1085,7 @@ tend
 tent
 term
 terrific
+theater
 theatre
 theft
 theoretical
@@ -1084,6 +1115,7 @@ tin
 toast
 tongue
 tortilla
+torture
 toss
 tough
 towel
@@ -1151,6 +1183,7 @@ waterfalls
 wave
 wealthy
 wearer
+website
 weekday
 weirdo
 wet
@@ -1165,6 +1198,7 @@ willingly
 wipe
 wise
 wit
+womb
 wood
 wooden
 woods
