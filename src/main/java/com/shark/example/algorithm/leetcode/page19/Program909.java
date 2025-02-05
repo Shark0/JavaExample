@@ -39,11 +39,8 @@ public class Program909 {
             locationList = nextLocationList;
             step++;
         }
-
-
         return -1;
     }
-
 
     public int[] generatePath(int[][] board) {
         int[] path = new int[board.length * board[0].length];
