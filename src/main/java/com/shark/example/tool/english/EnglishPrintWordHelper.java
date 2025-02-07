@@ -3,12 +3,15 @@ package com.shark.example.tool.english;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class EnglishPrintWordHelper {
 
     List<String> loadWordList() {
+        List<String> fileLst = List.of("words", "adv");
+        String fileName = fileLst.get(new Random().nextInt(fileLst.size()));
         List<String> words = new ArrayList<>();
-        File file = new File("file/english/words.txt");
+        File file = new File("file/english/" + fileName + ".txt");
         try (FileInputStream fileInputStream = new FileInputStream(file);
              InputStreamReader reader = new InputStreamReader(fileInputStream)) {
             BufferedReader bufferedReader = new BufferedReader(reader);
@@ -46,7 +49,7 @@ public class EnglishPrintWordHelper {
     public static void main(String[] args) {
         EnglishPrintWordHelper englishHelper = new EnglishPrintWordHelper();
         List<String> words = englishHelper.loadWordList();
-        englishHelper.randomSelect(words, 12);
+        englishHelper.randomSelect(words, Math.max(words.size() / 100, 10));
     }
 
 }

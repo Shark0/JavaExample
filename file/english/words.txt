@@ -1,8 +1,3 @@
-Christian
-Easter
-European
-Irish
-Spanish
 abandoned
 aboard
 abolish
@@ -17,9 +12,11 @@ accommodation
 accuse
 achieve
 actress
+actually
 administrative
 admiration
 admire
+admittedly
 adorable
 adore
 advance
@@ -35,7 +32,10 @@ aim
 aircraft
 album
 allegation
+almost
+already
 altogether
+always
 ambition
 ambulance
 among
@@ -43,11 +43,13 @@ amount
 amuse
 ancestor
 angle
+angrily
 ankle
 anniversary
 announcement
 annoyed
 anxious
+anywhere
 apart
 apartment
 apology
@@ -77,9 +79,11 @@ attractive
 authority
 autumn
 awake
+away
 awkward
 backpack
 bad-tempered
+badly
 bag
 baggy
 bake
@@ -92,9 +96,11 @@ barbecue
 barber
 bark
 basement
+basically
 basil
 bathrobe
 battery
+bead
 beam
 bean
 beard
@@ -162,6 +168,7 @@ camp
 campaigner
 camping
 campus
+candidate
 candle
 cap
 capital
@@ -169,6 +176,7 @@ captain
 carbon
 career
 careers
+carefully
 careless
 carpet
 carriage
@@ -187,7 +195,9 @@ century
 cereal
 ceremony
 certain
+certainly
 chalk
+champagne
 characteristic
 chas
 chauffeur
@@ -206,6 +216,7 @@ childlike
 chin
 chip
 chopsticks
+christian
 chubby
 cigarette
 cinnamon
@@ -281,6 +292,7 @@ curved
 custom
 cut
 cylindrical
+daily
 damage
 damaged
 dawn
@@ -294,10 +306,13 @@ deceive
 decline
 decorate
 decoration
+decorative
 deer
 defiance
+definitely
 delicate
 delight
+deluxe
 demand
 demonstrate
 dentist
@@ -333,6 +348,7 @@ dispute
 distant
 ditch
 dive
+divide
 divorce
 dizzy
 dodge ball
@@ -342,6 +358,7 @@ donkey
 doubt
 dough
 doughnut
+down
 downstairs
 downtown
 dozen
@@ -359,6 +376,8 @@ duty
 dying
 each
 earring
+easily
+easter
 economic
 effort
 either
@@ -380,6 +399,8 @@ emphasize
 encourage
 energetic
 enormous
+enough
+entertain
 entertainment
 entrance
 entry
@@ -390,7 +411,9 @@ equipment
 erupt
 escape
 especially
+european
 eve
+everywhere
 evidence
 exact
 exactly
@@ -423,6 +446,7 @@ fasten
 fatal
 faucet
 fence
+ferment
 ferry
 fever
 fibre
@@ -456,6 +480,7 @@ former
 fortune
 frame
 frank
+frankly
 freeze
 freezer
 freezing
@@ -470,6 +495,7 @@ fumes
 fungus
 furniture
 further
+furthermore
 gambol
 garage
 garlic
@@ -503,6 +529,7 @@ grease
 greenhouse
 greet
 grind
+grip
 grocery
 ground
 guard
@@ -515,6 +542,7 @@ hall
 ham
 handcuff
 handkerchief
+happily
 hardly
 harmful
 heat
@@ -523,6 +551,7 @@ heel
 helicopter
 hen
 herb
+here
 heroic
 highway
 hike
@@ -534,14 +563,18 @@ hokey
 hole
 homesick
 honest
+honestly
 honesty
 hop
 hopeful
 horrible
 horrifying
 hottie
+how
+however
 humble
 humid
+hydrogen
 icing
 identity
 ill
@@ -549,6 +582,7 @@ illegal
 illness
 imagination
 imitation
+immediately
 impolite
 impressive
 inadequate
@@ -556,6 +590,7 @@ incurable
 indicate
 infection
 infectious
+inflammable
 influence
 inform
 ingredient
@@ -573,6 +608,7 @@ intellectually
 intend
 intended
 intention
+interior
 intermediate
 international
 interstate
@@ -581,6 +617,7 @@ invest
 investigation
 investment
 invitation
+irish
 ironically
 italics
 itches
@@ -589,6 +626,7 @@ jamming
 jar
 jealous
 jeep
+jewelry
 jigsaw
 jog
 journalist
@@ -596,6 +634,7 @@ journey
 judge
 judgment
 junk
+just
 kangaroo
 ketchup
 kettle
@@ -674,6 +713,7 @@ matter
 meal
 mean
 means
+meanwhile
 meat
 mechanic
 mechanical
@@ -688,6 +728,7 @@ met
 metal
 metro
 microwave
+mild
 military
 mine
 minor
@@ -697,8 +738,10 @@ mixture
 molecule
 monastery
 monetary
+monthly
 mop
 morally
+moreover
 mosquito
 mud
 musician
@@ -712,15 +755,20 @@ national
 natural
 naturally
 naughty
+nearly
 neck
 necklace
 needle
 nephew
 nervous
+never
+nevertheless
 niece
+nitrogen
 noise
 noisy
 notch
+now
 nuclear
 nude
 nurse
@@ -730,6 +778,7 @@ nylon
 obey
 objective
 obvious
+obviously
 occasion
 offence
 offend
@@ -738,10 +787,12 @@ offer
 offering
 officer
 officially
+often
 oil
 olive
 omit
 onion
+only
 opinion
 opposite
 optimistic
@@ -750,6 +801,7 @@ oregano
 orgasm
 oriental
 original
+otherwise
 ought
 outbreak
 outcome
@@ -780,6 +832,8 @@ paw
 peanut
 pear
 pearl
+personally
+pesticide
 petrol
 petroleum
 petty
@@ -790,6 +844,7 @@ picnic
 piece
 pigeon
 pile
+pillar
 pillow
 pilot
 pipe
@@ -810,6 +865,7 @@ pocket
 pod
 poem
 poison
+poisonous
 polished
 polite
 political
@@ -843,7 +899,9 @@ principal
 principle
 prison
 prisoner
+probably
 procedure
+proceed
 procession
 produce
 professor
@@ -866,6 +924,7 @@ puzzle
 pyjamas
 qualification
 quicken
+quickly
 quite
 rack
 radiation
@@ -874,10 +933,13 @@ railroad
 railway
 raincoat
 rare
+rarely
 reach
 react
 reaction
+realistically
 realize
+really
 receipt
 recommend
 refrigerator
@@ -909,6 +971,7 @@ roll
 roller skate
 roof
 rope
+rosemary
 rub
 rubber
 rucksack
@@ -940,7 +1003,9 @@ selfie
 selfish
 semester
 sentence
+seriously
 servant
+settled
 severely
 sew
 sexually
@@ -964,6 +1029,7 @@ sidewalk
 sight
 sign
 silly
+simply
 sincere
 sink
 situation
@@ -975,6 +1041,7 @@ slender
 slice
 slightly
 slippers
+slowly
 smashed
 snail
 snappy
@@ -990,10 +1057,15 @@ society
 sock
 socks
 solicitor
+sometimes
+somewhere
+soon
 sore
 sour
 soy milk
 soy-sauce
+soya
+spanish
 spectacular
 speculate
 spell
@@ -1001,6 +1073,7 @@ spending
 spill
 spine
 spirit
+spoiled
 spoon
 spot
 sprain
@@ -1023,8 +1096,10 @@ steep
 stem
 stick
 sticky
+still
 stingy
 stolen
+stone
 stormy
 stove
 strange
@@ -1036,6 +1111,7 @@ straw
 stream
 stretch
 strict
+strike
 string
 strip
 strong
@@ -1060,6 +1136,7 @@ surgical
 surname
 surprise
 surprising
+surprisingly
 survive
 sustained
 swallow
@@ -1078,6 +1155,7 @@ tangerine
 tape
 teapot
 tease
+technically
 tell
 temperature
 temple
@@ -1088,8 +1166,13 @@ terrific
 theater
 theatre
 theft
+then
 theoretical
+theoretically
+there
+therefore
 thermal
+thermometer
 thick
 thief
 thin
@@ -1113,12 +1196,16 @@ tighty-whities
 timetable
 tin
 toast
+today
+tomorrow
 tongue
+too
 tortilla
 torture
 toss
 tough
 towel
+toxic
 track
 trail
 transform
@@ -1147,13 +1234,16 @@ underpass
 underwear
 unfaithful
 unfit
+unfortunately
 uniform
 union
 unleaded
 unpleasant
 untidily
 untrue
+up
 upset
+usually
 vaguely
 valley
 various
@@ -1162,6 +1252,7 @@ vehicle
 vendor
 verb
 verdict
+very
 vest
 village
 vinegar
@@ -1185,12 +1276,17 @@ wealthy
 wearer
 website
 weekday
+weekly
 weirdo
+well
 wet
 whale
 wheat
 wheel
+when
+where
 whole
+why
 wide
 wife beater
 wilderness
@@ -1211,5 +1307,8 @@ wound
 wrapped
 wrist
 yard
+yearly
 yeast
 yell
+yesterday
+yet
