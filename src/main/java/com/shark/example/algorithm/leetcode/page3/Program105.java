@@ -10,15 +10,15 @@ public class Program105 {
     public TreeNode buildTree(int[] preorder, int[] inorder) {
         //pre-order: right or down
         TreeNode root = new TreeNode(preorder[0]);
-        Map<Integer, Integer> indoorIndexMap = generateIndoorIndexMap(inorder);
+        Map<Integer, Integer> inOrderIndexMap = generateInOrderIndexMap(inorder);
 
         for(int i = 1; i < preorder.length; i++) {
             int preOrder = preorder[i];
             TreeNode node = root;
             while (true) {
-                int preOrderIndoorIndex = indoorIndexMap.get(preOrder);
-                int nodeValueIndoorIndex = indoorIndexMap.get(node.val);
-                boolean isLeft = preOrderIndoorIndex <= nodeValueIndoorIndex;
+                int preOrderInOrderIndex = inOrderIndexMap.get(preOrder);
+                int nodeValueInOrderIndex = inOrderIndexMap.get(node.val);
+                boolean isLeft = preOrderInOrderIndex <= nodeValueInOrderIndex;
                 if(isLeft) {
                     TreeNode leftNode = node.left;
                     if(leftNode == null) {
@@ -44,10 +44,10 @@ public class Program105 {
         return root;
     }
 
-    public Map<Integer, Integer> generateIndoorIndexMap(int[] indoors) {
+    public Map<Integer, Integer> generateInOrderIndexMap(int[] inOrders) {
         Map<Integer, Integer> map = new HashMap<>();
-        for (int i = 0; i < indoors.length; i++) {
-            map.put(indoors[i], i);
+        for (int i = 0; i < inOrders.length; i++) {
+            map.put(inOrders[i], i);
         }
         return map;
     }
