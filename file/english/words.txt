@@ -1,5 +1,6 @@
 abandoned
 aboard
+abode
 abolish
 abroad
 absent
@@ -11,6 +12,7 @@ accidentally
 accommodation
 accuse
 achieve
+across
 actress
 actually
 administrative
@@ -29,11 +31,13 @@ agenda
 agent
 agility
 aim
+aimlessly
 aircraft
 album
 allegation
 almost
 already
+altitude
 altogether
 always
 ambition
@@ -42,6 +46,7 @@ among
 amount
 amuse
 ancestor
+anchor
 angle
 angrily
 ankle
@@ -67,15 +72,18 @@ army
 arrange
 article
 artificial
+artificially
 ashore
 asset
 assignment
 assistant
 associate
 assume
+atrocity
 attend
 attention
 attractive
+aunt
 authority
 autumn
 awake
@@ -84,6 +92,7 @@ awkward
 backpack
 bad-tempered
 badly
+badminton
 bag
 baggy
 bake
@@ -124,27 +133,35 @@ biscuits
 bit
 bite
 bitter
+blackboard
 blade
 blame
+blank
 blanket
 bleach
+blind
 blouse
 blow
 boil
 boiled
 bookcase
 border
+bored
+boring
+born
 borne
 botanist
 bother
 bow
 bowel
+bowl
 bowling
 bracket
 brag
 brave
 breast
 breathtaking
+breeze
 bridge
 bright
 bring
@@ -171,6 +188,7 @@ campus
 candidate
 candle
 cap
+capable
 capital
 captain
 carbon
@@ -183,10 +201,13 @@ carriage
 carry
 cart
 cartridge
+castle
 casual
+catch
 catching
 catholic
 cause
+celebrate
 cell
 cement
 cent
@@ -201,6 +222,7 @@ champagne
 characteristic
 chas
 chauffeur
+cheat
 checkout
 cheek
 cheerful
@@ -238,14 +260,17 @@ coat
 cockroach
 coil
 coloured
+comb
 comment
 commodity
 comparison
 compliment
 concert
 concrete
+conductivity
 confident
 confuse
+confusion
 congestion
 consider
 considerate
@@ -286,6 +311,7 @@ cupboard
 curable
 cure
 curious
+curl
 curtain
 curve
 curved
@@ -308,6 +334,7 @@ decorate
 decoration
 decorative
 deer
+defective
 defiance
 definitely
 delicate
@@ -316,6 +343,8 @@ deluxe
 demand
 demonstrate
 dentist
+depress
+depressing
 deprived
 desert
 deserve
@@ -327,7 +356,9 @@ diary
 diesel
 diet
 dietary
+dig
 diligent
+dine
 dining room
 diplomat
 director
@@ -367,6 +398,7 @@ dresser
 drift
 drill
 drop
+drought
 drum
 dryer
 due
@@ -381,6 +413,7 @@ easter
 economic
 effort
 either
+elastic
 elbow
 elder
 elderly
@@ -395,6 +428,7 @@ elementary
 embassy
 emotion
 emotionally
+emphasis
 emphasize
 encourage
 energetic
@@ -413,6 +447,7 @@ escape
 especially
 european
 eve
+even
 everywhere
 evidence
 exact
@@ -431,6 +466,7 @@ expedition
 explode
 export
 express
+expression
 extract
 extremely
 eyelid
@@ -489,8 +525,12 @@ frisbee
 frontier
 frumpy
 frustrated
+fry
 fuel
 fulfil
+fulfilling
+full
+fully
 fumes
 fungus
 furniture
@@ -498,17 +538,22 @@ further
 furthermore
 gambol
 garage
+garden
 garlic
 gas
+gate
+gateway
 gather
 general
 generous
 gently
 geography
 gesture
+ghost
 girder
 glad
 glare
+glider
 glitch
 glitchy
 glove
@@ -525,6 +570,7 @@ gram
 grape
 grass
 gravity
+graze
 grease
 greenhouse
 greet
@@ -537,7 +583,9 @@ guava
 guilt
 guilty
 guttural
+habit
 hair dresser
+hairy
 hall
 ham
 handcuff
@@ -545,6 +593,7 @@ handkerchief
 happily
 hardly
 harmful
+harvest
 heat
 heater
 heel
@@ -559,6 +608,7 @@ hill
 hip
 hippo
 hoarse
+hobby
 hokey
 hole
 homesick
@@ -574,6 +624,7 @@ how
 however
 humble
 humid
+hurry
 hydrogen
 icing
 identity
@@ -625,6 +676,7 @@ jam
 jamming
 jar
 jealous
+jeans
 jeep
 jewelry
 jigsaw
@@ -646,12 +698,15 @@ kitten
 kneading
 knee
 knock
+koala
+lace
 lamb
 land
 lantern
 lap
 later
 latter
+laugh
 lawyer
 lay
 layer
@@ -684,6 +739,7 @@ loaf
 loathe
 locker
 loose
+lose
 loud
 lovely
 loyalty
@@ -695,6 +751,8 @@ magazine
 magician
 magistrate
 magnet
+magnificent
+mailman
 maintenance
 maize
 malfunction
@@ -705,6 +763,7 @@ manner
 manual
 manuscript
 marble
+marsh
 marvelous
 mass
 mat
@@ -718,6 +777,9 @@ meat
 mechanic
 mechanical
 medical
+medicinal
+medicine
+medium
 melting
 memo
 mention
@@ -733,8 +795,10 @@ military
 mine
 minor
 minus
+mist
 mistake
 mixture
+modern
 molecule
 monastery
 monetary
@@ -759,6 +823,7 @@ nearly
 neck
 necklace
 needle
+neighbor
 nephew
 nervous
 never
@@ -777,6 +842,7 @@ nuts
 nylon
 obey
 objective
+obtained
 obvious
 obviously
 occasion
@@ -798,6 +864,7 @@ opposite
 optimistic
 ordinary
 oregano
+organize
 orgasm
 oriental
 original
@@ -806,6 +873,7 @@ ought
 outbreak
 outcome
 outfit
+outraged
 oven
 overgrown
 overpass
@@ -817,6 +885,7 @@ pack
 pale
 pan
 pants
+papaya
 pardon
 parking lot
 parrot
@@ -826,9 +895,11 @@ passion
 passionate
 paste
 pastry
+patio
 patrol
 pause
 paw
+peach
 peanut
 pear
 pearl
@@ -847,6 +918,7 @@ pile
 pillar
 pillow
 pilot
+pin
 pipe
 plain
 plane
@@ -864,6 +936,7 @@ poach
 pocket
 pod
 poem
+point
 poison
 poisonous
 polished
@@ -899,6 +972,7 @@ principal
 principle
 prison
 prisoner
+prize
 probably
 procedure
 proceed
@@ -914,20 +988,24 @@ property
 proposal
 prospect
 protest
+proud
 pump
 pumpkin
 punishment
+purple
 purse
 pursue
 put
 puzzle
 pyjamas
 qualification
+quarter
 quicken
 quickly
 quite
 rack
 radiation
+rage
 rail
 railroad
 railway
@@ -941,6 +1019,7 @@ realistically
 realize
 really
 receipt
+recognized
 recommend
 refrigerator
 refugee
@@ -955,6 +1034,7 @@ reminder
 rendezvous
 rent
 represent
+republican
 resign
 resort
 restroom
@@ -972,6 +1052,7 @@ roller skate
 roof
 rope
 rosemary
+round
 rub
 rubber
 rucksack
@@ -979,6 +1060,7 @@ rude
 ruin
 ruler
 ruthless
+sacred
 sail
 sailor
 salted
@@ -993,6 +1075,7 @@ savoury
 scald
 scenery
 scientific
+scrape
 scratch
 scratchy
 scrupulously
@@ -1017,6 +1100,7 @@ shelf
 shepherd
 shift
 shine
+shirt
 shopkeeper
 shore
 shoulder
@@ -1036,13 +1120,17 @@ situation
 skate
 skeptical
 skyscraper
+sleazy
 sleeve
 slender
 slice
+slide
 slightly
+slim
 slippers
 slowly
 smashed
+snack
 snail
 snappy
 sneaker
@@ -1056,6 +1144,7 @@ snug
 society
 sock
 socks
+soldier
 solicitor
 sometimes
 somewhere
@@ -1065,6 +1154,7 @@ sour
 soy milk
 soy-sauce
 soya
+spaghetti
 spanish
 spectacular
 speculate
@@ -1093,6 +1183,7 @@ steady
 steal
 steel
 steep
+steer
 stem
 stick
 sticky
@@ -1102,6 +1193,7 @@ stolen
 stone
 stormy
 stove
+straight
 strange
 stranger
 strap
@@ -1127,6 +1219,7 @@ sudden
 suffer
 suffering
 suitable
+suitcase
 sunflower
 supper
 surf
@@ -1197,6 +1290,7 @@ timetable
 tin
 toast
 today
+toe
 tomorrow
 tongue
 too
@@ -1220,6 +1314,7 @@ trial
 trick
 trickle
 trim
+tropical
 trouser
 trousers
 truck
@@ -1227,6 +1322,8 @@ trumpet
 tsunami
 tub
 turbulence
+turkey
+turtle
 twisted
 ultimately
 undercover
@@ -1271,6 +1368,7 @@ warm
 warmth
 waste
 waterfalls
+watermelon
 wave
 wealthy
 wearer
@@ -1288,7 +1386,7 @@ where
 whole
 why
 wide
-wife beater
+wifebeater
 wilderness
 willingly
 wipe
@@ -1312,3 +1410,5 @@ yeast
 yell
 yesterday
 yet
+yummy
+zebra

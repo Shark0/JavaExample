@@ -8,7 +8,8 @@ import java.util.Random;
 public class EnglishPrintWordHelper {
 
     List<String> loadWordList() {
-        List<String> fileLst = List.of("words", "adv");
+//        List<String> fileLst = List.of("words", "adv");
+        List<String> fileLst = List.of("words");
         String fileName = fileLst.get(new Random().nextInt(fileLst.size()));
         List<String> words = new ArrayList<>();
         File file = new File("file/english/" + fileName + ".txt");
@@ -49,7 +50,7 @@ public class EnglishPrintWordHelper {
     public static void main(String[] args) {
         EnglishPrintWordHelper englishHelper = new EnglishPrintWordHelper();
         List<String> words = englishHelper.loadWordList();
-        englishHelper.randomSelect(words, Math.max(words.size() / 100, 10));
+        englishHelper.randomSelect(words, Math.min(20, Math.max(words.size() / 100, 10)));
     }
 
 }

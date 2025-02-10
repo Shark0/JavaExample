@@ -1,7 +1,5 @@
 package com.shark.example.algorithm.leetcode.page5;
 
-import org.apache.poi.ss.formula.functions.T;
-
 public class Program222 {
 
     public int countNodes(TreeNode node) {
