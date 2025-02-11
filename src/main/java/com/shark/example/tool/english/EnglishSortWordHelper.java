@@ -8,7 +8,7 @@ import java.util.*;
 public class EnglishSortWordHelper {
 
     public void sort() {
-        List<String> fileNameLst = List.of("words", "adv");
+        List<String> fileNameLst = List.of("words", "adv", "error");
         for(String fileName : fileNameLst) {
             String path = "file/english/" + fileName + ".txt";
             File file = new File(path);
