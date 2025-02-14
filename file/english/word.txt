@@ -1,39 +1,26 @@
-aaron
 abandoned
-aberdeen
-abilities
 ability
 able
-aboriginal
 abortion
 about
 above
-abraham
 abroad
-abs
 absence
 absent
 absolute
 absolutely
 absorption
 abstract
-abstracts
-abu
 abuse
-ac
 academic
-academics
 academy
-acc
 accent
 accept
 acceptable
 acceptance
 accepted
 accepting
-accepts
 access
-accessed
 accessibility
 accessible
 accessing
@@ -2348,6 +2335,7 @@ declared
 decline
 declined
 decor
+decorate
 decorating
 decorative
 decrease
@@ -2536,7 +2524,6 @@ dictionaries
 dictionary
 did
 die
-died
 diego
 dies
 diesel
@@ -3059,7 +3046,6 @@ epinions
 episode
 episodes
 epson
-eq
 equal
 equality
 equally
@@ -4129,7 +4115,6 @@ hence
 henderson
 henry
 hentai
-hepatitis
 her
 herald
 herb
@@ -4772,7 +4757,6 @@ jobs
 joe
 joel
 john
-johnny
 johns
 johnson
 johnston
@@ -5404,7 +5388,6 @@ mardi
 margaret
 margin
 maria
-mariah
 marie
 marijuana
 marilyn
@@ -5435,7 +5418,6 @@ martial
 martin
 marvel
 mary
-maryland
 mas
 mask
 mason
@@ -5743,7 +5725,6 @@ monroe
 monster
 monsters
 montana
-monte
 montgomery
 month
 monthly
@@ -5753,6 +5734,7 @@ mood
 moon
 moore
 moral
+morally
 more
 moreover
 morgan
@@ -5906,7 +5888,6 @@ nbc
 nc
 ncaa
 nd
-ne
 near
 nearby
 nearest
@@ -6571,7 +6552,6 @@ phentermine
 phi
 phil
 philadelphia
-philip
 philippines
 philips
 phillips
@@ -7099,7 +7079,6 @@ pushed
 pushing
 pussy
 put
-puts
 putting
 puzzle
 puzzles
@@ -7795,7 +7774,6 @@ satisfactory
 satisfied
 satisfy
 saturday
-saturn
 sauce
 saudi
 savage
@@ -8253,7 +8231,6 @@ sole
 solely
 solid
 solo
-solomon
 solution
 solutions
 solve
@@ -8837,6 +8814,7 @@ tell
 telling
 tells
 temp
+temperament
 temperature
 temperatures
 template
@@ -9969,3 +9947,4 @@ zshops
 zu
 zum
 zus
+idyllic

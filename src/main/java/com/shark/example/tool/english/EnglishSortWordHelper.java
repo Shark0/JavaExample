@@ -8,9 +8,9 @@ import java.util.*;
 public class EnglishSortWordHelper {
 
     public void sort() {
-        Set<String> wordNeedDeleteSet = generateNeedDeleteWords("words_delete");
-        Set<String> errorNeedDeleteSet = generateNeedDeleteWords("error_delete");
-        List<String> fileNameLst = List.of("words", "adv", "error");
+        Set<String> wordNeedDeleteSet = generateNeedDeleteWords("word_delete");
+        Set<String> reviewNeedDeleteSet = generateNeedDeleteWords("review_delete");
+        List<String> fileNameLst = List.of("word", "adv", "review");
         for(String fileName : fileNameLst) {
             String path = "file/english/" + fileName + ".txt";
             File file = new File(path);
@@ -28,8 +28,8 @@ public class EnglishSortWordHelper {
                     }
                 }
                 wordSet.removeAll(wordNeedDeleteSet);
-                if("error".equalsIgnoreCase(fileName)) {
-                    wordSet.removeAll(errorNeedDeleteSet);
+                if("review".equalsIgnoreCase(fileName)) {
+                    wordSet.removeAll(reviewNeedDeleteSet);
                 }
                 List<String> wordList = new ArrayList<>(wordSet);
                 Collections.sort(wordList);
