@@ -276,9 +276,6 @@ allocated
 allocation
 allow
 allowance
-allowed
-allowing
-allows
 alloy
 almost
 alone
@@ -516,7 +513,6 @@ arrangement
 arrangements
 array
 arrest
-arrested
 arrival
 arrivals
 arrive
@@ -647,7 +643,6 @@ aug
 august
 aurora
 aus
-austin
 australia
 australian
 austria
@@ -800,7 +795,6 @@ bbw
 bc
 bd
 bdsm
-be
 beach
 beaches
 beads
@@ -1153,7 +1147,6 @@ browsing
 bruce
 brunei
 brunette
-brunswick
 brush
 brussels
 brutal
@@ -1557,7 +1550,6 @@ christ
 christian
 christianity
 christians
-christina
 christine
 christmas
 christopher
@@ -2271,7 +2263,6 @@ dans
 dare
 dark
 darkness
-darwin
 das
 dash
 dat
@@ -2459,7 +2450,6 @@ desktops
 desperate
 despite
 destination
-destinations
 destiny
 destroy
 destroyed
@@ -2800,7 +2790,6 @@ dylan
 dynamic
 dynamics
 e
-ea
 each
 eagle
 eagles
@@ -3603,7 +3592,6 @@ fraction
 fragrance
 fragrances
 frame
-framed
 frames
 framework
 framing
@@ -3969,7 +3957,6 @@ guitars
 gulf
 gun
 guns
-guru
 guy
 guyana
 guys
@@ -4063,7 +4050,6 @@ hazards
 hb
 hc
 hd
-hdtv
 he
 head
 headed
@@ -4332,6 +4318,7 @@ identity
 idle
 idol
 ids
+idyllic
 ie
 ieee
 if
@@ -4797,7 +4784,6 @@ judy
 juice
 jul
 julia
-julian
 julie
 july
 jump
@@ -4840,7 +4826,6 @@ keith
 kelkoo
 kelly
 ken
-kennedy
 kenneth
 kenny
 keno
@@ -4910,7 +4895,6 @@ korean
 kruger
 ks
 kurt
-kuwait
 kw
 ky
 kyle
@@ -5146,7 +5130,6 @@ lions
 lip
 lips
 liquid
-lisa
 list
 listed
 listen
@@ -5464,7 +5447,6 @@ mb
 mba
 mc
 mcdonald
-md
 me
 meal
 meals
@@ -5489,7 +5471,6 @@ med
 medal
 media
 median
-mediawiki
 medicaid
 medical
 medicare
@@ -5597,7 +5578,6 @@ might
 mighty
 migration
 mike
-mil
 milan
 mild
 mile
@@ -5835,7 +5815,6 @@ myers
 myrtle
 myself
 mysimon
-myspace
 mysql
 mysterious
 mystery
@@ -7374,7 +7353,6 @@ religious
 reload
 relocation
 rely
-relying
 remain
 remainder
 remained
@@ -7855,7 +7833,6 @@ sd
 se
 sea
 seafood
-seal
 sealed
 sean
 search
@@ -8221,7 +8198,6 @@ soft
 softball
 software
 soil
-sol
 solar
 solaris
 sold
@@ -8251,7 +8227,6 @@ son
 song
 songs
 sonic
-sons
 sony
 soon
 soonest
@@ -8279,7 +8254,6 @@ sox
 sp
 spa
 space
-spaces
 spain
 spam
 span
@@ -8324,7 +8298,6 @@ speed
 speeds
 spell
 spelling
-spencer
 spend
 spending
 spent
@@ -9395,7 +9368,6 @@ v
 va
 vacancies
 vacation
-vacations
 vaccine
 vacuum
 vagina
@@ -9491,7 +9463,6 @@ vice
 victim
 victims
 victor
-victoria
 victorian
 victory
 vid
@@ -9871,19 +9842,12 @@ www
 wx
 wy
 wyoming
-x
-xanax
 xbox
 xerox
 xhtml
 xi
 xl
 xml
-xnxx
-xp
-xx
-xxx
-y
 ya
 yacht
 yahoo
@@ -9928,7 +9892,6 @@ yukon
 z
 za
 zambia
-zdnet
 zealand
 zen
 zero
@@ -9941,10 +9904,7 @@ zones
 zoning
 zoo
 zoom
-zoophilia
 zope
-zshops
 zu
 zum
 zus
-idyllic
