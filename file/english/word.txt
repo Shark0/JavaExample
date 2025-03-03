@@ -30,7 +30,6 @@ accident
 accidents
 accommodate
 accommodation
-accommodations
 accompanied
 accompanying
 accomplish
@@ -1226,7 +1225,6 @@ c
 ca
 cab
 cabin
-cabinet
 cabinets
 cable
 cables
@@ -1605,6 +1603,8 @@ claims
 claire
 clan
 clara
+clarification
+clarify
 clarity
 clark
 clarke
@@ -1848,7 +1848,6 @@ computing
 con
 concentrate
 concentration
-concentrations
 concept
 concepts
 conceptual
@@ -1943,11 +1942,9 @@ const
 constant
 constantly
 constitute
-constitutes
 constitution
 constitutional
 constraint
-constraints
 construct
 constructed
 construction
@@ -2609,8 +2606,6 @@ displays
 disposal
 disposition
 dispute
-disputes
-dist
 distance
 distances
 distant
@@ -2618,13 +2613,9 @@ distinct
 distinction
 distinguished
 distribute
-distributed
 distribution
-distributions
 distributor
-distributors
 district
-districts
 disturbed
 div
 dive
@@ -3225,6 +3216,7 @@ expo
 export
 exports
 exposed
+exposition
 exposure
 express
 expressed
@@ -3779,7 +3771,6 @@ germany
 get
 gets
 getting
-gg
 ghana
 ghost
 ghz
@@ -6726,7 +6717,6 @@ portion
 portions
 portland
 portrait
-portraits
 ports
 portsmouth
 portugal
@@ -7506,7 +7496,6 @@ retirement
 retreat
 retrieval
 retrieve
-retrieved
 retro
 return
 returned
@@ -7946,6 +7935,7 @@ serving
 session
 sessions
 set
+setback
 sets
 setting
 settings
@@ -9481,7 +9471,6 @@ viewpicture
 views
 vii
 viii
-viking
 villa
 village
 villages
@@ -9889,7 +9878,6 @@ yrs
 yu
 yugoslavia
 yukon
-z
 za
 zambia
 zealand
