@@ -42,6 +42,6 @@ public class EnglishPrintWordApp {
 
     public static void main(String[] args) {
         EnglishPrintWordApp englishHelper = new EnglishPrintWordApp();
-        englishHelper.printWordsInFiles(20);
+        englishHelper.printWordsInFiles(10);
     }
 }

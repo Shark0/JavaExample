@@ -2589,11 +2589,8 @@ discussing
 discussion
 discussions
 disease
-diseases
 dish
-dishes
 disk
-disks
 disney
 disorder
 disorders
@@ -4136,7 +4133,6 @@ hire
 hired
 hiring
 his
-hispanic
 hist
 historic
 historical
@@ -4173,7 +4169,6 @@ holy
 home
 homeland
 homeless
-homepage
 homes
 hometown
 homework
@@ -4412,12 +4407,8 @@ indiana
 indianapolis
 indians
 indicate
-indicated
-indicates
-indicating
 indication
 indicator
-indicators
 indices
 indie
 indigenous
@@ -5810,7 +5801,6 @@ mysql
 mysterious
 mystery
 myth
-n
 na
 nail
 nails
@@ -6391,7 +6381,6 @@ paths
 patient
 patients
 patio
-patricia
 patrick
 patrol
 pattern
@@ -6730,7 +6719,6 @@ positions
 positive
 possess
 possession
-possibilities
 possibility
 possible
 possibly
@@ -7707,7 +7695,6 @@ sally
 salmon
 salon
 salt
-salvador
 salvation
 sam
 samba
@@ -9153,7 +9140,6 @@ trinidad
 trinity
 trio
 trip
-tripadvisor
 triple
 trips
 triumph
