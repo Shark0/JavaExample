@@ -327,7 +327,6 @@ ampland
 amplifier
 amsterdam
 amy
-an
 ana
 anaheim
 anal
@@ -538,7 +537,6 @@ ashley
 asia
 asian
 aside
-asin
 ask
 asked
 asking
@@ -641,7 +639,6 @@ auditor
 aug
 august
 aurora
-aus
 australia
 australian
 austria
@@ -829,7 +826,6 @@ beef
 been
 beer
 before
-began
 begin
 beginner
 beginners
@@ -895,7 +891,6 @@ beverages
 beverly
 beyond
 bg
-bhutan
 bi
 bias
 bible
@@ -1074,7 +1069,6 @@ brain
 brake
 brakes
 branch
-branches
 brand
 brandon
 brands
@@ -1147,7 +1141,6 @@ bruce
 brunei
 brunette
 brush
-brussels
 brutal
 bryan
 bryant
@@ -1325,7 +1318,6 @@ caring
 carl
 carlo
 carlos
-carmen
 carnival
 carol
 carolina
@@ -1730,7 +1722,6 @@ colorado
 colored
 colors
 columbia
-columbus
 column
 columnists
 columns
@@ -2587,7 +2578,6 @@ discussed
 discusses
 discussing
 discussion
-discussions
 disease
 dish
 disk
@@ -2822,7 +2812,6 @@ economy
 ecuador
 ed
 eddie
-eden
 edgar
 edge
 edges
@@ -2859,7 +2848,6 @@ effort
 efforts
 eg
 egg
-eggs
 egypt
 egyptian
 eh
@@ -3775,12 +3763,10 @@ gi
 giant
 giants
 gibraltar
-gibson
 gif
 gift
 gifts
 gig
-gilbert
 girl
 girlfriend
 girls
@@ -3970,7 +3956,6 @@ hamburg
 hamilton
 hammer
 hampshire
-hampton
 hand
 handbags
 handbook
@@ -4005,7 +3990,6 @@ harder
 hardly
 hardware
 hardwood
-harley
 harm
 harmful
 harmony
@@ -4016,7 +4000,6 @@ harrison
 harry
 hart
 hartford
-harvard
 harvest
 harvey
 has
@@ -4513,7 +4496,6 @@ instrumental
 instrumentation
 instruments
 insulation
-insulin
 insurance
 insured
 int
@@ -4643,7 +4625,6 @@ issn
 issue
 issued
 issues
-ist
 istanbul
 it
 italia
@@ -4658,7 +4639,6 @@ itself
 itunes
 iv
 ivory
-ix
 j
 ja
 jack
@@ -5694,7 +5674,6 @@ months
 montreal
 mood
 moon
-moore
 moral
 morally
 more
@@ -5811,7 +5790,6 @@ named
 namely
 names
 namespace
-namibia
 nancy
 nano
 naples
@@ -6289,11 +6267,9 @@ pal
 palace
 pale
 palestine
-palestinian
 palm
 palmer
 pam
-pamela
 pan
 panama
 panasonic
@@ -7339,7 +7315,6 @@ remains
 remark
 remarkable
 remarks
-remedies
 remedy
 remember
 remembered
@@ -9149,7 +9124,6 @@ tropical
 trouble
 troubleshooting
 trout
-troy
 truck
 trucks
 true

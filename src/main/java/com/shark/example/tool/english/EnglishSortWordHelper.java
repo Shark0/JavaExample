@@ -10,7 +10,7 @@ public class EnglishSortWordHelper {
     public void sort() {
         Set<String> wordNeedDeleteSet = generateNeedDeleteWords("word_delete");
         Set<String> reviewNeedDeleteSet = generateNeedDeleteWords("review_delete");
-        List<String> fileNameLst = List.of("word", "adv", "review");
+        List<String> fileNameLst = List.of("word", "adv", "review", "oxford");
         for(String fileName : fileNameLst) {
             String path = "file/english/" + fileName + ".txt";
             File file = new File(path);

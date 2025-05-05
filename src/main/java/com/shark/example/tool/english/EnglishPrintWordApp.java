@@ -9,9 +9,8 @@ import java.util.Set;
 public class EnglishPrintWordApp {
 
     public void printWordsInFiles(int selectCount) {
-
         List<String> words = new ArrayList<>();
-        File file = new File("file/english/word.txt");
+        File file = new File("file/english/oxford.txt");
         try (FileInputStream fileInputStream = new FileInputStream(file);
              InputStreamReader reader = new InputStreamReader(fileInputStream);
              BufferedReader bufferedReader = new BufferedReader(reader)) {
