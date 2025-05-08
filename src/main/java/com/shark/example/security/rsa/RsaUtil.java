@@ -9,13 +9,11 @@ import java.security.spec.InvalidKeySpecException;
 import java.security.spec.PKCS8EncodedKeySpec;
 import java.security.spec.X509EncodedKeySpec;
 import java.util.Base64;
-import java.util.HashMap;
 
 public class RsaUtil {
-    public static final String OUTPUT_STRING_BASE64_PRIVATE_KEY = "OUTPUT_STRING_BASE64_PRIVATE_KEY";
-    public static final String OUTPUT_STRING_BASE64_PUBLIC_KEY = "OUTPUT_STRING_BASE64_PUBLIC_KEY";
 
-    public static HashMap<String, String> generateKeys() {
+
+    public static RsaKeyBase64Do generateKeys() {
         KeyPairGenerator keyPairGenerator = null;
         try {
             keyPairGenerator = KeyPairGenerator.getInstance("RSA");
@@ -26,15 +24,15 @@ public class RsaUtil {
         KeyPair keyPair = keyPairGenerator.generateKeyPair();
         PrivateKey privateKey = keyPair.getPrivate();
         PublicKey publicKey = keyPair.getPublic();
-        HashMap<String, String> keyHashMap = new HashMap<String, String>();
-        Base64.Encoder encoder = Base64.getEncoder();
 
+        Base64.Encoder encoder = Base64.getEncoder();
         String base64PrivateKey = encoder.encodeToString(privateKey.getEncoded());
         String base64PublicKey = encoder.encodeToString(publicKey.getEncoded());
 
-        keyHashMap.put(OUTPUT_STRING_BASE64_PRIVATE_KEY, base64PrivateKey);
-        keyHashMap.put(OUTPUT_STRING_BASE64_PUBLIC_KEY, base64PublicKey);
-        return keyHashMap;
+        RsaKeyBase64Do base64Do = new RsaKeyBase64Do();
+        base64Do.setPrivateKey(base64PrivateKey);
+        base64Do.setPublicKey(base64PublicKey);
+        return base64Do;
     }
 
     public static PrivateKey generatePrivateKey(String base64privateKey) {
@@ -111,21 +109,40 @@ public class RsaUtil {
         try {
             Base64.Decoder decoder = Base64.getDecoder();
             return new String(cipher.doFinal(decoder.decode(text)));
-        } catch (IllegalBlockSizeException e) {
-            e.printStackTrace();
-        } catch (BadPaddingException e) {
+        } catch (IllegalBlockSizeException | BadPaddingException e) {
             e.printStackTrace();
         }
         return null;
     }
 
+
+    public static String encryptByPrivateKey(String text,PrivateKey privateKey) {
+        Cipher cipher = null;
+        try {
+            cipher = Cipher.getInstance("RSA");
+        } catch (NoSuchAlgorithmException | NoSuchPaddingException e) {
+            e.printStackTrace();
+        }
+        try {
+            cipher.init(Cipher.ENCRYPT_MODE, privateKey);
+        } catch (InvalidKeyException e) {
+            e.printStackTrace();
+        }
+        try {
+            Base64.Encoder encoder = Base64.getEncoder();
+            return encoder.encodeToString(cipher.doFinal(text.getBytes()));
+        } catch (IllegalBlockSizeException | BadPaddingException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+
     public static String encryptByPrivateKey(String text, String privateKey) {
         Cipher cipher = null;
         try {
             cipher = Cipher.getInstance("RSA");
-        } catch (NoSuchAlgorithmException e) {
-            e.printStackTrace();
-        } catch (NoSuchPaddingException e) {
+        } catch (NoSuchAlgorithmException | NoSuchPaddingException e) {
             e.printStackTrace();
         }
         try {
@@ -138,21 +155,39 @@ public class RsaUtil {
         try {
             Base64.Encoder encoder = Base64.getEncoder();
             return encoder.encodeToString(cipher.doFinal(text.getBytes()));
-        } catch (IllegalBlockSizeException e) {
-            e.printStackTrace();
-        } catch (BadPaddingException e) {
+        } catch (IllegalBlockSizeException | BadPaddingException e) {
             e.printStackTrace();
         }
         return null;
+    }
+
+    public static String decryptByPublicKey(String encryptText, PublicKey publicKey) {
+        Cipher cipher = null;
+        try {
+            cipher = Cipher.getInstance("RSA");
+        } catch (NoSuchAlgorithmException | NoSuchPaddingException e) {
+            e.printStackTrace();
+        }
+        try {
+            cipher.init(Cipher.DECRYPT_MODE, publicKey);
+        } catch (InvalidKeyException e) {
+            e.printStackTrace();
+        }
+        String text = null;
+        try {
+            Base64.Decoder decoder = Base64.getDecoder();
+            text = new String(cipher.doFinal(decoder.decode(encryptText)));
+        } catch (IllegalBlockSizeException | BadPaddingException e) {
+            e.printStackTrace();
+        }
+        return text;
     }
 
     public static String decryptByPublicKey(String encryptText, String publicKey) {
         Cipher cipher = null;
         try {
             cipher = Cipher.getInstance("RSA");
-        } catch (NoSuchAlgorithmException e) {
-            e.printStackTrace();
-        } catch (NoSuchPaddingException e) {
+        } catch (NoSuchAlgorithmException | NoSuchPaddingException e) {
             e.printStackTrace();
         }
         try {
@@ -165,9 +200,7 @@ public class RsaUtil {
         try {
             Base64.Decoder decoder = Base64.getDecoder();
             text = new String(cipher.doFinal(decoder.decode(encryptText)));
-        } catch (IllegalBlockSizeException e) {
-            e.printStackTrace();
-        } catch (BadPaddingException e) {
+        } catch (IllegalBlockSizeException | BadPaddingException e) {
             e.printStackTrace();
         }
         return text;

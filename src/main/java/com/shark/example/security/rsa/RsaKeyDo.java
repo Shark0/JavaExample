@@ -2,8 +2,11 @@ package com.shark.example.security.rsa;
 
 import lombok.Data;
 
+import java.security.PrivateKey;
+import java.security.PublicKey;
+
 @Data
 public class RsaKeyDo {
-    private String publicKey;
-    private String privateKey;
+    private PublicKey publicKey;
+    private PrivateKey privateKey;
 }
