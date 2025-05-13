@@ -9,36 +9,23 @@ public class Program78 {
 
     public List<List<Integer>> subsets(int[] nums) {
         List<List<Integer>> results = new ArrayList<>();
-        for (int count = 0; count <= nums.length; count++) {
-            List<List<Integer>> countResults = subsets(nums, count, 0);
-            results.addAll(countResults);
-        }
+        backtrack(nums, 0, new ArrayList<>(), results);
         return results;
     }
 
-    private List<List<Integer>> subsets(int[] nums, int count, int offset) {
-        List<List<Integer>> results = new ArrayList<>();
-        if (count == 0) {
-            results.add(new ArrayList<>());
-        } else {
-            for (int i = 0; (i + count + offset) <= nums.length; i++) {
-                List<List<Integer>> subResults = subsets(nums, count - 1, 1 + offset + i);
-                int value = nums[i + offset];
+    private void backtrack(int[] nums, int start, List<Integer> path, List<List<Integer>> result) {
+        result.add(new ArrayList<>(path));
+        for (int end = start + 1; end <= nums.length ; end++) {
+            System.out.println("start: " + start + ", end: " + end + ", path: " + new Gson().toJson(path) + ", n: " + nums[end - 1]);
+            path.add(nums[end - 1]);
 
-                for (List<Integer> subResult : subResults) {
-                    subResult.addFirst(value);
-
-                }
-//                System.out.println("value: " + value + ", subResults: " + new Gson().toJson(subResults));
-                results.addAll(subResults);
-            }
+            backtrack(nums, end, path, result);
+            path.removeLast();
         }
-//        System.out.println("count: " + count + ", offset: " + offset + ", results: " + new Gson().toJson(results));
-        return results;
     }
 
     public static void main(String[] args) {
-        List<List<Integer>> results = new Program78().subsets(new int[]{1, 2, 3});
+        List<List<Integer>> results = new Program78().subsets(new int[]{0, 1, 2});
         System.out.println(new Gson().toJson(results));
     }
 
