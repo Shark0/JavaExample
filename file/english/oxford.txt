@@ -2928,7 +2928,6 @@ news
 newsletter
 newspaper
 next
-next to
 nice
 niche
 night
