@@ -1,7 +1,5 @@
 package com.shark.example.algorithm.leetcode.page69;
 
-import com.google.gson.Gson;
-
 import java.util.Arrays;
 
 public class Program3440 {
