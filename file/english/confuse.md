@@ -22,7 +22,7 @@ scheme schema
 dock duck
 
 # 意思太像
-booklet brochure manual handout
+booklet brochure manual handout leaflet
 workshop seminar convention
 keynote subject
 session season
@@ -35,3 +35,5 @@ attendance turn-out
 book register
 metro subway
 attendance participant
+campaign activity
+fare ticket
