@@ -4,12 +4,18 @@ import com.google.gson.Gson;
 
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Program452 {
+
+
+
     public int findMinArrowShots(int[][] points) {
-        if (points.length == 0) {
-            return 0;
+        if (points.length == 0 || points.length == 1) {
+            return points.length;
         }
+
         Arrays.sort(points, Comparator.comparingInt(a -> a[1])); //用最高來排序
         System.out.println("points: " + new Gson().toJson(points));
         int result = 1;

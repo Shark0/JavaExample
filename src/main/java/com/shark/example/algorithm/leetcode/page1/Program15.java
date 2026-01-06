@@ -3,46 +3,45 @@ package com.shark.example.algorithm.leetcode.page1;
 import java.util.*;
 
 public class Program15 {
+
     public List<List<Integer>> threeSum(int[] nums) {
         List<List<Integer>> resultList = new ArrayList<>();
         Arrays.sort(nums);
 
-        int i = 0;
-        while (i < nums.length - 2) {
+        int end = nums.length - 1;
+        while (end >= 2) {
 
+            int endNum = nums[end];
+            int start = 0;
+            int middle = end - 1;
 
-            int j = i + 1;
-            int k = nums.length - 1;
-
-            while (j < k) {
-                int result = nums[i] + nums[j] + nums[k];
-                if (result == 0) {
-                    resultList.add(Arrays.asList(nums[i], nums[j], nums[k]));
-                    while (j < k && nums[j] == nums[j + 1]) {
-                        j++;
-                    }
-                    while (j < k && nums[k] == nums[k - 1]) {
-                        k--;
-                    }
-                    j++;
-                    k--;
-                } else if (result < 0) {
-                    j++;
+            while (start < middle) {
+                int middleNum = nums[middle];
+                int startNum = nums[start];
+                int num = startNum + middleNum + endNum;
+                if(num == 0) {
+                    resultList.add(Arrays.asList(startNum, middleNum, endNum));
+                }
+                if (num > 0) {
+                    do {
+                        middle--;
+                    } while (middleNum == nums[middle] && middle > start);
                 } else {
-                    k--;
+                    do {
+                        start++;
+                    } while (startNum == nums[start] && middle > start);
                 }
             }
 
-            while (i < nums.length - 2 && nums[i] == nums[i + 1]) {
-                i ++;
-            }
-            i++;
+            do {
+                end = end - 1;
+            } while (end >= 2 && nums[end] == endNum && nums[end--] == nums[end]);
         }
         return resultList;
     }
 
     public static void main(String[] args) {
         Program15 threeSum = new Program15();
-        System.out.println(threeSum.threeSum(new int[]{-4, -2, -2, -2, 0, 1, 2, 2, 2, 3, 3, 4, 4, 6, 6}));
+        System.out.println(threeSum.threeSum(new int[]{0, 0, 0, 0}));
     }
 }

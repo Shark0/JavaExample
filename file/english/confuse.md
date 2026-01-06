@@ -37,3 +37,4 @@ metro subway
 attendance participant
 campaign activity
 fare ticket
+beverage drink

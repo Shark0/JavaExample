@@ -9,8 +9,9 @@ public class Program224 {
         int num = 0;
         int sign = 1;
         Stack<Integer> stack = new Stack<>();
-        for(int i = 0; i < s.length(); i++) {
-            char c = s.charAt(i);
+        char[] chars = s.toCharArray();
+
+        for (char c : chars) {
             switch (c) {
                 case '0':
                 case '1':
@@ -43,16 +44,14 @@ public class Program224 {
                 case ')':
                     result = result + sign * num;
                     int previewSign = stack.pop();
-                    result = result * previewSign;
                     int previewResult = stack.pop();
-                    result = result + previewResult;
+                    result = previewResult + previewSign * result;
                     num = 0;
                     break;
                 default:
                     break;
             }
         }
-
         result += sign * num;
         return result;
     }
