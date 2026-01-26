@@ -20,6 +20,6 @@ public class Program137 {
     }
 
     public static void main(String[] args) {
-        System.out.println(new Program137().singleNumber(new int[]{1, 2, 2, 1, 3}));
+        System.out.println(new Program137().singleNumber(new int[]{0, 1, 0, 1, 0, 1, 99}));
     }
 }

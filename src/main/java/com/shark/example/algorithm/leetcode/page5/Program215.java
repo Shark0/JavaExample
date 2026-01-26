@@ -7,15 +7,21 @@ public class Program215 {
 
     public int findKthLargest(int[] nums, int k) {
         PriorityQueue<Integer> priorityQueue = new PriorityQueue<>();
-
+        int condition = 0;
         for(int i = 0; i < nums.length; i++) {
             int num = nums[i];
-            priorityQueue.add(num);
-            if(i >= k) {
-                priorityQueue.poll();
+            if(i < k) {
+                priorityQueue.add(num);
+            }else if(i == k) {
+                priorityQueue.add(num);
+                condition = priorityQueue.poll();
+            } else {
+                if(num > condition) {
+                    priorityQueue.add(num);
+                    condition = priorityQueue.poll();
+                }
             }
         }
-
         return priorityQueue.poll();
     }
 

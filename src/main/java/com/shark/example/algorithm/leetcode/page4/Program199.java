@@ -12,13 +12,37 @@ public class Program199 {
         if(root == null) {
             return resultList;
         }
+        List<TreeNode> nodeList = new ArrayList<>();
+        nodeList.add(root);
+        while (!nodeList.isEmpty()) {
+            resultList.add(nodeList.getLast().val);
+            List<TreeNode> childList = new ArrayList<>();
+            for(TreeNode treeNode: nodeList) {
+                if(treeNode.left != null) {
+                    childList.add(treeNode.left);
+                }
+                if(treeNode.right != null) {
+                    childList.add(treeNode.right);
+                }
+            }
+            nodeList = childList;
+        }
+        return resultList;
+    }
+
+
+    public List<Integer> rightSideViewV1(TreeNode root) {
+        List<Integer> resultList = new ArrayList<>();
+        if(root == null) {
+            return resultList;
+        }
         List<Integer> leftResultList = null;
         if(root.left != null) {
-            leftResultList = rightSideView(root.left);
+            leftResultList = rightSideViewV1(root.left);
         }
         List<Integer> rightResultList = null;
         if(root.right != null) {
-            rightResultList = rightSideView(root.right);
+            rightResultList = rightSideViewV1(root.right);
         }
         int max = 0;
         if(rightResultList != null) {

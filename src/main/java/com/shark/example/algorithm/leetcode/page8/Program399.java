@@ -16,14 +16,14 @@ public class Program399 {
             graph.computeIfAbsent(node1, k -> new HashMap<>()).put(node2, value);
             graph.computeIfAbsent(node2, k -> new HashMap<>()).put(node1, 1 / value);
         }
-        System.out.println("graph: " + new Gson().toJson(graph));
+
         double[] results = new double[queries.size()];
         for (int i = 0; i < queries.size(); i++) {
             List<String> query = queries.get(i);
             String node1 = query.get(0);
             String node2 = query.get(1);
             Set<String> checkedNodeSet = new HashSet<>();
-            Double value = calc(graph, checkedNodeSet, node1, node2);
+            Double value = find(graph, checkedNodeSet, node1, node2);
             if (value == null) {
                 results[i] = -1;
             } else {
@@ -35,14 +35,14 @@ public class Program399 {
         return results;
     }
 
-    private Double calc(
+    private Double find(
             Map<String, Map<String, Double>> graph,
             Set<String> checkedNodeSet, String node1, String node2) {
         checkedNodeSet.add(node1);
-        Map<String, Double> node1Path = graph.get(node1);
-        if (node1Path == null) {
+        if(!graph.containsKey(node1) || !graph.containsKey(node2)) {
             return null;
         }
+        Map<String, Double> node1Path = graph.get(node1);
         if (node1.equals(node2)) {
             return 1.0;
         }
@@ -56,7 +56,7 @@ public class Program399 {
                 continue;
             }
             value = node1Path.get(node);
-            Double childValue = calc(graph, checkedNodeSet, node, node2);
+            Double childValue = find(graph, checkedNodeSet, node, node2);
             System.out.println("node: " + node + ", node2: " + node2 + ", childValue: " + childValue);
             if (childValue != null) {
                 return childValue * value;

@@ -36,8 +36,7 @@ public class Program2 {
         }
 
         if(carry != 0) {
-            ListNode node = new ListNode(carry);
-            tail.next = node;
+            tail.next = new ListNode(carry);
         }
         return head;
     }

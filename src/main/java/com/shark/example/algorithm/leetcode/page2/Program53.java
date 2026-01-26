@@ -8,6 +8,7 @@ public class Program53 {
         for (int i = 1; i < nums.length; i++) {
             sum = Math.max(sum + nums[i], nums[i]);
             max = Math.max(max, sum);
+            System.out.println("sum: " + sum + ", max: " + max + ", nums[i]: " + nums[i] + ", i: " + i);
         }
         return max;
     }

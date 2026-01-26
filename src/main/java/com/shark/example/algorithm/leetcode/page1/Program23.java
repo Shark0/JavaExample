@@ -8,6 +8,54 @@ public class Program23 {
         if (lists == null || lists.length == 0) {
             return null;
         }
+        return divideAndConquer(lists, 0, lists.length - 1);
+    }
+
+    public ListNode divideAndConquer(ListNode[] lists, int start, int end) {
+        if(start == end) {
+            return lists[start];
+        }
+        ListNode left = divideAndConquer(lists, start, (start + end) / 2);
+        ListNode right = divideAndConquer(lists, (start + end) / 2 + 1, end);
+        return merge(left, right);
+    }
+
+    public ListNode merge(ListNode listNode1, ListNode listNode2) {
+        if(listNode1 == null) {
+            return listNode2;
+        }
+        if(listNode2 == null) {
+            return listNode1;
+        }
+
+        ListNode dummy = new ListNode(0);
+        ListNode current = dummy;
+
+        while (listNode1 != null && listNode2 != null) {
+            if (listNode1.val <= listNode2.val) {
+                current.next = listNode1;   // 把較小的節點接到新鏈表後
+                listNode1 = listNode1.next; // 移動 list1 的指標
+            } else {
+                current.next = listNode2;
+                listNode2 = listNode2.next; // 移動 list2 的指標
+            }
+            current = current.next; // 移動新鏈表的指標
+        }
+
+        if (listNode1 != null) {
+            current.next = listNode1;
+        } else {
+            current.next = listNode2;
+        }
+
+        return dummy.next;
+    }
+
+
+    public ListNode mergeKListsBackup(ListNode[] lists) {
+        if (lists == null || lists.length == 0) {
+            return null;
+        }
         ListNode head = null;
         ListNode tail = null;
         while (true) {

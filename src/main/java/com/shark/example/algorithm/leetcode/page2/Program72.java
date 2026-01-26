@@ -1,7 +1,5 @@
 package com.shark.example.algorithm.leetcode.page2;
 
-import java.util.HashMap;
-
 public class Program72 {
 
     public int minDistance(String word1, String word2) {

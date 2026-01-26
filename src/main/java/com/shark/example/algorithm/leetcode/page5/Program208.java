@@ -4,16 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Program208 {
-    
-    public static void main(String[] args) {
-        Trie trie = new Trie();
-        trie.insert("apple");
-        System.out.println("search apple: " + trie.search("apple"));
-        System.out.println("search app: " + trie.search("app"));
-        System.out.println("start with app: " + trie.startsWith("app"));
-        trie.insert("app");
-        System.out.println("search app: " + trie.search("app"));
-    }
+
 
     public static class Trie {
 
